@@ -135,3 +135,7 @@ Frameworks/Include/CFRegularExpression.h
 !/**/msvc/**/bin
 
 .tools
+
+# [port] CHANGED: We build the Objective-C runtime from sources
+# [port] and copy it every time.
+/tools/deps/prebuilt/Universal Windows/x86/libobjc2.*
