@@ -36,8 +36,16 @@ CF_PRIVATE uintptr_t __CFISAForTypeID(CFTypeID typeID);
 // an option here, use &_OBJC_CLASS__NSCFString instead.
 // CF_EXPORT void * __CFConstantStringClassReferencePtrPtr;
 // CF_EXPORT void *__CFConstantStringClassReferencePtr[];
+// [port] CHANGED: [objc-class].
+#if defined(OBJC_PORT)
+CF_EXPORT Class OBJC_CLASS_$__NSCFString;
+#define _OBJC_CLASS__NSCFString OBJC_CLASS_$__NSCFString
+CF_EXPORT Class OBJC_CLASS_$__NSCFType;
+#define _OBJC_CLASS__NSCFType OBJC_CLASS_$__NSCFType
+#else
 CF_EXPORT Class _OBJC_CLASS__NSCFString;
 CF_EXPORT Class _OBJC_CLASS__NSCFType;
+#endif
 
 // For bridged classes, which under certain circumstances, dispatch a function from C side to Objective-C side
 #define CF_OBJC_FUNCDISPATCHV(type, ret, obj, ...)         \
