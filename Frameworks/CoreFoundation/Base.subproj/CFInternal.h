@@ -366,8 +366,16 @@ CF_PRIVATE Boolean __CFProcessIsRestricted();
 
 // WINOBJC: Compilation can't find these class names
 // Needed for class checks against cfisa, _CFRuntimeBridgeTypeToClass
+// [port] CHANGED: [objc-class].
+#if defined(OBJC_PORT)
+extern "C" Class OBJC_CLASS_$__NSCFNumber;
+#define _OBJC_CLASS__NSCFNumber OBJC_CLASS_$__NSCFNumber
+extern "C" Class OBJC_CLASS_$__NSCFBoolean;
+#define _OBJC_CLASS__NSCFBoolean OBJC_CLASS_$__NSCFBoolean
+#else
 extern "C" Class _OBJC_CLASS__NSCFNumber;
 extern "C" Class _OBJC_CLASS__NSCFBoolean;
+#endif
 
 // WINOBJC: Returns an empty protocol that is assigned only to bridged classes, so that bridged objects can be distinguished quickly
 static Protocol* __CFRuntimeGetBridgeProtocol() {
