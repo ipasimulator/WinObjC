@@ -87,8 +87,8 @@
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <!-- [port] CHANGED: Added `/ignore:4075` and `<ForceFileOutput>`, so that it is not an error to have multiple occurences of symbol `_OBJC_EHTYPE_$_NSException`. -->
-      <AdditionalOptions>/ignore:4087 /ignore:4001 /ignore:4075 %(AdditionalOptions)</AdditionalOptions>
+      <!-- [port] CHANGED: Added `/ignore:4075` and `<ForceFileOutput>`, [ehtype]. -->
+      <AdditionalOptions>/ignore:4087 /ignore:4001 /ignore:4075,4006 %(AdditionalOptions)</AdditionalOptions>
       <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(MSBuildThisFileDirectory)..\deps\prebuilt\$(TargetOSAndVersion)\$(PlatformTarget);$(MSBuildThisFileDirectory)..\deps;$(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
@@ -103,6 +103,10 @@
       <IncludePaths>%(IncludePaths);$(MSBuildThisFileDirectory)..\Frameworks\include\;</IncludePaths>
       <InternalForceIncludes>%(InternalForceIncludes);StubIncludes.h;</InternalForceIncludes>
     </ClangCompile>
+    <!-- [port] CHANGED: Added this whole section, [ehtype]. -->
+    <Lib>
+      <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
   </ItemDefinitionGroup>
 
 
