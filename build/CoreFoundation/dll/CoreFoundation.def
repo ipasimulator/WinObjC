@@ -949,6 +949,8 @@ LIBRARY CoreFoundation
         ; CFStringIsSurrogateHighCharacter ; inline
         ; CFStringIsSurrogateLowCharacter ; inline
         ; __CFConstantStringClassReference ; WINOBJC: Use above _NSCFString export instead.
+        ; [port] CHANGED: This is used by our runtime.
+        __CFConstantStringClassReference=OBJC_CLASS_$__NSCFString
 
         ; CFStringTokenizer.mm
         CFStringTokenizerCreate
