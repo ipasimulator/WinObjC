@@ -57,6 +57,9 @@ static const wchar_t* TAG = L"Objective-C";
 - (id)mutableCopyWithZone:(NSZone*)zone;
 @end
 
+// [port] CHANGED: `NSObject` is implemented in our runtime.
+// [port] TODO: Is it complete, though?
+#if !defined(OBJC_PORT)
 @implementation NSObject
 /**
  @Status Interoperable
@@ -700,6 +703,8 @@ static IMP _NSIMPForward(id object, SEL selector) {
 }
 
 @end
+// [port] !defined(OBJC_PORT)
+#endif
 
 void WinObjC_SetMissingSelectorFatal(BOOL fatal) {
     _NSSelectorNotFoundIsNonFatal = !fatal;
