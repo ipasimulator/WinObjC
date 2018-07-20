@@ -285,6 +285,8 @@ static constexpr unsigned int NSINVOCATION_SMALL_RETURN_VALUE_SIZE = 16;
 
 @end
 
+// [port] CHANGED: Uses undefined functions and is not referenced anyway.
+#if !defined(OBJC_PORT)
 extern "C" void _NSInvocation_ForwardFrame(
     void* stret, id self, SEL sel, void* frame, /* out */ _NSInvocationForwardReturnInfo* bridgeOut) {
     NSMethodSignature* signature = [self methodSignatureForSelector:sel];
@@ -332,3 +334,5 @@ extern "C" void _NSInvocation_ForwardFrame(
     }
     *bridgeOut = { returnValuePointer, opaqueReturnType };
 }
+// [port] !defined(OBJC_PORT)
+#endif
