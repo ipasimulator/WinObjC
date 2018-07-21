@@ -378,6 +378,10 @@ static id _NSWeakLoad(id obj) {
     return ret;
 }
 
+// [port] !defined(OBJC_PORT)
+#else
+__declspec(dllexport)
+#endif
 // NOTE: long return value to allow nonfatal continuation to get a "valid" result (for non-fpret/non-stret calls)
 long _throwUnrecognizedSelectorException(id self, Class isa, SEL sel) {
     std::string reason;
@@ -396,6 +400,7 @@ long _throwUnrecognizedSelectorException(id self, Class isa, SEL sel) {
 
     return 0;
 }
+#if !defined(OBJC_PORT)
 
 /**
  @Status Interoperable
