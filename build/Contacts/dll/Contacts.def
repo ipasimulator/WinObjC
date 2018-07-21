@@ -31,20 +31,20 @@ LIBRARY Contacts
         CNContactRelationsKey DATA
         CNContactSocialProfilesKey DATA
         CNContactInstantMessageAddressesKey DATA
-        _OBJC_CLASS_CNContact DATA
-        __objc_class_name_CNContact CONSTANT
+        OBJC_CLASS_$_CNContact DATA
+        OBJC_METACLASS_$_CNContact CONSTANT
 
         ; CNContactFetchRequest.mm
-        _OBJC_CLASS_CNContactFetchRequest DATA
-        __objc_class_name_CNContactFetchRequest CONSTANT
+        OBJC_CLASS_$_CNContactFetchRequest DATA
+        OBJC_METACLASS_$_CNContactFetchRequest CONSTANT
 
         ; CNContactFormatter.mm
-        _OBJC_CLASS_CNContactFormatter DATA
-        __objc_class_name_CNContactFormatter CONSTANT
+        OBJC_CLASS_$_CNContactFormatter DATA
+        OBJC_METACLASS_$_CNContactFormatter CONSTANT
 
         ; CNContactProperty.mm
-        _OBJC_CLASS_CNContactProperty DATA
-        __objc_class_name_CNContactProperty CONSTANT
+        OBJC_CLASS_$_CNContactProperty DATA
+        OBJC_METACLASS_$_CNContactProperty CONSTANT
 
         ; CNContactRelation.mm
         CNLabelContactRelationFather DATA
@@ -58,30 +58,30 @@ LIBRARY Contacts
         CNLabelContactRelationPartner DATA
         CNLabelContactRelationAssistant DATA
         CNLabelContactRelationManager DATA
-        _OBJC_CLASS_CNContactRelation DATA
-        __objc_class_name_CNContactRelation CONSTANT
+        OBJC_CLASS_$_CNContactRelation DATA
+        OBJC_METACLASS_$_CNContactRelation CONSTANT
 
         ; CNContactStore.mm
         CNContactStoreDidChangeNotification DATA
-        _OBJC_CLASS_CNContactStore DATA
-        __objc_class_name_CNContactStore CONSTANT
+        OBJC_CLASS_$_CNContactStore DATA
+        OBJC_METACLASS_$_CNContactStore CONSTANT
 
         ; CNContactVCardSerialization.mm
-        _OBJC_CLASS_CNContactVCardSerialization DATA
-        __objc_class_name_CNContactVCardSerialization CONSTANT
+        OBJC_CLASS_$_CNContactVCardSerialization DATA
+        OBJC_METACLASS_$_CNContactVCardSerialization CONSTANT
 
         ; CNContainer.mm
         CNContainerIdentifierKey DATA
         CNContainerNameKey DATA
         CNContainerTypeKey DATA
-        _OBJC_CLASS_CNContainer DATA
-        __objc_class_name_CNContainer CONSTANT
+        OBJC_CLASS_$_CNContainer DATA
+        OBJC_METACLASS_$_CNContainer CONSTANT
 
         ; CNGroup.mm
         CNGroupIdentifierKey DATA
         CNGroupNameKey DATA
-        _OBJC_CLASS_CNGroup DATA
-        __objc_class_name_CNGroup CONSTANT
+        OBJC_CLASS_$_CNGroup DATA
+        OBJC_METACLASS_$_CNGroup CONSTANT
 
         ; CNInstantMessageAddress.mm
         CNInstantMessageAddressUsernameKey DATA
@@ -96,8 +96,8 @@ LIBRARY Contacts
         CNInstantMessageServiceQQ DATA
         CNInstantMessageServiceSkype DATA
         CNInstantMessageServiceYahoo DATA
-        _OBJC_CLASS_CNInstantMessageAddress DATA
-        __objc_class_name_CNInstantMessageAddress CONSTANT
+        OBJC_CLASS_$_CNInstantMessageAddress DATA
+        OBJC_METACLASS_$_CNInstantMessageAddress CONSTANT
 
         ; CNLabeledValue.mm
         CNLabelHome DATA
@@ -106,20 +106,20 @@ LIBRARY Contacts
         CNLabelEmailiCloud DATA
         CNLabelURLAddressHomePage DATA
         CNLabelDateAnniversary DATA
-        _OBJC_CLASS_CNLabeledValue DATA
-        __objc_class_name_CNLabeledValue CONSTANT
+        OBJC_CLASS_$_CNLabeledValue DATA
+        OBJC_METACLASS_$_CNLabeledValue CONSTANT
 
         ; CNMutableContact.mm
-        _OBJC_CLASS_CNMutableContact DATA
-        __objc_class_name_CNMutableContact CONSTANT
+        OBJC_CLASS_$_CNMutableContact DATA
+        OBJC_METACLASS_$_CNMutableContact CONSTANT
 
         ; CNMutableGroup.mm
-        _OBJC_CLASS_CNMutableGroup DATA
-        __objc_class_name_CNMutableGroup CONSTANT
+        OBJC_CLASS_$_CNMutableGroup DATA
+        OBJC_METACLASS_$_CNMutableGroup CONSTANT
 
         ; CNMutablePostalAddress.mm
-        _OBJC_CLASS_CNMutablePostalAddress DATA
-        __objc_class_name_CNMutablePostalAddress CONSTANT
+        OBJC_CLASS_$_CNMutablePostalAddress DATA
+        OBJC_METACLASS_$_CNMutablePostalAddress CONSTANT
 
         ; CNPhoneNumber.mm
         CNLabelPhoneNumberiPhone DATA
@@ -129,8 +129,8 @@ LIBRARY Contacts
         CNLabelPhoneNumberWorkFax DATA
         CNLabelPhoneNumberOtherFax DATA
         CNLabelPhoneNumberPager DATA
-        _OBJC_CLASS_CNPhoneNumber DATA
-        __objc_class_name_CNPhoneNumber CONSTANT
+        OBJC_CLASS_$_CNPhoneNumber DATA
+        OBJC_METACLASS_$_CNPhoneNumber CONSTANT
 
         ; CNPostalAddress.mm
         CNPostalAddressStreetKey DATA
@@ -139,18 +139,18 @@ LIBRARY Contacts
         CNPostalAddressPostalCodeKey DATA
         CNPostalAddressCountryKey DATA
         CNPostalAddressISOCountryCodeKey DATA
-        _OBJC_CLASS_CNPostalAddress DATA
-        __objc_class_name_CNPostalAddress CONSTANT
+        OBJC_CLASS_$_CNPostalAddress DATA
+        OBJC_METACLASS_$_CNPostalAddress CONSTANT
 
         ; CNPostalAddressFormatter.mm
         CNPostalAddressPropertyAttribute DATA
         CNPostalAddressLocalizedPropertyNameAttribute DATA
-        _OBJC_CLASS_CNPostalAddressFormatter DATA
-        __objc_class_name_CNPostalAddressFormatter CONSTANT
+        OBJC_CLASS_$_CNPostalAddressFormatter DATA
+        OBJC_METACLASS_$_CNPostalAddressFormatter CONSTANT
 
         ; CNSaveRequest.mm
-        _OBJC_CLASS_CNSaveRequest DATA
-        __objc_class_name_CNSaveRequest CONSTANT
+        OBJC_CLASS_$_CNSaveRequest DATA
+        OBJC_METACLASS_$_CNSaveRequest CONSTANT
 
         ; CNSocialProfile.mm
         CNSocialProfileURLStringKey DATA
@@ -165,8 +165,8 @@ LIBRARY Contacts
         CNSocialProfileServiceTwitter DATA
         CNSocialProfileServiceYelp DATA
         CNSocialProfileServiceGameCenter DATA
-        _OBJC_CLASS_CNSocialProfile DATA
-        __objc_class_name_CNSocialProfile CONSTANT
+        OBJC_CLASS_$_CNSocialProfile DATA
+        OBJC_METACLASS_$_CNSocialProfile CONSTANT
 
         ; ContactsConstants.mm
         CNErrorUserInfoAffectedRecordsKey DATA

@@ -10,117 +10,117 @@ LIBRARY Metal
         MTLClearColorMake
 
         ; MTLArgument.mm
-        _OBJC_CLASS_MTLArgument DATA
-        __objc_class_name_MTLArgument CONSTANT
+        OBJC_CLASS_$_MTLArgument DATA
+        OBJC_METACLASS_$_MTLArgument CONSTANT
 
         ; MTLArrayType.mm
-        _OBJC_CLASS_MTLArrayType DATA
-        __objc_class_name_MTLArrayType CONSTANT
+        OBJC_CLASS_$_MTLArrayType DATA
+        OBJC_METACLASS_$_MTLArrayType CONSTANT
 
         ; MTLCommandBuffer.mm
         MTLCommandBufferErrorDomain DATA
 
         ; MTLCompileOptions.mm
-        _OBJC_CLASS_MTLCompileOptions DATA
-        __objc_class_name_MTLCompileOptions CONSTANT
+        OBJC_CLASS_$_MTLCompileOptions DATA
+        OBJC_METACLASS_$_MTLCompileOptions CONSTANT
 
         ; MTLComputePipelineDescriptor.mm
-        _OBJC_CLASS_MTLComputePipelineDescriptor DATA
-        __objc_class_name_MTLComputePipelineDescriptor CONSTANT
+        OBJC_CLASS_$_MTLComputePipelineDescriptor DATA
+        OBJC_METACLASS_$_MTLComputePipelineDescriptor CONSTANT
 
         ; MTLComputePipelineReflection.mm
-        _OBJC_CLASS_MTLComputePipelineReflection DATA
-        __objc_class_name_MTLComputePipelineReflection CONSTANT
+        OBJC_CLASS_$_MTLComputePipelineReflection DATA
+        OBJC_METACLASS_$_MTLComputePipelineReflection CONSTANT
 
         ; MTLDepthStencilDescriptor.mm
-        _OBJC_CLASS_MTLDepthStencilDescriptor DATA
-        __objc_class_name_MTLDepthStencilDescriptor CONSTANT
+        OBJC_CLASS_$_MTLDepthStencilDescriptor DATA
+        OBJC_METACLASS_$_MTLDepthStencilDescriptor CONSTANT
 
         ; MTLLibrary.mm
         MTLLibraryErrorDomain DATA
         MTLRenderPipelineErrorDomain DATA
 
         ; MTLRenderPassAttachmentDescriptor.mm
-        _OBJC_CLASS_MTLRenderPassAttachmentDescriptor DATA
-        __objc_class_name_MTLRenderPassAttachmentDescriptor CONSTANT
+        OBJC_CLASS_$_MTLRenderPassAttachmentDescriptor DATA
+        OBJC_METACLASS_$_MTLRenderPassAttachmentDescriptor CONSTANT
 
         ; MTLRenderPassColorAttachmentDescriptor.mm
-        _OBJC_CLASS_MTLRenderPassColorAttachmentDescriptor DATA
-        __objc_class_name_MTLRenderPassColorAttachmentDescriptor CONSTANT
+        OBJC_CLASS_$_MTLRenderPassColorAttachmentDescriptor DATA
+        OBJC_METACLASS_$_MTLRenderPassColorAttachmentDescriptor CONSTANT
 
         ; MTLRenderPassColorAttachmentDescriptorArray.mm
-        _OBJC_CLASS_MTLRenderPassColorAttachmentDescriptorArray DATA
-        __objc_class_name_MTLRenderPassColorAttachmentDescriptorArray CONSTANT
+        OBJC_CLASS_$_MTLRenderPassColorAttachmentDescriptorArray DATA
+        OBJC_METACLASS_$_MTLRenderPassColorAttachmentDescriptorArray CONSTANT
 
         ; MTLRenderPassDepthAttachmentDescriptor.mm
-        _OBJC_CLASS_MTLRenderPassDepthAttachmentDescriptor DATA
-        __objc_class_name_MTLRenderPassDepthAttachmentDescriptor CONSTANT
+        OBJC_CLASS_$_MTLRenderPassDepthAttachmentDescriptor DATA
+        OBJC_METACLASS_$_MTLRenderPassDepthAttachmentDescriptor CONSTANT
 
         ; MTLRenderPassDescriptor.mm
-        _OBJC_CLASS_MTLRenderPassDescriptor DATA
-        __objc_class_name_MTLRenderPassDescriptor CONSTANT
+        OBJC_CLASS_$_MTLRenderPassDescriptor DATA
+        OBJC_METACLASS_$_MTLRenderPassDescriptor CONSTANT
 
         ; MTLRenderPassStencilAttachmentDescriptor.mm
-        _OBJC_CLASS_MTLRenderPassStencilAttachmentDescriptor DATA
-        __objc_class_name_MTLRenderPassStencilAttachmentDescriptor CONSTANT
+        OBJC_CLASS_$_MTLRenderPassStencilAttachmentDescriptor DATA
+        OBJC_METACLASS_$_MTLRenderPassStencilAttachmentDescriptor CONSTANT
 
         ; MTLRenderPipelineColorAttachmentDescriptor.mm
-        _OBJC_CLASS_MTLRenderPipelineColorAttachmentDescriptor DATA
-        __objc_class_name_MTLRenderPipelineColorAttachmentDescriptor CONSTANT
+        OBJC_CLASS_$_MTLRenderPipelineColorAttachmentDescriptor DATA
+        OBJC_METACLASS_$_MTLRenderPipelineColorAttachmentDescriptor CONSTANT
 
         ; MTLRenderPipelineColorAttachmentDescriptorArray.mm
-        _OBJC_CLASS_MTLRenderPipelineColorAttachmentDescriptorArray DATA
-        __objc_class_name_MTLRenderPipelineColorAttachmentDescriptorArray CONSTANT
+        OBJC_CLASS_$_MTLRenderPipelineColorAttachmentDescriptorArray DATA
+        OBJC_METACLASS_$_MTLRenderPipelineColorAttachmentDescriptorArray CONSTANT
 
         ; MTLRenderPipelineDescriptor.mm
-        _OBJC_CLASS_MTLRenderPipelineDescriptor DATA
-        __objc_class_name_MTLRenderPipelineDescriptor CONSTANT
+        OBJC_CLASS_$_MTLRenderPipelineDescriptor DATA
+        OBJC_METACLASS_$_MTLRenderPipelineDescriptor CONSTANT
 
         ; MTLRenderPipelineReflection.mm
-        _OBJC_CLASS_MTLRenderPipelineReflection DATA
-        __objc_class_name_MTLRenderPipelineReflection CONSTANT
+        OBJC_CLASS_$_MTLRenderPipelineReflection DATA
+        OBJC_METACLASS_$_MTLRenderPipelineReflection CONSTANT
 
         ; MTLSamplerDescriptor.mm
-        _OBJC_CLASS_MTLSamplerDescriptor DATA
-        __objc_class_name_MTLSamplerDescriptor CONSTANT
+        OBJC_CLASS_$_MTLSamplerDescriptor DATA
+        OBJC_METACLASS_$_MTLSamplerDescriptor CONSTANT
 
         ; MTLStencilDescriptor.mm
-        _OBJC_CLASS_MTLStencilDescriptor DATA
-        __objc_class_name_MTLStencilDescriptor CONSTANT
+        OBJC_CLASS_$_MTLStencilDescriptor DATA
+        OBJC_METACLASS_$_MTLStencilDescriptor CONSTANT
 
         ; MTLStructMember.mm
-        _OBJC_CLASS_MTLStructMember DATA
-        __objc_class_name_MTLStructMember CONSTANT
+        OBJC_CLASS_$_MTLStructMember DATA
+        OBJC_METACLASS_$_MTLStructMember CONSTANT
 
         ; MTLStructType.mm
-        _OBJC_CLASS_MTLStructType DATA
-        __objc_class_name_MTLStructType CONSTANT
+        OBJC_CLASS_$_MTLStructType DATA
+        OBJC_METACLASS_$_MTLStructType CONSTANT
 
         ; MTLTextureDescriptor.mm
-        _OBJC_CLASS_MTLTextureDescriptor DATA
-        __objc_class_name_MTLTextureDescriptor CONSTANT
+        OBJC_CLASS_$_MTLTextureDescriptor DATA
+        OBJC_METACLASS_$_MTLTextureDescriptor CONSTANT
 
         ; MTLVertexAttribute.mm
-        _OBJC_CLASS_MTLVertexAttribute DATA
-        __objc_class_name_MTLVertexAttribute CONSTANT
+        OBJC_CLASS_$_MTLVertexAttribute DATA
+        OBJC_METACLASS_$_MTLVertexAttribute CONSTANT
 
         ; MTLVertexAttributeDescriptor.mm
-        _OBJC_CLASS_MTLVertexAttributeDescriptor DATA
-        __objc_class_name_MTLVertexAttributeDescriptor CONSTANT
+        OBJC_CLASS_$_MTLVertexAttributeDescriptor DATA
+        OBJC_METACLASS_$_MTLVertexAttributeDescriptor CONSTANT
 
         ; MTLVertexAttributeDescriptorArray.mm
-        _OBJC_CLASS_MTLVertexAttributeDescriptorArray DATA
-        __objc_class_name_MTLVertexAttributeDescriptorArray CONSTANT
+        OBJC_CLASS_$_MTLVertexAttributeDescriptorArray DATA
+        OBJC_METACLASS_$_MTLVertexAttributeDescriptorArray CONSTANT
 
         ; MTLVertexBufferLayoutDescriptor.mm
-        _OBJC_CLASS_MTLVertexBufferLayoutDescriptor DATA
-        __objc_class_name_MTLVertexBufferLayoutDescriptor CONSTANT
+        OBJC_CLASS_$_MTLVertexBufferLayoutDescriptor DATA
+        OBJC_METACLASS_$_MTLVertexBufferLayoutDescriptor CONSTANT
 
         ; MTLVertexBufferLayoutDescriptorArray.mm
-        _OBJC_CLASS_MTLVertexBufferLayoutDescriptorArray DATA
-        __objc_class_name_MTLVertexBufferLayoutDescriptorArray CONSTANT
+        OBJC_CLASS_$_MTLVertexBufferLayoutDescriptorArray DATA
+        OBJC_METACLASS_$_MTLVertexBufferLayoutDescriptorArray CONSTANT
 
         ; MTLVertexDescriptor.mm
-        _OBJC_CLASS_MTLVertexDescriptor DATA
-        __objc_class_name_MTLVertexDescriptor CONSTANT
+        OBJC_CLASS_$_MTLVertexDescriptor DATA
+        OBJC_METACLASS_$_MTLVertexDescriptor CONSTANT
 

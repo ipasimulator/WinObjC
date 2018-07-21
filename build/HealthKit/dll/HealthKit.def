@@ -107,58 +107,58 @@ LIBRARY HealthKit
         HKErrorDomain DATA
 
         ; HKAnchoredObjectQuery.mm
-        _OBJC_CLASS_HKAnchoredObjectQuery DATA
-        __objc_class_name_HKAnchoredObjectQuery CONSTANT
+        OBJC_CLASS_$_HKAnchoredObjectQuery DATA
+        OBJC_METACLASS_$_HKAnchoredObjectQuery CONSTANT
 
         ; HKBiologicalSexObject.mm
-        _OBJC_CLASS_HKBiologicalSexObject DATA
-        __objc_class_name_HKBiologicalSexObject CONSTANT
+        OBJC_CLASS_$_HKBiologicalSexObject DATA
+        OBJC_METACLASS_$_HKBiologicalSexObject CONSTANT
 
         ; HKBloodTypeObject.mm
-        _OBJC_CLASS_HKBloodTypeObject DATA
-        __objc_class_name_HKBloodTypeObject CONSTANT
+        OBJC_CLASS_$_HKBloodTypeObject DATA
+        OBJC_METACLASS_$_HKBloodTypeObject CONSTANT
 
         ; HKCategorySample.mm
         HKPredicateKeyPathCategoryValue DATA
-        _OBJC_CLASS_HKCategorySample DATA
-        __objc_class_name_HKCategorySample CONSTANT
+        OBJC_CLASS_$_HKCategorySample DATA
+        OBJC_METACLASS_$_HKCategorySample CONSTANT
 
         ; HKCategoryType.mm
-        _OBJC_CLASS_HKCategoryType DATA
-        __objc_class_name_HKCategoryType CONSTANT
+        OBJC_CLASS_$_HKCategoryType DATA
+        OBJC_METACLASS_$_HKCategoryType CONSTANT
 
         ; HKCharacteristicType.mm
-        _OBJC_CLASS_HKCharacteristicType DATA
-        __objc_class_name_HKCharacteristicType CONSTANT
+        OBJC_CLASS_$_HKCharacteristicType DATA
+        OBJC_METACLASS_$_HKCharacteristicType CONSTANT
 
         ; HKCorrelation.mm
-        _OBJC_CLASS_HKCorrelation DATA
-        __objc_class_name_HKCorrelation CONSTANT
+        OBJC_CLASS_$_HKCorrelation DATA
+        OBJC_METACLASS_$_HKCorrelation CONSTANT
 
         ; HKCorrelationQuery.mm
-        _OBJC_CLASS_HKCorrelationQuery DATA
-        __objc_class_name_HKCorrelationQuery CONSTANT
+        OBJC_CLASS_$_HKCorrelationQuery DATA
+        OBJC_METACLASS_$_HKCorrelationQuery CONSTANT
 
         ; HKCorrelationType.mm
-        _OBJC_CLASS_HKCorrelationType DATA
-        __objc_class_name_HKCorrelationType CONSTANT
+        OBJC_CLASS_$_HKCorrelationType DATA
+        OBJC_METACLASS_$_HKCorrelationType CONSTANT
 
         ; HKDeletedObject.mm
-        _OBJC_CLASS_HKDeletedObject DATA
-        __objc_class_name_HKDeletedObject CONSTANT
+        OBJC_CLASS_$_HKDeletedObject DATA
+        OBJC_METACLASS_$_HKDeletedObject CONSTANT
 
         ; HKDevice.mm
-        _OBJC_CLASS_HKDevice DATA
-        __objc_class_name_HKDevice CONSTANT
+        OBJC_CLASS_$_HKDevice DATA
+        OBJC_METACLASS_$_HKDevice CONSTANT
 
         ; HKFitzpatrickSkinTypeObject.mm
-        _OBJC_CLASS_HKFitzpatrickSkinTypeObject DATA
-        __objc_class_name_HKFitzpatrickSkinTypeObject CONSTANT
+        OBJC_CLASS_$_HKFitzpatrickSkinTypeObject DATA
+        OBJC_METACLASS_$_HKFitzpatrickSkinTypeObject CONSTANT
 
         ; HKHealthStore.mm
         HKUserPreferencesDidChangeNotification DATA
-        _OBJC_CLASS_HKHealthStore DATA
-        __objc_class_name_HKHealthStore CONSTANT
+        OBJC_CLASS_$_HKHealthStore DATA
+        OBJC_METACLASS_$_HKHealthStore CONSTANT
 
         ; HKObject.mm
         HKPredicateKeyPathUUID DATA
@@ -168,29 +168,29 @@ LIBRARY HealthKit
         HKPredicateKeyPathWorkout DATA
         HKPredicateKeyPathDevice DATA
         HKPredicateKeyPathSourceRevision DATA
-        _OBJC_CLASS_HKObject DATA
-        __objc_class_name_HKObject CONSTANT
+        OBJC_CLASS_$_HKObject DATA
+        OBJC_METACLASS_$_HKObject CONSTANT
 
         ; HKObjectType.mm
-        _OBJC_CLASS_HKObjectType DATA
-        __objc_class_name_HKObjectType CONSTANT
+        OBJC_CLASS_$_HKObjectType DATA
+        OBJC_METACLASS_$_HKObjectType CONSTANT
 
         ; HKObserverQuery.mm
-        _OBJC_CLASS_HKObserverQuery DATA
-        __objc_class_name_HKObserverQuery CONSTANT
+        OBJC_CLASS_$_HKObserverQuery DATA
+        OBJC_METACLASS_$_HKObserverQuery CONSTANT
 
         ; HKQuantity.mm
-        _OBJC_CLASS_HKQuantity DATA
-        __objc_class_name_HKQuantity CONSTANT
+        OBJC_CLASS_$_HKQuantity DATA
+        OBJC_METACLASS_$_HKQuantity CONSTANT
 
         ; HKQuantitySample.mm
         HKPredicateKeyPathQuantity DATA
-        _OBJC_CLASS_HKQuantitySample DATA
-        __objc_class_name_HKQuantitySample CONSTANT
+        OBJC_CLASS_$_HKQuantitySample DATA
+        OBJC_METACLASS_$_HKQuantitySample CONSTANT
 
         ; HKQuantityType.mm
-        _OBJC_CLASS_HKQuantityType DATA
-        __objc_class_name_HKQuantityType CONSTANT
+        OBJC_CLASS_$_HKQuantityType DATA
+        OBJC_METACLASS_$_HKQuantityType CONSTANT
 
         ; HKQuery.mm
         HKDevicePropertyKeyName DATA
@@ -201,56 +201,56 @@ LIBRARY HealthKit
         HKDevicePropertyKeySoftwareVersion DATA
         HKDevicePropertyKeyLocalIdentifier DATA
         HKDevicePropertyKeyUDIDeviceIdentifier DATA
-        _OBJC_CLASS_HKQuery DATA
-        __objc_class_name_HKQuery CONSTANT
+        OBJC_CLASS_$_HKQuery DATA
+        OBJC_METACLASS_$_HKQuery CONSTANT
 
         ; HKSample.mm
         HKSampleSortIdentifierStartDate DATA
         HKSampleSortIdentifierEndDate DATA
         HKPredicateKeyPathStartDate DATA
         HKPredicateKeyPathEndDate DATA
-        _OBJC_CLASS_HKSample DATA
-        __objc_class_name_HKSample CONSTANT
+        OBJC_CLASS_$_HKSample DATA
+        OBJC_METACLASS_$_HKSample CONSTANT
 
         ; HKSampleQuery.mm
-        _OBJC_CLASS_HKSampleQuery DATA
-        __objc_class_name_HKSampleQuery CONSTANT
+        OBJC_CLASS_$_HKSampleQuery DATA
+        OBJC_METACLASS_$_HKSampleQuery CONSTANT
 
         ; HKSampleType.mm
-        _OBJC_CLASS_HKSampleType DATA
-        __objc_class_name_HKSampleType CONSTANT
+        OBJC_CLASS_$_HKSampleType DATA
+        OBJC_METACLASS_$_HKSampleType CONSTANT
 
         ; HKSource.mm
-        _OBJC_CLASS_HKSource DATA
-        __objc_class_name_HKSource CONSTANT
+        OBJC_CLASS_$_HKSource DATA
+        OBJC_METACLASS_$_HKSource CONSTANT
 
         ; HKSourceQuery.mm
-        _OBJC_CLASS_HKSourceQuery DATA
-        __objc_class_name_HKSourceQuery CONSTANT
+        OBJC_CLASS_$_HKSourceQuery DATA
+        OBJC_METACLASS_$_HKSourceQuery CONSTANT
 
         ; HKSourceRevision.mm
-        _OBJC_CLASS_HKSourceRevision DATA
-        __objc_class_name_HKSourceRevision CONSTANT
+        OBJC_CLASS_$_HKSourceRevision DATA
+        OBJC_METACLASS_$_HKSourceRevision CONSTANT
 
         ; HKStatistics.mm
-        _OBJC_CLASS_HKStatistics DATA
-        __objc_class_name_HKStatistics CONSTANT
+        OBJC_CLASS_$_HKStatistics DATA
+        OBJC_METACLASS_$_HKStatistics CONSTANT
 
         ; HKStatisticsCollection.mm
-        _OBJC_CLASS_HKStatisticsCollection DATA
-        __objc_class_name_HKStatisticsCollection CONSTANT
+        OBJC_CLASS_$_HKStatisticsCollection DATA
+        OBJC_METACLASS_$_HKStatisticsCollection CONSTANT
 
         ; HKStatisticsCollectionQuery.mm
-        _OBJC_CLASS_HKStatisticsCollectionQuery DATA
-        __objc_class_name_HKStatisticsCollectionQuery CONSTANT
+        OBJC_CLASS_$_HKStatisticsCollectionQuery DATA
+        OBJC_METACLASS_$_HKStatisticsCollectionQuery CONSTANT
 
         ; HKStatisticsQuery.mm
-        _OBJC_CLASS_HKStatisticsQuery DATA
-        __objc_class_name_HKStatisticsQuery CONSTANT
+        OBJC_CLASS_$_HKStatisticsQuery DATA
+        OBJC_METACLASS_$_HKStatisticsQuery CONSTANT
 
         ; HKUnit.mm
-        _OBJC_CLASS_HKUnit DATA
-        __objc_class_name_HKUnit CONSTANT
+        OBJC_CLASS_$_HKUnit DATA
+        OBJC_METACLASS_$_HKUnit CONSTANT
 
         ; HKWorkout.mm
         HKWorkoutSortIdentifierDuration DATA
@@ -260,14 +260,14 @@ LIBRARY HealthKit
         HKPredicateKeyPathWorkoutTotalDistance DATA
         HKPredicateKeyPathWorkoutTotalEnergyBurned DATA
         HKPredicateKeyPathWorkoutType DATA
-        _OBJC_CLASS_HKWorkout DATA
-        __objc_class_name_HKWorkout CONSTANT
+        OBJC_CLASS_$_HKWorkout DATA
+        OBJC_METACLASS_$_HKWorkout CONSTANT
 
         ; HKWorkoutEvent.mm
-        _OBJC_CLASS_HKWorkoutEvent DATA
-        __objc_class_name_HKWorkoutEvent CONSTANT
+        OBJC_CLASS_$_HKWorkoutEvent DATA
+        OBJC_METACLASS_$_HKWorkoutEvent CONSTANT
 
         ; HKWorkoutType.mm
-        _OBJC_CLASS_HKWorkoutType DATA
-        __objc_class_name_HKWorkoutType CONSTANT
+        OBJC_CLASS_$_HKWorkoutType DATA
+        OBJC_METACLASS_$_HKWorkoutType CONSTANT
 

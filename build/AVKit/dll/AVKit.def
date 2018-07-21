@@ -1,10 +1,10 @@
 LIBRARY AVKit
     EXPORTS
         ; AVPictureInPictureController.mm
-        _OBJC_CLASS_AVPictureInPictureController DATA
-        __objc_class_name_AVPictureInPictureController CONSTANT
+        OBJC_CLASS_$_AVPictureInPictureController DATA
+        OBJC_METACLASS_$_AVPictureInPictureController CONSTANT
 
         ; AVPlayerViewController.mm
-        _OBJC_CLASS_AVPlayerViewController DATA
-        __objc_class_name_AVPlayerViewController CONSTANT
+        OBJC_CLASS_$_AVPlayerViewController DATA
+        OBJC_METACLASS_$_AVPlayerViewController CONSTANT
 

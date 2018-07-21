@@ -1,28 +1,28 @@
 LIBRARY QuartzCore
     EXPORTS
         ; CAAnimation.mm
-        _OBJC_CLASS_CAAnimation DATA
-        __objc_class_name_CAAnimation CONSTANT
+        OBJC_CLASS_$_CAAnimation DATA
+        OBJC_METACLASS_$_CAAnimation CONSTANT
 
         ; CAAnimationGroup.mm
-        _OBJC_CLASS_CAAnimationGroup DATA
-        __objc_class_name_CAAnimationGroup CONSTANT
+        OBJC_CLASS_$_CAAnimationGroup DATA
+        OBJC_METACLASS_$_CAAnimationGroup CONSTANT
 
         ; CABasicAnimation.mm
-        _OBJC_CLASS_CABasicAnimation DATA
-        __objc_class_name_CABasicAnimation CONSTANT
+        OBJC_CLASS_$_CABasicAnimation DATA
+        OBJC_METACLASS_$_CABasicAnimation CONSTANT
 
         ; CADisplayLink.mm
-        _OBJC_CLASS_CADisplayLink DATA
-        __objc_class_name_CADisplayLink CONSTANT
+        OBJC_CLASS_$_CADisplayLink DATA
+        OBJC_METACLASS_$_CADisplayLink CONSTANT
 
         ; CAEAGLLayer.mm
-        _OBJC_CLASS_CAEAGLLayer DATA
-        __objc_class_name_CAEAGLLayer CONSTANT
+        OBJC_CLASS_$_CAEAGLLayer DATA
+        OBJC_METACLASS_$_CAEAGLLayer CONSTANT
 
         ; CAEmitterCell.mm
-        _OBJC_CLASS_CAEmitterCell DATA
-        __objc_class_name_CAEmitterCell CONSTANT
+        OBJC_CLASS_$_CAEmitterCell DATA
+        OBJC_METACLASS_$_CAEmitterCell CONSTANT
 
         ; CAEmitterLayer.mm
         kCAEmitterLayerPoint DATA
@@ -40,13 +40,13 @@ LIBRARY QuartzCore
         kCAEmitterLayerOldestLast DATA
         kCAEmitterLayerBackToFront DATA
         kCAEmitterLayerAdditive DATA
-        _OBJC_CLASS_CAEmitterLayer DATA
-        __objc_class_name_CAEmitterLayer CONSTANT
+        OBJC_CLASS_$_CAEmitterLayer DATA
+        OBJC_METACLASS_$_CAEmitterLayer CONSTANT
 
         ; CAGradientLayer.mm
         kCAGradientLayerAxial DATA
-        _OBJC_CLASS_CAGradientLayer DATA
-        __objc_class_name_CAGradientLayer CONSTANT
+        OBJC_CLASS_$_CAGradientLayer DATA
+        OBJC_METACLASS_$_CAGradientLayer CONSTANT
 
         ; CAKeyframeAnimation.mm
         kCAAnimationRotateAuto DATA
@@ -56,8 +56,8 @@ LIBRARY QuartzCore
         kCAAnimationPaced DATA
         kCAAnimationCubic DATA
         kCAAnimationCubicPaced DATA
-        _OBJC_CLASS_CAKeyframeAnimation DATA
-        __objc_class_name_CAKeyframeAnimation CONSTANT
+        OBJC_CLASS_$_CAKeyframeAnimation DATA
+        OBJC_METACLASS_$_CAKeyframeAnimation CONSTANT
 
         ; CALayer.mm
         kCAOnOrderIn DATA
@@ -79,8 +79,8 @@ LIBRARY QuartzCore
         kCAFilterLinear DATA
         kCAFilterNearest DATA
         kCAFilterTrilinear DATA
-        _OBJC_CLASS_CALayer DATA
-        __objc_class_name_CALayer CONSTANT
+        OBJC_CLASS_$_CALayer DATA
+        OBJC_METACLASS_$_CALayer CONSTANT
 
         ; CALayerDelegate.mm
 
@@ -97,28 +97,28 @@ LIBRARY QuartzCore
         kCAMediaTimingFunctionEaseOut DATA
         kCAMediaTimingFunctionEaseInEaseOut DATA
         kCAMediaTimingFunctionDefault DATA
-        _OBJC_CLASS_CAMediaTimingFunction DATA
-        __objc_class_name_CAMediaTimingFunction CONSTANT
+        OBJC_CLASS_$_CAMediaTimingFunction DATA
+        OBJC_METACLASS_$_CAMediaTimingFunction CONSTANT
 
         ; CAMetalLayer.mm
-        _OBJC_CLASS_CAMetalLayer DATA
-        __objc_class_name_CAMetalLayer CONSTANT
+        OBJC_CLASS_$_CAMetalLayer DATA
+        OBJC_METACLASS_$_CAMetalLayer CONSTANT
 
         ; CAPropertyAnimation.mm
-        _OBJC_CLASS_CAPropertyAnimation DATA
-        __objc_class_name_CAPropertyAnimation CONSTANT
+        OBJC_CLASS_$_CAPropertyAnimation DATA
+        OBJC_METACLASS_$_CAPropertyAnimation CONSTANT
 
         ; CAReplicatorLayer.mm
-        _OBJC_CLASS_CAReplicatorLayer DATA
-        __objc_class_name_CAReplicatorLayer CONSTANT
+        OBJC_CLASS_$_CAReplicatorLayer DATA
+        OBJC_METACLASS_$_CAReplicatorLayer CONSTANT
 
         ; CAScrollLayer.mm
         kCAScrollNone DATA
         kCAScrollVertically DATA
         kCAScrollHorizontally DATA
         kCAScrollBoth DATA
-        _OBJC_CLASS_CAScrollLayer DATA
-        __objc_class_name_CAScrollLayer CONSTANT
+        OBJC_CLASS_$_CAScrollLayer DATA
+        OBJC_METACLASS_$_CAScrollLayer CONSTANT
 
         ; CAShapeLayer.mm
         kCAFillRuleNonZero DATA
@@ -129,8 +129,8 @@ LIBRARY QuartzCore
         kCALineCapButt DATA
         kCALineCapRound DATA
         kCALineCapSquare DATA
-        _OBJC_CLASS_CAShapeLayer DATA
-        __objc_class_name_CAShapeLayer CONSTANT
+        OBJC_CLASS_$_CAShapeLayer DATA
+        OBJC_METACLASS_$_CAShapeLayer CONSTANT
 
         ; CATextLayer.mm
         kCATruncationNone DATA
@@ -142,24 +142,24 @@ LIBRARY QuartzCore
         kCAAlignmentRight DATA
         kCAAlignmentCenter DATA
         kCAAlignmentJustified DATA
-        _OBJC_CLASS_CATextLayer DATA
-        __objc_class_name_CATextLayer CONSTANT
+        OBJC_CLASS_$_CATextLayer DATA
+        OBJC_METACLASS_$_CATextLayer CONSTANT
 
         ; CATiledLayer.mm
-        _OBJC_CLASS_CATiledLayer DATA
-        __objc_class_name_CATiledLayer CONSTANT
+        OBJC_CLASS_$_CATiledLayer DATA
+        OBJC_METACLASS_$_CATiledLayer CONSTANT
 
         ; CATransaction.mm
         kCATransactionAnimationDuration DATA
         kCATransactionDisableActions DATA
         kCATransactionAnimationTimingFunction DATA
         kCATransactionCompletionBlock DATA
-        _OBJC_CLASS_CATransaction DATA
-        __objc_class_name_CATransaction CONSTANT
+        OBJC_CLASS_$_CATransaction DATA
+        OBJC_METACLASS_$_CATransaction CONSTANT
 
         ; CATransformLayer.mm
-        _OBJC_CLASS_CATransformLayer DATA
-        __objc_class_name_CATransformLayer CONSTANT
+        OBJC_CLASS_$_CATransformLayer DATA
+        OBJC_METACLASS_$_CATransformLayer CONSTANT
 
         ; CATransition.mm
         kCATransitionFade DATA
@@ -170,8 +170,8 @@ LIBRARY QuartzCore
         kCATransitionFromLeft DATA
         kCATransitionFromTop DATA
         kCATransitionFromBottom DATA
-        _OBJC_CLASS_CATransition DATA
-        __objc_class_name_CATransition CONSTANT
+        OBJC_CLASS_$_CATransition DATA
+        OBJC_METACLASS_$_CATransition CONSTANT
 
         ; CAValueFunction.mm
         kCAValueFunctionRotateX DATA
@@ -185,8 +185,8 @@ LIBRARY QuartzCore
         kCAValueFunctionTranslateX DATA
         kCAValueFunctionTranslateY DATA
         kCAValueFunctionTranslateZ DATA
-        _OBJC_CLASS_CAValueFunction DATA
-        __objc_class_name_CAValueFunction CONSTANT
+        OBJC_CLASS_$_CAValueFunction DATA
+        OBJC_METACLASS_$_CAValueFunction CONSTANT
 
         ; Core Animation Function Reference.mm
         CACurrentMediaTime

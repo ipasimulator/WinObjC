@@ -5,8 +5,8 @@ LIBRARY MessageUI
     MFMessageComposeViewControllerAttachmentURL DATA
     MFMessageComposeViewControllerAttachmentAlternateFilename DATA
 
-    _OBJC_CLASS_MFMailComposeViewController DATA
-    _OBJC_CLASS_MFMessageComposeViewController DATA
+    OBJC_CLASS_$_MFMailComposeViewController DATA
+    OBJC_CLASS_$_MFMessageComposeViewController DATA
 
-    __objc_class_name_MFMailComposeViewController CONSTANT
-    __objc_class_name_MFMessageComposeViewController CONSTANT
+    OBJC_METACLASS_$_MFMailComposeViewController CONSTANT
+    OBJC_METACLASS_$_MFMessageComposeViewController CONSTANT

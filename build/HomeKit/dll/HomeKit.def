@@ -1,20 +1,20 @@
 LIBRARY HomeKit
     EXPORTS
         ; HMAccessory.mm
-        _OBJC_CLASS_HMAccessory DATA
-        __objc_class_name_HMAccessory CONSTANT
+        OBJC_CLASS_$_HMAccessory DATA
+        OBJC_METACLASS_$_HMAccessory CONSTANT
 
         ; HMAccessoryBrowser.mm
-        _OBJC_CLASS_HMAccessoryBrowser DATA
-        __objc_class_name_HMAccessoryBrowser CONSTANT
+        OBJC_CLASS_$_HMAccessoryBrowser DATA
+        OBJC_METACLASS_$_HMAccessoryBrowser CONSTANT
 
         ; HMAction.mm
-        _OBJC_CLASS_HMAction DATA
-        __objc_class_name_HMAction CONSTANT
+        OBJC_CLASS_$_HMAction DATA
+        OBJC_METACLASS_$_HMAction CONSTANT
 
         ; HMActionSet.mm
-        _OBJC_CLASS_HMActionSet DATA
-        __objc_class_name_HMActionSet CONSTANT
+        OBJC_CLASS_$_HMActionSet DATA
+        OBJC_METACLASS_$_HMActionSet CONSTANT
 
         ; HMCharacteristic.mm
         HMCharacteristicPropertySupportsEventNotification DATA
@@ -54,8 +54,8 @@ LIBRARY HomeKit
         HMCharacteristicTypeLockMechanismLastKnownAction DATA
         HMCharacteristicTypeLockManagementControlPoint DATA
         HMCharacteristicTypeLockManagementAutoSecureTimeout DATA
-        _OBJC_CLASS_HMCharacteristic DATA
-        __objc_class_name_HMCharacteristic CONSTANT
+        OBJC_CLASS_$_HMCharacteristic DATA
+        OBJC_METACLASS_$_HMCharacteristic CONSTANT
 
         ; HMCharacteristicMetadata.mm
         HMCharacteristicMetadataUnitsCelsius DATA
@@ -74,25 +74,25 @@ LIBRARY HomeKit
         HMCharacteristicMetadataFormatUInt64 DATA
         HMCharacteristicMetadataFormatData DATA
         HMCharacteristicMetadataFormatTLV8 DATA
-        _OBJC_CLASS_HMCharacteristicMetadata DATA
-        __objc_class_name_HMCharacteristicMetadata CONSTANT
+        OBJC_CLASS_$_HMCharacteristicMetadata DATA
+        OBJC_METACLASS_$_HMCharacteristicMetadata CONSTANT
 
         ; HMCharacteristicWriteAction.mm
-        _OBJC_CLASS_HMCharacteristicWriteAction DATA
-        __objc_class_name_HMCharacteristicWriteAction CONSTANT
+        OBJC_CLASS_$_HMCharacteristicWriteAction DATA
+        OBJC_METACLASS_$_HMCharacteristicWriteAction CONSTANT
 
         ; HMHome.mm
         HMUserFailedAccessoriesKey DATA
-        _OBJC_CLASS_HMHome DATA
-        __objc_class_name_HMHome CONSTANT
+        OBJC_CLASS_$_HMHome DATA
+        OBJC_METACLASS_$_HMHome CONSTANT
 
         ; HMHomeManager.mm
-        _OBJC_CLASS_HMHomeManager DATA
-        __objc_class_name_HMHomeManager CONSTANT
+        OBJC_CLASS_$_HMHomeManager DATA
+        OBJC_METACLASS_$_HMHomeManager CONSTANT
 
         ; HMRoom.mm
-        _OBJC_CLASS_HMRoom DATA
-        __objc_class_name_HMRoom CONSTANT
+        OBJC_CLASS_$_HMRoom DATA
+        OBJC_METACLASS_$_HMRoom CONSTANT
 
         ; HMService.mm
         HMServiceTypeLightbulb DATA
@@ -104,28 +104,28 @@ LIBRARY HomeKit
         HMServiceTypeOutlet DATA
         HMServiceTypeLockMechanism DATA
         HMServiceTypeLockManagement DATA
-        _OBJC_CLASS_HMService DATA
-        __objc_class_name_HMService CONSTANT
+        OBJC_CLASS_$_HMService DATA
+        OBJC_METACLASS_$_HMService CONSTANT
 
         ; HMServiceGroup.mm
-        _OBJC_CLASS_HMServiceGroup DATA
-        __objc_class_name_HMServiceGroup CONSTANT
+        OBJC_CLASS_$_HMServiceGroup DATA
+        OBJC_METACLASS_$_HMServiceGroup CONSTANT
 
         ; HMTimerTrigger.mm
-        _OBJC_CLASS_HMTimerTrigger DATA
-        __objc_class_name_HMTimerTrigger CONSTANT
+        OBJC_CLASS_$_HMTimerTrigger DATA
+        OBJC_METACLASS_$_HMTimerTrigger CONSTANT
 
         ; HMTrigger.mm
-        _OBJC_CLASS_HMTrigger DATA
-        __objc_class_name_HMTrigger CONSTANT
+        OBJC_CLASS_$_HMTrigger DATA
+        OBJC_METACLASS_$_HMTrigger CONSTANT
 
         ; HMUser.mm
-        _OBJC_CLASS_HMUser DATA
-        __objc_class_name_HMUser CONSTANT
+        OBJC_CLASS_$_HMUser DATA
+        OBJC_METACLASS_$_HMUser CONSTANT
 
         ; HMZone.mm
-        _OBJC_CLASS_HMZone DATA
-        __objc_class_name_HMZone CONSTANT
+        OBJC_CLASS_$_HMZone DATA
+        OBJC_METACLASS_$_HMZone CONSTANT
 
         ; HomeKitConstants.mm
         HMErrorDomain DATA

@@ -1,24 +1,29 @@
 LIBRARY AudioUnit
     EXPORTS
         ; AUAudioUnit.mm
-        _OBJC_CLASS_AUAudioUnit DATA
-        __objc_class_name_AUAudioUnit CONSTANT
+        ; [port] CHANGED: [class-symbols].
+        OBJC_CLASS_$_AUAudioUnit DATA
+        OBJC_METACLASS_$_AUAudioUnit CONSTANT
 
         ; AUAudioUnitBus.mm
-        _OBJC_CLASS_AUAudioUnitBus DATA
-        __objc_class_name_AUAudioUnitBus CONSTANT
+        ; [port] CHANGED: [class-symbols].
+        OBJC_CLASS_$_AUAudioUnitBus DATA
+        OBJC_METACLASS_$_AUAudioUnitBus CONSTANT
 
         ; AUAudioUnitBusArray.mm
-        _OBJC_CLASS_AUAudioUnitBusArray DATA
-        __objc_class_name_AUAudioUnitBusArray CONSTANT
+        ; [port] CHANGED: [class-symbols].
+        OBJC_CLASS_$_AUAudioUnitBusArray DATA
+        OBJC_METACLASS_$_AUAudioUnitBusArray CONSTANT
 
         ; AUAudioUnitPreset.mm
-        _OBJC_CLASS_AUAudioUnitPreset DATA
-        __objc_class_name_AUAudioUnitPreset CONSTANT
+        ; [port] CHANGED: [class-symbols].
+        OBJC_CLASS_$_AUAudioUnitPreset DATA
+        OBJC_METACLASS_$_AUAudioUnitPreset CONSTANT
 
         ; AUAudioUnitV2Bridge.mm
-        _OBJC_CLASS_AUAudioUnitV2Bridge DATA
-        __objc_class_name_AUAudioUnitV2Bridge CONSTANT
+        ; [port] CHANGED: [class-symbols].
+        OBJC_CLASS_$_AUAudioUnitV2Bridge DATA
+        OBJC_METACLASS_$_AUAudioUnitV2Bridge CONSTANT
 
         ; AudioComponent.mm
         AudioComponentCopyName
@@ -48,20 +53,20 @@ LIBRARY AudioUnit
         AudioUnitScheduleParameters
 
         ; AUParameter.mm
-        _OBJC_CLASS_AUParameter DATA
-        __objc_class_name_AUParameter CONSTANT
+        OBJC_CLASS_$_AUParameter DATA
+        OBJC_METACLASS_$_AUParameter CONSTANT
 
         ; AUParameterGroup.mm
-        _OBJC_CLASS_AUParameterGroup DATA
-        __objc_class_name_AUParameterGroup CONSTANT
+        OBJC_CLASS_$_AUParameterGroup DATA
+        OBJC_METACLASS_$_AUParameterGroup CONSTANT
 
         ; AUParameterNode.mm
-        _OBJC_CLASS_AUParameterNode DATA
-        __objc_class_name_AUParameterNode CONSTANT
+        OBJC_CLASS_$_AUParameterNode DATA
+        OBJC_METACLASS_$_AUParameterNode CONSTANT
 
         ; AUParameterTree.mm
-        _OBJC_CLASS_AUParameterTree DATA
-        __objc_class_name_AUParameterTree CONSTANT
+        OBJC_CLASS_$_AUParameterTree DATA
+        OBJC_METACLASS_$_AUParameterTree CONSTANT
 
         ; OutputAudioUnit.mm
         AudioOutputUnitStart

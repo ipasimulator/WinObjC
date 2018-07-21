@@ -1,6 +1,6 @@
 LIBRARY AdSupport
     EXPORTS
         ; ASIdentifierManager.mm
-        _OBJC_CLASS_ASIdentifierManager DATA
-        __objc_class_name_ASIdentifierManager CONSTANT
+        OBJC_CLASS_$_ASIdentifierManager DATA
+        OBJC_METACLASS_$_ASIdentifierManager CONSTANT
 

@@ -1,22 +1,22 @@
 LIBRARY Social
     EXPORTS
         ; SLComposeServiceViewController.mm
-        _OBJC_CLASS_SLComposeServiceViewController DATA
-        __objc_class_name_SLComposeServiceViewController CONSTANT
+        OBJC_CLASS_$_SLComposeServiceViewController DATA
+        OBJC_METACLASS_$_SLComposeServiceViewController CONSTANT
 
         ; SLComposeSheetConfigurationItem.mm
-        _OBJC_CLASS_SLComposeSheetConfigurationItem DATA
-        __objc_class_name_SLComposeSheetConfigurationItem CONSTANT
+        OBJC_CLASS_$_SLComposeSheetConfigurationItem DATA
+        OBJC_METACLASS_$_SLComposeSheetConfigurationItem CONSTANT
 
         ; SLComposeViewController.mm
-        _OBJC_CLASS_SLComposeViewController DATA
-        __objc_class_name_SLComposeViewController CONSTANT
+        OBJC_CLASS_$_SLComposeViewController DATA
+        OBJC_METACLASS_$_SLComposeViewController CONSTANT
 
         ; SLRequest.mm
         SLServiceTypeFacebook DATA
         SLServiceTypeTwitter DATA
         SLServiceTypeSinaWeibo DATA
         SLServiceTypeTencentWeibo DATA
-        _OBJC_CLASS_SLRequest DATA
-        __objc_class_name_SLRequest CONSTANT
+        OBJC_CLASS_$_SLRequest DATA
+        OBJC_METACLASS_$_SLRequest CONSTANT
 

@@ -1,12 +1,12 @@
 LIBRARY CoreImage
     EXPORTS
         ; CIColor.mm
-        _OBJC_CLASS_CIColor DATA
-        __objc_class_name_CIColor CONSTANT
+        OBJC_CLASS_$_CIColor DATA
+        OBJC_METACLASS_$_CIColor CONSTANT
 
         ; CIColorKernel.mm
-        _OBJC_CLASS_CIColorKernel DATA
-        __objc_class_name_CIColorKernel CONSTANT
+        OBJC_CLASS_$_CIColorKernel DATA
+        OBJC_METACLASS_$_CIColorKernel CONSTANT
 
         ; CIContext.mm
         kCIContextOutputColorSpace DATA
@@ -14,8 +14,8 @@ LIBRARY CoreImage
         kCIContextUseSoftwareRenderer DATA
         kCIContextPriorityRequestLow DATA
         kCIContextWorkingFormat DATA
-        _OBJC_CLASS_CIContext DATA
-        __objc_class_name_CIContext CONSTANT
+        OBJC_CLASS_$_CIContext DATA
+        OBJC_METACLASS_$_CIContext CONSTANT
 
         ; CIDetector.mm
         CIDetectorTypeFace DATA
@@ -34,20 +34,20 @@ LIBRARY CoreImage
         CIDetectorFocalLength DATA
         CIDetectorAspectRatio DATA
         CIDetectorReturnSubFeatures DATA
-        _OBJC_CLASS_CIDetector DATA
-        __objc_class_name_CIDetector CONSTANT
+        OBJC_CLASS_$_CIDetector DATA
+        OBJC_METACLASS_$_CIDetector CONSTANT
 
         ; CIFaceFeature.mm
-        _OBJC_CLASS_CIFaceFeature DATA
-        __objc_class_name_CIFaceFeature CONSTANT
+        OBJC_CLASS_$_CIFaceFeature DATA
+        OBJC_METACLASS_$_CIFaceFeature CONSTANT
 
         ; CIFeature.mm
         CIFeatureTypeFace DATA
         CIFeatureTypeRectangle DATA
         CIFeatureTypeQRCode DATA
         CIFeatureTypeText DATA
-        _OBJC_CLASS_CIFeature DATA
-        __objc_class_name_CIFeature CONSTANT
+        OBJC_CLASS_$_CIFeature DATA
+        OBJC_METACLASS_$_CIFeature CONSTANT
 
         ; CIFilter.mm
         kCIAttributeFilterName DATA
@@ -136,12 +136,12 @@ LIBRARY CoreImage
         kCIInputVersionKey DATA
         kCIInputNeutralLocation DATA
         kCIInputBiasKey DATA
-        _OBJC_CLASS_CIFilter DATA
-        __objc_class_name_CIFilter CONSTANT
+        OBJC_CLASS_$_CIFilter DATA
+        OBJC_METACLASS_$_CIFilter CONSTANT
 
         ; CIFilterShape.mm
-        _OBJC_CLASS_CIFilterShape DATA
-        __objc_class_name_CIFilterShape CONSTANT
+        OBJC_CLASS_$_CIFilterShape DATA
+        OBJC_METACLASS_$_CIFilterShape CONSTANT
 
         ; CIImage.mm
         kCIFormatARGB8 DATA
@@ -169,28 +169,28 @@ LIBRARY CoreImage
         kCIImageAutoAdjustFeatures DATA
         kCIImageAutoAdjustCrop DATA
         kCIImageAutoAdjustLevel DATA
-        _OBJC_CLASS_CIImage DATA
-        __objc_class_name_CIImage CONSTANT
+        OBJC_CLASS_$_CIImage DATA
+        OBJC_METACLASS_$_CIImage CONSTANT
 
         ; CIImageAccumulator.mm
-        _OBJC_CLASS_CIImageAccumulator DATA
-        __objc_class_name_CIImageAccumulator CONSTANT
+        OBJC_CLASS_$_CIImageAccumulator DATA
+        OBJC_METACLASS_$_CIImageAccumulator CONSTANT
 
         ; CIImageProvider.mm
         kCIImageProviderTileSize DATA
         kCIImageProviderUserInfo DATA
 
         ; CIKernel.mm
-        _OBJC_CLASS_CIKernel DATA
-        __objc_class_name_CIKernel CONSTANT
+        OBJC_CLASS_$_CIKernel DATA
+        OBJC_METACLASS_$_CIKernel CONSTANT
 
         ; CIQRCodeFeature.mm
-        _OBJC_CLASS_CIQRCodeFeature DATA
-        __objc_class_name_CIQRCodeFeature CONSTANT
+        OBJC_CLASS_$_CIQRCodeFeature DATA
+        OBJC_METACLASS_$_CIQRCodeFeature CONSTANT
 
         ; CIRectangleFeature.mm
-        _OBJC_CLASS_CIRectangleFeature DATA
-        __objc_class_name_CIRectangleFeature CONSTANT
+        OBJC_CLASS_$_CIRectangleFeature DATA
+        OBJC_METACLASS_$_CIRectangleFeature CONSTANT
 
         ; CISampler.mm
         kCISamplerAffineMatrix DATA
@@ -201,18 +201,18 @@ LIBRARY CoreImage
         kCISamplerWrapClamp DATA
         kCISamplerFilterNearest DATA
         kCISamplerFilterLinear DATA
-        _OBJC_CLASS_CISampler DATA
-        __objc_class_name_CISampler CONSTANT
+        OBJC_CLASS_$_CISampler DATA
+        OBJC_METACLASS_$_CISampler CONSTANT
 
         ; CITextFeature.mm
-        _OBJC_CLASS_CITextFeature DATA
-        __objc_class_name_CITextFeature CONSTANT
+        OBJC_CLASS_$_CITextFeature DATA
+        OBJC_METACLASS_$_CITextFeature CONSTANT
 
         ; CIVector.mm
-        _OBJC_CLASS_CIVector DATA
-        __objc_class_name_CIVector CONSTANT
+        OBJC_CLASS_$_CIVector DATA
+        OBJC_METACLASS_$_CIVector CONSTANT
 
         ; CIWarpKernel.mm
-        _OBJC_CLASS_CIWarpKernel DATA
-        __objc_class_name_CIWarpKernel CONSTANT
+        OBJC_CLASS_$_CIWarpKernel DATA
+        OBJC_METACLASS_$_CIWarpKernel CONSTANT
 
