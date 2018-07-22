@@ -100,7 +100,8 @@ LIBRARY Foundation
         OBJC_CLASS_$_NSNull DATA
         OBJC_CLASS_$_NSNumber DATA
         OBJC_CLASS_$_NSNumberFormatter DATA
-        OBJC_CLASS_$_NSObject DATA
+        ; [port] CHANGED: Commented out, [no-nsobject].
+        ;OBJC_CLASS_$_NSObject DATA
         OBJC_CLASS_$_NSOperation DATA
         OBJC_CLASS_$_NSOperationQueue DATA
         OBJC_CLASS_$_NSOrderedSet DATA
@@ -244,7 +245,8 @@ LIBRARY Foundation
         OBJC_METACLASS_$_NSNull CONSTANT
         OBJC_METACLASS_$_NSNumber CONSTANT
         OBJC_METACLASS_$_NSNumberFormatter CONSTANT
-        OBJC_METACLASS_$_NSObject CONSTANT
+        ; [port] CHANGED: Commented out, [no-nsobject].
+        ;OBJC_METACLASS_$_NSObject CONSTANT
         OBJC_METACLASS_$_NSOperation CONSTANT
         OBJC_METACLASS_$_NSOperationQueue CONSTANT
         OBJC_METACLASS_$_NSOrderedSet CONSTANT

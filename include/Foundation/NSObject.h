@@ -43,7 +43,12 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. */
 
 @end
 
+// [port] CHANGED: [no-nsobject].
+#if defined(OBJC_PORT)
+__declspec(dllimport)
+#else
 FOUNDATION_EXPORT_CLASS
+#endif
 __attribute__((objc_root_class)) @interface NSObject<NSObject> {
 @public
     Class isa;

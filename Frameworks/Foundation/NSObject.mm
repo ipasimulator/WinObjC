@@ -57,8 +57,7 @@ static const wchar_t* TAG = L"Objective-C";
 - (id)mutableCopyWithZone:(NSZone*)zone;
 @end
 
-// [port] CHANGED: `NSObject` is implemented in our runtime.
-// [port] TODO: Is it complete, though?
+// [port] CHANGED: [no-nsobject].
 #if !defined(OBJC_PORT)
 @implementation NSObject
 /**
