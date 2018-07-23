@@ -21,6 +21,10 @@
 #import <AddressBook/ABAddressBook.h>
 #import <AddressBook/ABMultiValue.h>
 #import <UIKit/UIViewController.h>
+// [port] CHANGED: Needed for protocol `UIViewControllerRestoration`.
+#if defined(OBJC_PORT)
+#import <UIKit/UIViewControllerRestoration.h>
+#endif
 
 @class NSArray;
 
