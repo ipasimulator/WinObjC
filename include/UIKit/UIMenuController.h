@@ -34,11 +34,20 @@
 #import <CoreGraphics/CGBase.h>
 #import <Foundation/Foundation.h>
 
+// [port] CHANGED: These constants need to be exported, but since they are mangled,
+// [port] they cannot be (easily) exported via `UIKit.def`, so we export them here.
+// [port] TODO: How could this work in the original code?
+#if defined(OBJC_PORT)
+#define extern UIKIT_EXPORT
+#endif
 extern NSString* const UIMenuControllerWillShowMenuNotification;
 extern NSString* const UIMenuControllerDidShowMenuNotification;
 extern NSString* const UIMenuControllerWillHideMenuNotification;
 extern NSString* const UIMenuControllerDidHideMenuNotification;
 extern NSString* const UIMenuControllerMenuFrameDidChangeNotification;
+#if defined(OBJC_PORT)
+#undef extern
+#endif
 
 @class UIView, UIWindow;
 

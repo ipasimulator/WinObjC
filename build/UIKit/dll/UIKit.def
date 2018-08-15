@@ -709,11 +709,13 @@ LIBRARY UIKit
         OBJC_METACLASS_$_UIMarkupTextPrintFormatter CONSTANT
 
         ; UIMenuController.mm
-        UIMenuControllerWillShowMenuNotification DATA
-        UIMenuControllerDidShowMenuNotification DATA
-        UIMenuControllerWillHideMenuNotification DATA
-        UIMenuControllerDidHideMenuNotification DATA
-        UIMenuControllerMenuFrameDidChangeNotification DATA
+        ; [port] CHANGED: Commented these out. They are now exported
+        ; [port] from source since they are mangled.
+        ;UIMenuControllerWillShowMenuNotification DATA
+        ;UIMenuControllerDidShowMenuNotification DATA
+        ;UIMenuControllerWillHideMenuNotification DATA
+        ;UIMenuControllerDidHideMenuNotification DATA
+        ;UIMenuControllerMenuFrameDidChangeNotification DATA
         OBJC_CLASS_$_UIMenuController DATA
         OBJC_METACLASS_$_UIMenuController CONSTANT
 
