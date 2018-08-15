@@ -51,6 +51,12 @@
       <Link Include="ucrtd.lib" />
     </ItemGroup>
 
+    <!-- [port] CHANGED: Added this `ItemGroup`. See `/src/dyld/dyld_initializer.cpp` for source. -->
+    <ItemGroup Condition="'$(ObjC_Port)' == 'true'">
+      <Link Include="dyld_initializer.obj" />
+      <Link Include="dyld.lib" />
+    </ItemGroup>
+
     <ItemGroup>
       <ClCompile Remove="@(ClCompile)" Condition="'%(ClCompile.DeleteSoon)'=='true'" />
     </ItemGroup>
