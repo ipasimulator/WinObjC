@@ -51,8 +51,9 @@
     </ClCompile>
     <Link>
       <ModuleDefinitionFile>AutoLayout.def</ModuleDefinitionFile>
-      <!-- [port] CHANGED: Added `UIKit.lib`, [uikit-autolayout]. -->
-      <AdditionalDependencies>$(StarboardBasePath)\build\Win32\Debug\Universal Windows\UIKit.lib;cassowary-0.60-Debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>cassowary-0.60-Debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <!-- [port] CHANGED: Added, [uikit-autolayout]. -->
+      <AdditionalDependencies Condition="'$(ObjC_Port)' == 'true'">$(StarboardBasePath)\build\Win32\Debug\Universal Windows\UIKit.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClangCompile>
       <IncludePaths>$(StarboardBasePath)\deps\prebuilt\include;$(StarboardBasePath)\Frameworks\include;$(StarboardBasePath)\include\xplat</IncludePaths>

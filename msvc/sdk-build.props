@@ -87,11 +87,13 @@
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <!-- [port] CHANGED: Added `/ignore:4075,4006,4088` and `<ForceFileOutput>`, [ehtype]. -->
-      <AdditionalOptions>/ignore:4087 /ignore:4001 /ignore:4075,4006 %(AdditionalOptions)</AdditionalOptions>
-      <ForceFileOutput>MultiplyDefinedSymbolOnly</ForceFileOutput>
-      <!-- [port] CHANGED: true -> false, [ehtype]. -->
-      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+      <AdditionalOptions>/ignore:4087 /ignore:4001 %(AdditionalOptions)</AdditionalOptions>
+      <!-- [port] CHANGED: Added, [ehtype]. -->
+      <AdditionalOptions Condition="'$(ObjC_Port)' == 'true'">/ignore:4075,4006 %(AdditionalOptions)</AdditionalOptions>
+      <ForceFileOutput Condition="'$(ObjC_Port)' == 'true'">MultiplyDefinedSymbolOnly</ForceFileOutput>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+      <!-- [port] CHANGED: Added, [ehtype]. -->
+      <TreatLinkerWarningAsErrors Condition="'$(ObjC_Port)' == 'true'">false</TreatLinkerWarningAsErrors>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);$(MSBuildThisFileDirectory)..\deps\prebuilt\$(TargetOSAndVersion)\$(PlatformTarget);$(MSBuildThisFileDirectory)..\deps;$(AdditionalLibraryDirectories);</AdditionalLibraryDirectories>
     </Link>
     <ClangCompile>
@@ -105,7 +107,7 @@
       <InternalForceIncludes>%(InternalForceIncludes);StubIncludes.h;</InternalForceIncludes>
     </ClangCompile>
     <!-- [port] CHANGED: Added this whole section, [ehtype]. -->
-    <Lib>
+    <Lib Condition="'$(ObjC_Port)' == 'true'">
       <AdditionalOptions>/ignore:4006 %(AdditionalOptions)</AdditionalOptions>
     </Lib>
   </ItemDefinitionGroup>
