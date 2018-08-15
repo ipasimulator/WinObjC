@@ -7,10 +7,8 @@
   <!-- [port] CHANGED: Added, so that we can specify our own linker. -->
   <PropertyGroup Condition="'$(ObjC_Port)' == 'true'">
     <ExecutablePath Condition="'$(ExecutablePath)' == ''">$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(FxCopDir);$(PATH);</ExecutablePath>
-    <!-- TODO: This should work out of the box, shouldn't it? -->
-    <PlatformShortName Condition="'$(Platform)' == 'Win32'">x86</PlatformShortName>
     <!-- TODO: This needs our linker (`lld-link`) to be copied and renamed to `link.exe` to the directory specified below. This process should be automated. -->
-    <ExecutablePath>$(MSBuildThisFileDirectory)..\deps\prebuilt\Universal Windows\$(PlatformShortName);$(ExecutablePath)</ExecutablePath>
+    <ExecutablePath>$(MSBuildThisFileDirectory)..\bin;$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
 
   <PropertyGroup Label="Clang Args">
