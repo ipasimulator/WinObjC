@@ -1099,6 +1099,17 @@ void __CFInitialize(void) {
     if (!__CFInitialized && !__CFInitializing) {
         __CFInitializing = 1;
 
+    // [port] CHANGED: Added so that those classes are realized. Otherwise, since they have not a `+load` method,
+    // [port] our runtime would consider them as lazy and not realize them automatically. They would be realized
+    // [port] later, when message was sent to them, for example, but we are first calling `class_addProtocol` on
+    // [port] them and that method requires the classes to be already realized.
+#if defined(OBJC_PORT)
+        objc_getClass("_NSCFString");
+        objc_getClass("_NSCFNumber");
+        objc_getClass("_NSCFBoolean");
+        objc_getClass("_NSCFType");
+#endif
+
 #if DEPLOYMENT_TARGET_WINDOWS || DEPLOYMENT_TARGET_IPHONESIMULATOR
         if (!pthread_main_np()) HALT;   // CoreFoundation must be initialized on the main thread
 #endif
