@@ -96,7 +96,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-      <!-- [port] CHANGED: Added to force linking. TODO: Remove. -->
+      <!-- [port] CHANGED: Added to force linking. TODO: Remove or add to other configurations and platforms. -->
       <AdditionalOptions Condition="'$(ObjC_Port)' == 'true'">/force:multiple %(AdditionalOptions)</AdditionalOptions>
     </Link>
     <SBInfoPlistCopy>
