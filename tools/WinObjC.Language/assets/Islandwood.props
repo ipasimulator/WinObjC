@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <!-- [port] CHANGED: Added, so that we can specify our own linker. -->
-  <PropertyGroup Condition="'$(ObjC_Port)' == 'true'">
+  <PropertyGroup Condition="'$(ObjC_Port)' == 'true' AND '$(Use_LLD)' != 'false'">
     <!-- TODO: Maybe don't add all those things, add just $(PATH), since we are executing `msbuild` from Developer Command Prompt anyway... -->
     <ExecutablePath Condition="'$(ExecutablePath)' == ''">$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(FxCopDir);$(PATH);</ExecutablePath>
     <!-- TODO: This needs our linker (`lld-link`) and our proxy (`link`) to be copied to the directory specified below. This process should be automated. -->

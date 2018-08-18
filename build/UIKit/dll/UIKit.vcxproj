@@ -22,7 +22,8 @@
     <ProjectReference Include="..\..\CoreText\dll\CoreText.vcxproj">
       <Project>{36deec5d-f77b-4c94-a63c-86fb716833de}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\AutoLayout\dll\AutoLayout.vcxproj">
+    <!-- [port] CHANGED: Added attribute `Condition`, [uikit-autolayout]. -->
+    <ProjectReference Include="..\..\AutoLayout\dll\AutoLayout.vcxproj" Condition="'$(Include_AutoLayout)' != 'false'">
       <Project>{D036FDB1-F82C-40C7-B1B4-65F499EAE116}</Project>
     </ProjectReference>
     <ProjectReference Include="..\..\CoreGraphics\dll\CoreGraphics.vcxproj">
