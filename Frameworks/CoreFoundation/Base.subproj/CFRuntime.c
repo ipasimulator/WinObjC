@@ -657,12 +657,15 @@ static void* _ensureAutoreleaseInit() {
 }
 
 CFTypeRef CFAutorelease(CFTypeRef __attribute__((cf_consumed)) cf) {
+    // [port] CHANGED: This caused stack overflow (`objc_autorelease` calls this method again).
+#if !defined(OBJC_PORT)
     // WINOBJC: Add in handling for calling CFRetain and friends on a generic objective c object.
     // Bridged classes need to be objc_autorelease'd too.
     if (!cf || __CF_IsBridgedObject(cf) || !__CF_IsCFObject(cf)) {
         static void* s_ensureAutoreleaseInit = _ensureAutoreleaseInit();
         return (CFTypeRef)objc_autorelease((id)cf);
     }
+#endif
 
     if (NULL == cf) { CRSetCrashLogMessage("*** CFAutorelease() called with NULL ***"); HALT; }
 
