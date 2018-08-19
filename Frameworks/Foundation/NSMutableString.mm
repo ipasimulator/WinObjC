@@ -39,7 +39,10 @@ static Class _NSCFString$classForCoder(id self, SEL _cmd) {
 
     class_setSuperclass(nscfClass, self);
     object_setClass(nscfMetaClass, object_getClass(object_getClass(self)));
+    // [port] CHANGED: Not necessary.
+#if !defined(OBJC_PORT)
     class_setSuperclass(nscfMetaClass, object_getClass(self));
+#endif
 
     // NSString is special and needs some help. We can't override classForCoder
     // in _NSCFString because it lives in CoreFoundation (and can't reference us.)
