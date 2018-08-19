@@ -4,6 +4,11 @@
     <StarboardSdkRoot>$([System.IO.Path]::Combine('$(MSBuildThisFileDirectory)', '..'))</StarboardSdkRoot>
   </PropertyGroup>
 
+  <!-- [port] CHANGED: Added. Converts environment variable `OBJC_PORT` to MSBuild property `ObjC_Port`. -->
+  <PropertyGroup Condition="'$(OBJC_PORT)' == '1'">
+    <ObjC_Port>true</ObjC_Port>
+  </PropertyGroup>
+
   <!-- [port] CHANGED: Added, so that we can specify our own linker. -->
   <PropertyGroup Condition="'$(ObjC_Port)' == 'true' AND '$(Use_LLD)' != 'false'">
     <!-- TODO: This needs our linker (`lld-link`) and our proxy (`link-proxy`) to be copied to the directory specified below. This process should be automated. -->
