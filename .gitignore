@@ -138,7 +138,7 @@ Frameworks/Include/CFRegularExpression.h
 
 # [port] CHANGED: We build the Objective-C runtime from sources
 # [port] and copy it every time.
-/tools/deps/prebuilt/Universal Windows/x86/libobjc2.*
+/tools/deps/prebuilt/Universal Windows/x86/libobjc.A.*
 
 # [port] CHANGED: The same thing holds for Clang.
 /tools/WinObjC.Compiler/LLVM/bin/clang.exe
