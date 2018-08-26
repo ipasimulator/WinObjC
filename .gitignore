@@ -144,3 +144,6 @@ Frameworks/Include/CFRegularExpression.h
 /tools/WinObjC.Compiler/LLVM/bin/clang.exe
 /tools/WinObjC.Compiler/LLVM/bin/libclang.*
 /tools/bin/libclang.dll
+
+# [port] CHANGED: Added, [gtm].
+/.gtm/
