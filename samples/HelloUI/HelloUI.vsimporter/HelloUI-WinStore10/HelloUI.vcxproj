@@ -96,10 +96,6 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-      <!-- [port] CHANGED: Added to force linking. TODO: Remove or add to other configurations and platforms. -->
-      <AdditionalOptions Condition="'$(ObjC_Port)' == 'true'">/force:multiple %(AdditionalOptions)</AdditionalOptions>
-      <!-- [port] CHANGED: Added to include our initialization. See `/src/dyld/dyld_initializer.cpp` for source. TODO: Add to other configurations and platforms. -->
-      <AdditionalDependencies Condition="'$(ObjC_Port)' == 'true'">dyld_initializer.obj;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <SBInfoPlistCopy>
       <ExcludedFromBuild>true</ExcludedFromBuild>
