@@ -1,0 +1,16 @@
+[ver:1,total:3420]
+samples/HelloUI/HelloUI/main.m:1500,1535400000:180,1535436000:1080,1535450400:120,1535454000:60,1535457600:60,r
+Frameworks/UIKit/StarboardXaml/StarboardXaml.cpp:400,1535436000:120,1535457600:280,r
+samples/HelloUI/HelloUI.vsimporter/HelloUI-WinStore10/HelloUI.vcxproj:360,1535400000:180,1535439600:180,r
+tools/WinObjC.Language/assets/WinObjC.ObjectiveC.targets:360,1535457600:360,m
+Frameworks/UIKit/StarboardXaml/ApplicationMain.mm:342,1535457600:322,1535461200:20,r
+Frameworks/Foundation/NSNotification.mm:140,1535457600:140,r
+Frameworks/UIKit/UIApplicationMain.mm:75,1535457600:75,r
+deps/3rdparty/libdispatch/build/libdispatch.vcxproj:60,1535457600:60,r
+Frameworks/include/StringHelpers.h:43,1535457600:43,r
+build/CoreFoundation/dll/CoreFoundation.vcxproj:40,1535457600:40,r
+build/CoreAudio/dll/obj/project.assets.json:20,1535457600:20,r
+Frameworks/Foundation/NSNotificationCenter.mm:20,1535457600:20,r
+Frameworks/UIKit/UIApplication.mm:20,1535457600:20,r
+Frameworks/UIKit/UIWindow.mm:20,1535461200:20,r
+Frameworks/UIKit/UIView.mm:20,1535461200:20,r
