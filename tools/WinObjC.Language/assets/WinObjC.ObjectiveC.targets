@@ -12,7 +12,9 @@
     DependsOnTargets="ComputeStarboardHasObjCSources">
 
     <ItemGroup Condition="'$(StarboardHasObjCSources)' == 'true'">
-      <Link Include="libobjc2.lib" />
+      <!-- [port] CHANGED: Our Objective-C library is called `libobjc.A`. -->
+      <Link Condition="'$(ObjC_Port)' != 'true'" Include="libobjc2.lib" />
+      <Link Condition="'$(ObjC_Port)' == 'true'" Include="libobjc.A.lib" />
     </ItemGroup>
   </Target>
 
