@@ -1,0 +1,21 @@
+[ver:1,total:6600]
+samples/HelloUI/HelloUI/main.m:1812,1535461200:1330,1535472000:462,1535540400:20,r
+samples/HelloUI/HelloUI.vsimporter/HelloUI-WinStore10/HelloUI.vcxproj:1440,1535482800:360,1535486400:300,1535536800:280,1535540400:500,m
+Frameworks/include/UIViewInternal.h:826,1535461200:720,1535472000:36,1535482800:70,r
+tools/WinObjC.Language/assets/ConsumeRuntimeComponent.cpp:480,1535536800:480,r
+samples/HelloUI/HelloUI.vsimporter/HelloUI-WinStore10/Generated Files/App.g.hpp:430,1535536800:410,1535540400:20,r
+Frameworks/UIKit/StarboardXaml/LayerProxy.cpp:290,1535482800:290,r
+Frameworks/UIKit/StarboardXaml/StarboardXaml.cpp:212,1535461200:140,1535472000:12,1535540400:60,r
+Frameworks/Foundation/NSBlocks.mm:210,1535472000:210,r
+Frameworks/UIKit/UIView.mm:200,1535461200:30,1535482800:170,r
+Frameworks/UIKit/StarboardXaml/XamlCompositor.mm:170,1535482800:170,r
+Frameworks/QuartzCore/CALayer.mm:140,1535482800:140,r
+build/UIKit/dll/UIKit.def:90,1535461200:90,r
+deps/3rdparty/openal-soft-winphone/winrt.vs2012/example.winrt/example.winrt.cpp:60,1535486400:60,r
+tools/WinObjC.Language/assets/WinObjC.ObjectiveC.targets:60,1535461200:60,r
+include/UIKit/UIKitExport.h:40,1535461200:40,r
+Frameworks/UIKit/UIWindow.mm:30,1535461200:30,r
+samples/HelloUI/HelloUI.vsimporter/HelloUI-WinStore10/App.xaml.cpp:30,1535536800:30,r
+Frameworks/include/objc-private.h:30,1535472000:30,r
+include/UIKit/UIKit.h:30,1535472000:30,r
+build/UIKit/lib/UIKitLib.vcxproj:20,1535461200:20,r
