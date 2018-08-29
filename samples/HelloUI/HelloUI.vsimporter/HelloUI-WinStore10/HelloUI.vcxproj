@@ -35,6 +35,10 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ConfigurationType>Application</ConfigurationType>
+    <!-- [port] CHANGED: Added, we want this to be a `.dll` which we then load in our `HelloUIWrapper`.
+    Unfortunately, that doesn't work if it's `.exe` for some reason.
+    TODO: Copy this to other configurations, as well. -->
+    <ConfigurationType Condition="'$(ObjC_Port)' == 'true'">DynamicLibrary</ConfigurationType>
     <PlatformToolset>v141</PlatformToolset>
     <TargetName>HelloUI</TargetName>
   </PropertyGroup>
@@ -96,6 +100,11 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <!-- [port] CHANGED: Added, this will cause that the resulting `.dll` won't try to reconfigure it's
+      threading model (which would fail since we already configured it in the main `.exe`). This is what
+      Visual Studio Designer does, hence the name.
+      TODO: Copy this to other configurations, as well. -->
+      <EntryPointSymbol Condition="'$(ObjC_Port)' == 'true'">VSDesignerDllMain</EntryPointSymbol>
     </Link>
     <SBInfoPlistCopy>
       <ExcludedFromBuild>true</ExcludedFromBuild>
