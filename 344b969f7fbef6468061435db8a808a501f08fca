@@ -1,0 +1,10 @@
+[ver:1,total:1680]
+include/Platform/Universal Windows/UWP/RTHelpers.h:540,1535630400:360,1535644800:180,r
+tools/include/WOCStdLib/COMIncludes.h:320,1535634000:180,1535652000:140,r
+Frameworks/Foundation/Utils.mm:210,1535652000:210,r
+.gitignore:180,1535655600:180,m
+build/Foundation/dll/Foundation.def:180,1535652000:180,r
+tools/include/WOCStdLib/ifaddrs.h:180,1535652000:180,r
+Frameworks/Foundation/NSAssertionHandler.mm:30,1535652000:30,r
+tools/include/WOCStdLib/dlfcn.h:20,1535652000:20,r
+tools/include/WOCStdLib/COMIncludes_End.h:20,1535652000:20,r
