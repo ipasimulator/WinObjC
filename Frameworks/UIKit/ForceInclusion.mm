@@ -48,11 +48,7 @@ void ForceInclusion() {
     [UISwitch class];
     [UISlider class];
     [UIProxyObject class];
-    // [port] CHANGED: `RTObject` is not implemented.
-    // [port] TODO: Why? Isn't it implemented in some prebuilt .dll?
-#if !defined(OBJC_PORT)
     [RTObject class];
-#endif
     NSStringForceinclude();
     NSIndexPathForceInclude();
     NSValueForceinclude();
