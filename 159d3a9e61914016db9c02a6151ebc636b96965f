@@ -1,0 +1,7 @@
+[ver:1,total:1260]
+.gitignore:700,1535655600:700,m
+Frameworks/CoreFoundation/StringEncodings.subproj/CFUniChar.c:190,1535655600:190,r
+include/Platform/Universal Windows/UWP/RTHelpers.h:140,1535655600:140,r
+deps/prebuilt/.gitignore:110,1535655600:110,m
+Frameworks/UIKit/UILabel.mm:110,1535655600:110,r
+Frameworks/UIKit.Xaml/Label.xaml.cpp:10,1535655600:10,r
