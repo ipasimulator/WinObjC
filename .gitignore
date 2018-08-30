@@ -145,8 +145,5 @@ Frameworks/Include/CFRegularExpression.h
 /tools/WinObjC.Compiler/LLVM/bin/libclang.*
 /tools/bin/libclang.dll
 
-# [port] CHANGED: And for `RTObjCInterop.dll`.
-/deps/prebuilt/Universal Windows/x86/RTObjCInterop.*
-
 # [port] CHANGED: Added, [gtm].
 /.gtm/
