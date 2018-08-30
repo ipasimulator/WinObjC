@@ -1,0 +1,29 @@
+[ver:1,total:7560]
+Frameworks/UIKit/UILabel.mm:1713,1535572800:565,1535623200:854,1535626800:294,r
+Frameworks/UIKit/StarboardXaml/LayerProxy.cpp:1050,1535540400:390,1535565600:180,1535569200:480,r
+samples/HelloUI/HelloUI.vsimporter/HelloUI-WinStore10/HelloUI.vcxproj:1020,1535540400:360,1535562000:180,1535565600:90,1535569200:360,1535572800:30,r
+Frameworks/UIKit/UIApplicationMain.mm:460,1535540400:30,1535569200:300,1535572800:20,1535626800:110,r
+Frameworks/UIKit.Xaml/Layer.xaml.h:414,1535547600:234,1535562000:180,r
+build/UIKit.Xaml/dll/Generated Files/Label.g.hpp:335,1535623200:315,1535626800:20,r
+Frameworks/UIKit/UIView.mm:328,1535540400:24,1535572800:96,1535623200:196,1535626800:12,r
+samples/HelloUI/HelloUI/HelloUI.m:311,1535540400:12,1535569200:60,1535572800:129,1535626800:110,r
+samples/HelloUI/Debug/HelloUI/AppxManifest.xml:210,1535547600:30,1535569200:180,r
+Frameworks/UIKit.Xaml/Label.xaml.cpp:182,1535623200:110,1535626800:72,r
+Frameworks/QuartzCore/CALayer.mm:180,1535540400:180,r
+samples/HelloUI/Debug/HelloUI/AppX/AppxManifest.xml:180,1535569200:180,r
+samples/HelloUI/HelloUI/main.m:160,1535540400:160,r
+include/Platform/Universal Windows/UWP/RTHelpers.h:150,1535626800:150,r
+Frameworks/UIKit/StarboardXaml/ApplicationMain.mm:149,1535540400:30,1535569200:99,1535626800:20,r
+Frameworks/UIKit/UIApplication.mm:141,1535569200:141,r
+Frameworks/UIKit.Xaml/ILayer.h:132,1535547600:132,r
+Frameworks/UIKit/StarboardXaml/StarboardXaml.cpp:130,1535540400:80,1535626800:50,r
+Frameworks/UIKit/XamlControls.mm:82,1535623200:60,1535626800:22,r
+Frameworks/UIKit/ForceInclusion.mm:60,1535626800:60,m
+Frameworks/include/CppWinRTHelpers.h:40,1535626800:40,r
+Frameworks/UIKit/StarboardXaml/XamlCompositor.mm:30,1535540400:30,r
+samples/HelloUI/Debug/HelloUI/AppX/vs.appxrecipe:30,1535565600:30,r
+build/UIKit.Xaml/dll/Generated Files/Label.g.h:25,1535623200:25,r
+Frameworks/UIKit.Xaml/Layer.xaml.cpp:12,1535547600:12,r
+Frameworks/include/UIViewInternal.h:12,1535540400:12,r
+Frameworks/UIKit.Xaml/Layer.xaml:12,1535547600:12,r
+Frameworks/UIKit/UIWindow.mm:12,1535540400:12,r
