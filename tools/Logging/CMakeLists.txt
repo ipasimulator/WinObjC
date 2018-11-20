@@ -6,6 +6,8 @@ set (SOURCE_FILES
 
 add_library (Logging SHARED ${SOURCE_FILES})
 
+add_dependencies (Logging prep)
+
 target_include_directories (Logging PUBLIC
     include
     include/wil
