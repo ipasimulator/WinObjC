@@ -1,0 +1,23 @@
+set (SOURCE_FILES
+    UTSName.cpp
+    mach.cpp
+    String.cpp
+    TaskInfo.cpp
+    unistd.cpp
+    sched.cpp
+    sysctl.cpp
+    version.cpp
+    dlfcn.cpp
+    OSMisc.cpp
+    OSEndian.cpp
+    inet.cpp
+    random.cpp
+    time.cpp
+    OSSpinLock.cpp)
+list (TRANSFORM SOURCE_FILES PREPEND lib/)
+
+add_library (WOCStdLib SHARED ${SOURCE_FILES})
+
+target_include_directories (WOCStdLib PUBLIC
+    ../include/WOCStdLib
+    ../include)
