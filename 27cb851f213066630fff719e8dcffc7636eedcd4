@@ -1,0 +1,6 @@
+[ver:1,total:1440]
+CMakeLists.txt:804,1542722400:180,1542747600:624,m
+tools/Logging/lib/LoggingLib.vcxproj:240,1542744000:240,r
+tools/CMakeLists.txt:212,1542744000:180,1542747600:32,r
+tools/WOCStdLib/CMakeLists.txt:107,1542747600:107,m
+tools/Logging/CMakeLists.txt:77,1542747600:77,m
