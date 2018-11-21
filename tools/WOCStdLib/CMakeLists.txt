@@ -24,4 +24,6 @@ target_include_directories (WOCStdLib PUBLIC
     ../include/WOCStdLib
     ../include)
 
-target_link_libraries (WOCStdLib Logging)
+target_link_libraries (WOCStdLib Logging WindowsApp.lib)
+
+target_compile_definitions (WOCStdLib PRIVATE WINAPI_FAMILY=WINAPI_FAMILY_APP)
