@@ -23,3 +23,5 @@ add_dependencies (WOCStdLib prep)
 target_include_directories (WOCStdLib PUBLIC
     ../include/WOCStdLib
     ../include)
+
+target_link_libraries (WOCStdLib Logging)
