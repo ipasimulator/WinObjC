@@ -1,0 +1,6 @@
+[ver:1,total:420]
+tools/WOCStdLib/CMakeLists.txt:260,1542751200:200,1542830400:60,m
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:60,1542830400:60,r
+CMakeLists.txt:60,1542751200:60,r
+tools/WOCStdLib/lib/WOCStdLibLib.vcxproj:30,1542751200:30,r
+tools/WOCStdLib/lib/UTSName.cpp:10,1542751200:10,r
