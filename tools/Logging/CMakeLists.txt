@@ -12,5 +12,3 @@ target_include_directories (Logging PUBLIC
     include
     include/wil
     ${WOCStdLib_HEADERS})
-
-target_compile_definitions (Logging PUBLIC OBJC_PORT)
