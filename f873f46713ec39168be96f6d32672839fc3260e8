@@ -1,0 +1,7 @@
+[ver:1,total:1200]
+Frameworks/Starboard/CMakeLists.txt:650,1542884400:650,m
+Frameworks/CMakeLists.txt:240,1542884400:240,r
+tools/Logging/CMakeLists.txt:140,1542884400:140,m
+CMakeLists.txt:90,1542884400:90,m
+build/Starboard/lib/StarboardLib.vcxproj:60,1542884400:60,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:20,1542884400:20,r
