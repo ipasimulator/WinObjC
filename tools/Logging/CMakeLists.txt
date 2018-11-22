@@ -11,4 +11,4 @@ add_dependencies (Logging prep)
 target_include_directories (Logging PUBLIC
     include
     include/wil
-    ${WOCStdLib_HEADERS})
+    ../include/WOCStdLib)
