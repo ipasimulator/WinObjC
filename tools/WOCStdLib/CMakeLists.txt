@@ -26,4 +26,4 @@ target_include_directories (WOCStdLib PUBLIC
 
 target_link_libraries (WOCStdLib Logging WindowsApp.lib)
 
-target_compile_definitions (WOCStdLib PRIVATE WINAPI_FAMILY=WINAPI_FAMILY_APP)
+target_compile_definitions (WOCStdLib PUBLIC WINAPI_FAMILY=WINAPI_FAMILY_APP)
