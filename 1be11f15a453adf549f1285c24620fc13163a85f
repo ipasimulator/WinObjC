@@ -1,0 +1,11 @@
+[ver:1,total:2880]
+Frameworks/Starboard/CMakeLists.txt:1316,1542884400:90,1542888000:591,1542891600:420,1542895200:215,m
+build/Starboard/lib/Debug/StarboardLib.tlog/clang.command.1.tlog:964,1542888000:354,1542891600:390,1542895200:220,r
+tools/Logging/CMakeLists.txt:210,1542884400:210,r
+Frameworks/include/StringHelpers.h:150,1542891600:150,r
+Frameworks/Starboard/RawBuffer.cpp:90,1542895200:90,r
+tools/WOCStdLib/CMakeLists.txt:45,1542884400:45,m
+tools/include/WOCStdLib/WOCStdLib.h:30,1542891600:30,r
+build/Starboard/lib/StarboardLib.vcxproj:30,1542888000:15,1542895200:15,r
+include/StubIncludes.h:30,1542891600:30,r
+CMakeLists.txt:15,1542884400:15,r
