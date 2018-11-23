@@ -20,10 +20,19 @@ else (CL_COMPILER)
         EbrDevRandomFile.cpp)
 endif (CL_COMPILER)
 
-add_library (Starboard SHARED ${SOURCE_FILES})
+if (CL_COMPILER)
+    add_library (Starboard STATIC ${SOURCE_FILES})
+else (CL_COMPILER)
+    add_library (Starboard SHARED ${SOURCE_FILES})
+endif (CL_COMPILER)
 
 if (NOT CL_COMPILER)
-    add_dependencies (Starboard prep winobjc-Logging)
+    add_dependencies (Starboard prep winobjc-Logging winobjc-Starboard)
+    target_link_libraries (Starboard
+        WindowsApp.lib ws2_32.lib
+        "${WINOBJC_CMAKE_DIR}/tools/Logging/Logging.lib"
+        "${WINOBJC_CMAKE_DIR}/Frameworks/Starboard/Starboard.lib")
+    # TODO: Linking still fails, we must add more libraries...
 endif (NOT CL_COMPILER)
 
 target_include_directories (Starboard PUBLIC
