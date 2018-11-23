@@ -1,26 +1,30 @@
-set (SOURCE_FILES
-    #pthread.cpp # TODO: Use win-pthreads.
-    CommonDigest.cpp
-    CommonHMAC.cpp
-    MurmurHash3.cpp
-    pevents.cpp
-    String.cpp
-    PlatformSupport.cpp
-    CommonCryptor.cpp
-    DNSService.cpp
-    EbrFile.cpp
-    EbrIOFile.cpp
-    EbrDevRandomFile.cpp
-    # TOOD: Compile these with CL.
-    # RawBuffer.cpp
-    # EbrStorageFile.cpp
-    # PathMapper.cpp
-    # AssetFile.cpp
-    )
+if (CL_COMPILER)
+    set (SOURCE_FILES
+        RawBuffer.cpp
+        EbrStorageFile.cpp
+        PathMapper.cpp
+        AssetFile.cpp)
+else (CL_COMPILER)
+    set (SOURCE_FILES
+        #pthread.cpp # TODO: Use win-pthreads.
+        CommonDigest.cpp
+        CommonHMAC.cpp
+        MurmurHash3.cpp
+        pevents.cpp
+        String.cpp
+        PlatformSupport.cpp
+        CommonCryptor.cpp
+        DNSService.cpp
+        EbrFile.cpp
+        EbrIOFile.cpp
+        EbrDevRandomFile.cpp)
+endif (CL_COMPILER)
 
 add_library (Starboard SHARED ${SOURCE_FILES})
 
-add_dependencies (Starboard prep winobjc-Logging)
+if (NOT CL_COMPILER)
+    add_dependencies (Starboard prep winobjc-Logging)
+endif (NOT CL_COMPILER)
 
 target_include_directories (Starboard PUBLIC
     ../../include
@@ -36,7 +40,7 @@ target_include_directories (Starboard PUBLIC
     ../../tools/include/WOCStdLib)
 
 target_compile_definitions (Starboard PUBLIC
-    # Those come from `clang.command.1.tlog` (i.e., file generated when building
+    # These come from `clang.command.1.tlog` (i.e., file generated when building
     # WinObjC using MSBuild).
     WINAPI_FAMILY=WINAPI_FAMILY_APP
     _WINSOCK_DEPRECATED_NO_WARNINGS
@@ -51,8 +55,11 @@ target_compile_definitions (Starboard PUBLIC
     # we successfully built WinObjC using MSBuild, i.e., 10.0.14393.0).
     DISABLE_WINRT_DEPRECATION)
 
-target_compile_options (Starboard PUBLIC
-    -fobjc-runtime=ios-11
-    # Warnings
-    -Wno-c++17-extensions -Wno-nullability-completeness
-    -Wno-unused-command-line-argument -Wno-c++17-compat-mangling -Wno-microsoft)
+if (NOT CL_COMPILER)
+    target_compile_options (Starboard PUBLIC
+        -fobjc-runtime=ios-11
+        # Warnings
+        -Wno-c++17-extensions -Wno-nullability-completeness
+        -Wno-unused-command-line-argument -Wno-c++17-compat-mangling
+        -Wno-microsoft)
+endif (NOT CL_COMPILER)

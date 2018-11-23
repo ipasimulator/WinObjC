@@ -11,4 +11,7 @@ add_custom_target (prep
     WORKING_DIRECTORY "${BINARY_DIR}"
     USES_TERMINAL)
 
+set (CL_COMPILER ON)
+
 add_subdirectory (tools)
+add_subdirectory (Frameworks)
