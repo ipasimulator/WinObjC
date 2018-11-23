@@ -1,0 +1,9 @@
+[ver:1,total:1260]
+Frameworks/Starboard/CMakeLists.txt:974,1542967200:354,1542970800:620,m
+build/Starboard/dll/Debug/Starboard.tlog/link-proxy.command.1.tlog:120,1542967200:60,1542970800:60,r
+build/Starboard/dll/Starboard.vcxproj:60,1542967200:60,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:40,1542970800:40,r
+build/Starboard/lib/StarboardLib.vcxproj:30,1542967200:30,r
+tools/Logging/CMakeLists.txt:12,1542967200:12,r
+tools/WOCStdLib/CMakeLists.txt:12,1542967200:12,r
+Frameworks/CMakeLists.txt:12,1542967200:12,r
