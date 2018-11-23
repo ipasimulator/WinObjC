@@ -31,8 +31,8 @@ if (NOT CL_COMPILER)
     target_link_libraries (Starboard
         WindowsApp.lib ws2_32.lib
         "${WINOBJC_CMAKE_DIR}/tools/Logging/Logging.lib"
-        "${WINOBJC_CMAKE_DIR}/Frameworks/Starboard/Starboard.lib")
-    # TODO: Linking still fails, we must add more libraries...
+        "${WINOBJC_CMAKE_DIR}/Frameworks/Starboard/Starboard.lib"
+        -Wl,/force:multiple)
 endif (NOT CL_COMPILER)
 
 target_include_directories (Starboard PUBLIC
