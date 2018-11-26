@@ -30,9 +30,8 @@ if (NOT CL_COMPILER)
     add_dependencies (Starboard prep winobjc-WOCStdLib winobjc-Logging
         winobjc-Starboard)
     target_link_libraries (Starboard
-        WindowsApp.lib ws2_32.lib # TODO: Are these necessary? Add more?
+        WindowsApp.lib
         msvcrtd.lib
-        #"${SOURCE_DIR}/deps/WinObjC/tools/deps/prebuilt/Universal Windows/x86/libdispatch.lib"
         "${WINOBJC_CMAKE_DIR}/tools/WOCStdLib/WOCStdLib.lib"
         "${WINOBJC_CMAKE_DIR}/tools/Logging/Logging.lib"
         "${WINOBJC_CMAKE_DIR}/Frameworks/Starboard/Starboard.lib"
