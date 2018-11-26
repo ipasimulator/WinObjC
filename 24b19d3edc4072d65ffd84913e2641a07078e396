@@ -1,0 +1,8 @@
+[ver:1,total:1500]
+Frameworks/Starboard/CMakeLists.txt:870,1543269600:100,1543273200:770,m
+build/Starboard/lib/Debug/StarboardLib.tlog/clang.command.1.tlog:235,1543269600:80,1543273200:155,r
+build/Starboard/dll/Debug/Starboard.tlog/link-proxy.command.1.tlog:155,1543273200:155,r
+Frameworks/Starboard/PlatformSupport.cpp:120,1543273200:120,r
+include/StubIncludes.h:90,1543273200:90,r
+build/Starboard/lib/StarboardLib.vcxproj:15,1543273200:15,r
+tools/include/WOCStdLib/WOCStdLib.h:15,1543273200:15,r
