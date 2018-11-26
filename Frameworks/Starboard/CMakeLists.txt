@@ -32,7 +32,8 @@ if (NOT CL_COMPILER)
         WindowsApp.lib ws2_32.lib # TODO: Are these necessary? Add more?
         "${WINOBJC_CMAKE_DIR}/tools/Logging/Logging.lib"
         "${WINOBJC_CMAKE_DIR}/Frameworks/Starboard/Starboard.lib"
-        -Wl,/force:multiple)
+        -Wl,/force:multiple
+        pthread)
 endif (NOT CL_COMPILER)
 
 target_include_directories (Starboard PUBLIC
