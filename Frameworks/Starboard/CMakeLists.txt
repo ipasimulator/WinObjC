@@ -29,7 +29,7 @@ endif (CL_COMPILER)
 if (NOT CL_COMPILER)
     add_dependencies (Starboard prep winobjc-Logging winobjc-Starboard)
     target_link_libraries (Starboard
-        WindowsApp.lib ws2_32.lib
+        WindowsApp.lib ws2_32.lib # TODO: Are these necessary? Add more?
         "${WINOBJC_CMAKE_DIR}/tools/Logging/Logging.lib"
         "${WINOBJC_CMAKE_DIR}/Frameworks/Starboard/Starboard.lib"
         -Wl,/force:multiple)
@@ -59,6 +59,10 @@ target_compile_definitions (Starboard PUBLIC
     _HAS_EXCEPTIONS=0
     OBJC_PORT
     SB_IMPEXP=
+    # TODO: Include these conditionally (on CMAKE_BUILD_TYPE) and everywhere.
+    _DEBUG
+    _MT
+    _DLL
     # Without this, there is an error in header `Windows.UI.Notifications.h`.
     # TODO: Don't define this, rather use older SDK (e.g., the one we used when
     # we successfully built WinObjC using MSBuild, i.e., 10.0.14393.0).
