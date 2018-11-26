@@ -6,7 +6,7 @@ if (CL_COMPILER)
         AssetFile.cpp)
 else (CL_COMPILER)
     set (SOURCE_FILES
-        #pthread.cpp # TODO: Use win-pthreads.
+        #pthread.cpp # We use win-pthreads instead.
         CommonDigest.cpp
         CommonHMAC.cpp
         MurmurHash3.cpp
