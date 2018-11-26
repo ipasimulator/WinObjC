@@ -1,0 +1,12 @@
+[ver:1,total:1380]
+Frameworks/Starboard/CMakeLists.txt:1090,1542981600:360,1543161600:195,1543269600:535,m
+build/Starboard/lib/Debug/StarboardLib.tlog/clang.command.1.tlog:115,1543161600:15,1543269600:100,r
+CMakeLists.txt:40,1543269600:40,r
+build/Starboard/lib/StarboardLib.vcxproj:40,1543269600:40,r
+Frameworks/CMakeLists.txt:15,1543269600:15,r
+tools/WOCStdLib/CMakeLists.txt:15,1543269600:15,r
+tools/Logging/CMakeLists.txt:15,1543269600:15,r
+Frameworks/Starboard/RawBuffer.cpp:15,1543161600:15,r
+Frameworks/include/StringHelpers.h:15,1543161600:15,r
+build/Starboard/dll/Starboard.vcxproj:10,1543269600:10,r
+build/Starboard/dll/Debug/Starboard.tlog/link-proxy.command.1.tlog:10,1543269600:10,r
