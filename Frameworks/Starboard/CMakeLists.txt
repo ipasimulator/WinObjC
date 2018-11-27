@@ -36,7 +36,8 @@ if (NOT CL_COMPILER)
         "${WINOBJC_CMAKE_DIR}/tools/Logging/Logging.lib"
         "${WINOBJC_CMAKE_DIR}/Frameworks/Starboard/Starboard.lib"
         -Wl,/force:multiple,/debug,/nodefaultlib:libcmt
-        "-Wl,/def:${SOURCE_DIR}/deps/WinObjC/build/Starboard/dll/Starboard.def"
+        "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Starboard/dll/\
+Starboard.def"
         pthread)
 endif (NOT CL_COMPILER)
 

@@ -25,6 +25,6 @@ target_include_directories (WOCStdLib PUBLIC
     ../include)
 
 target_link_libraries (WOCStdLib Logging WindowsApp.lib
-    "-def:${SOURCE_DIR}/deps/WinObjC/tools/WOCStdLib/dll/WOCStdLib.def")
+    "-def:${CMAKE_CURRENT_SOURCE_DIR}/dll/WOCStdLib.def")
 
 target_compile_definitions (WOCStdLib PUBLIC WINAPI_FAMILY=WINAPI_FAMILY_APP)
