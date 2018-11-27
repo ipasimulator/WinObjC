@@ -1,0 +1,6 @@
+[ver:1,total:648]
+Frameworks/Starboard/CMakeLists.txt:464,1543273200:180,1543356000:284,m
+tools/WOCStdLib/CMakeLists.txt:62,1543356000:62,m
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:60,1543356000:60,r
+tools/Logging/dll/Logging.def:32,1543356000:32,r
+CMakeLists.txt:30,1543356000:30,r
