@@ -40,7 +40,10 @@ set (SOURCE_FILES
     src/core/TelemetryClient.cpp
     src/core/TelemetryContextOther.cpp
     src/core/TelemetryContextWin32.cpp
-    src/core/TelemetryContextWinStore.cpp)
+    src/core/TelemetryContextWinStore.cpp
+    Projects/AppInsights_Win10-UAP/ApplicationInsights/SessionTracking.cpp
+    Projects/AppInsights_Win10-UAP/ApplicationInsights/PageTracking.cpp
+    Projects/AppInsights_Win10-UAP/ApplicationInsights/TelemetryClient.cpp)
 
 add_library (AppInsights SHARED ${SOURCE_FILES})
 
@@ -50,8 +53,14 @@ target_compile_definitions (AppInsights PRIVATE TELEMETRY_CLIENT_DLL_EXPORT
     # TODO: Share these.
     PUBLIC _UNICODE UNICODE)
 
-target_compile_options (AppInsights PUBLIC /wd4251 /Zc:wchar_t)
+# TODO: Share also some of these (e.g., the `wchar_t` one).
+target_compile_options (AppInsights PUBLIC /wd4251 /Zc:wchar_t /ZW)
 
-# TODO: This doesn't actually seem to be linked by any relevant `.vcxproj`, but
-# linking fails without it. Why?
-target_link_libraries (AppInsights winhttp.lib)
+target_link_libraries (AppInsights
+    # TODO: This doesn't actually seem to be linked by any relevant `.vcxproj`,
+    # but linking fails without it. Why?
+    winhttp.lib
+    WindowsApp.lib)
+
+target_include_directories (AppInsights PUBLIC
+    Projects/AppInsights_Win10-UAP/ApplicationInsights)
