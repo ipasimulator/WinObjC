@@ -49,7 +49,8 @@ add_library (AppInsights SHARED ${SOURCE_FILES})
 
 add_dependencies (AppInsights prep)
 
-target_compile_definitions (AppInsights PRIVATE TELEMETRY_CLIENT_DLL_EXPORT
+target_compile_definitions (AppInsights PRIVATE
+    TELEMETRY_CLIENT_DLL_EXPORT _WINRT_DLL
     # TODO: Share these.
     PUBLIC _UNICODE UNICODE)
 

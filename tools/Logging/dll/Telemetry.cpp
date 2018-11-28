@@ -14,11 +14,13 @@
 //
 //******************************************************************************
 
-// This file is included under the DLL because the compiler cannot statically link to a library that references the 
+// This file is included under the DLL because the compiler cannot statically link to a library that references the
 // AppInsights UAP library.
 
 #include "LoggingInternal.h"
 #include "Telemetry.h"
+// [port] CHANGED: Added this include. How could it ever work without it?
+#include <TelemetryClient.h>
 
 using namespace ApplicationInsights::CX;
 using namespace Platform;
