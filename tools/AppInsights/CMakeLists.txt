@@ -45,7 +45,7 @@ set (SOURCE_FILES
     Projects/AppInsights_Win10-UAP/ApplicationInsights/PageTracking.cpp
     Projects/AppInsights_Win10-UAP/ApplicationInsights/TelemetryClient.cpp)
 
-add_library (AppInsights SHARED ${SOURCE_FILES})
+add_library (AppInsights STATIC ${SOURCE_FILES})
 
 add_dependencies (AppInsights prep)
 
