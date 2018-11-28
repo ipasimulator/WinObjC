@@ -1,0 +1,15 @@
+[ver:1,total:1461]
+tools/Logging/CMakeLists.txt:681,1543356000:406,1543395600:95,1543399200:180,m
+tools/AppInsights/CMakeLists.txt:210,1543395600:60,1543399200:150,m
+tools/AppInsights/Projects/AppInsights_Win10-UAP/ApplicationInsights/ApplicationInsights.vcxproj:152,1543395600:17,1543399200:135,r
+tools/Logging/dll/Telemetry.cpp:145,1543395600:105,1543399200:40,m
+tools/AppInsights/Projects/AppInsights_Win10-UAP/AppInsights_Win10-UAP/AppInsights_Win10-UAP.vcxproj:75,1543395600:60,1543399200:15,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:60,1543399200:60,r
+tools/Logging/dll/Logging.vcxproj:30,1543395600:30,r
+tools/Logging/dll/Telemetry.h:30,1543395600:30,r
+tools/AppInsights/Projects/AppInsights_Win32/core/core.vcxproj:20,1543399200:20,r
+tools/AppInsights/Projects/AppInsights_Win10-UAP/ApplicationInsights/TelemetryClient.cpp:17,1543395600:17,r
+tools/Logging/dll/dllmain.cpp:15,1543395600:15,r
+tools/AppInsights/src/core/TelemetryClient.h:10,1543395600:10,r
+tools/AppInsights/Projects/AppInsights_Win10-UAP/ApplicationInsights/ApplicationInsights.vcxproj.filters:8,1543395600:8,r
+tools/AppInsights/Projects/AppInsights_Win10-UAP/ApplicationInsights/TelemetryClient.h:8,1543395600:8,r
