@@ -1,0 +1,4 @@
+[ver:1,total:180]
+tools/Logging/dll/Telemetry.cpp:90,1543399200:90,r
+tools/AppInsights/CMakeLists.txt:60,1543399200:60,m
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:30,1543399200:30,r
