@@ -1,0 +1,6 @@
+[ver:1,total:600]
+Frameworks/Starboard/CMakeLists.txt:210,1543399200:210,m
+tools/Logging/dll/Telemetry.cpp:150,1543399200:150,r
+tools/Logging/CMakeLists.txt:120,1543399200:120,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:60,1543399200:60,r
+tools/AppInsights/CMakeLists.txt:60,1543399200:60,r
