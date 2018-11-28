@@ -27,8 +27,7 @@ else (CL_COMPILER)
 endif (CL_COMPILER)
 
 if (NOT CL_COMPILER)
-    add_dependencies (Starboard prep winobjc-WOCStdLib winobjc-Logging
-        winobjc-Starboard)
+    add_dependencies (Starboard prep)
     target_link_libraries (Starboard
         WindowsApp.lib
         msvcrtd.lib
