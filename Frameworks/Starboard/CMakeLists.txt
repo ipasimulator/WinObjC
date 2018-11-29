@@ -31,7 +31,7 @@ if (NOT CL_COMPILER)
     target_link_libraries (Starboard PUBLIC
         WindowsApp.lib
         msvcrtd.lib
-        "${WINOBJC_CMAKE_DIR}/bin/WOCStdLib.lib"
+        WOCStdLib
         # "${WINOBJC_CMAKE_DIR}/bin/Logging.lib"
         # "${WINOBJC_CMAKE_DIR}/bin/Starboard.lib"
         pthread
