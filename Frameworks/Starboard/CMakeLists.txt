@@ -27,13 +27,13 @@ else (CL_COMPILER)
 endif (CL_COMPILER)
 
 if (NOT CL_COMPILER)
-    add_dependencies (Starboard prep WOCStdLib)
+    add_dependencies (Starboard prep)
     target_link_libraries (Starboard PUBLIC
         WindowsApp.lib
         msvcrtd.lib
-        WOCStdLib
-        # "${WINOBJC_CMAKE_DIR}/bin/Logging.lib"
-        # "${WINOBJC_CMAKE_DIR}/bin/Starboard.lib"
+        woc-WOCStdLib
+        woc-Logging
+        woc-Starboard
         pthread
         PRIVATE -Wl,/force:multiple,/debug,/nodefaultlib:libcmt
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Starboard/dll/\
