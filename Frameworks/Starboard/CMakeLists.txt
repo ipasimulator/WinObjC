@@ -38,6 +38,15 @@ if (NOT CL_COMPILER)
         PRIVATE -Wl,/force:multiple,/debug,/nodefaultlib:libcmt
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Starboard/dll/\
 Starboard.def")
+    # HACK: Make Starboard depend on clang.exe and lld-link.exe.
+    # TODO: Extract this into some function.
+    target_sources (Starboard PUBLIC
+        "${BUILT_CLANG_EXE}"
+        "${BUILT_LLD_LINK_EXE}")
+    set_source_files_properties ("${BUILT_CLANG_EXE}" "${BUILT_LLD_LINK_EXE}"
+        PROPERTIES HEADER_FILE_ONLY ON GENERATED ON)
+    set_source_files_properties (${SOURCE_FILES}
+        PROPERTIES OBJECT_DEPENDS "${BUILT_CLANG_EXE};${BUILT_LLD_LINK_EXE}")
 endif (NOT CL_COMPILER)
 
 target_include_directories (Starboard PUBLIC
