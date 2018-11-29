@@ -31,9 +31,9 @@ if (NOT CL_COMPILER)
     target_link_libraries (Starboard
         WindowsApp.lib
         msvcrtd.lib
-        "${WINOBJC_CMAKE_DIR}/tools/WOCStdLib/WOCStdLib.lib"
-        "${WINOBJC_CMAKE_DIR}/tools/Logging/Logging.lib"
-        "${WINOBJC_CMAKE_DIR}/Frameworks/Starboard/Starboard.lib"
+        "${WINOBJC_CMAKE_DIR}/bin/WOCStdLib.lib"
+        "${WINOBJC_CMAKE_DIR}/bin/Logging.lib"
+        "${WINOBJC_CMAKE_DIR}/bin/Starboard.lib"
         -Wl,/force:multiple,/debug,/nodefaultlib:libcmt
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Starboard/dll/\
 Starboard.def"
