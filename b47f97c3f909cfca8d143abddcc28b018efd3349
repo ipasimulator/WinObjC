@@ -1,0 +1,11 @@
+[ver:1,total:780]
+Frameworks/Starboard/CMakeLists.txt:255,1543496400:255,m
+tools/Logging/lib/LoggingTesting.cpp:135,1543496400:135,r
+tools/Logging/CMakeLists.txt:115,1543496400:115,m
+tools/WOCStdLib/CMakeLists.txt:110,1543496400:110,m
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:45,1543496400:45,r
+tools/Logging/dll/Logging.def:45,1543496400:45,r
+tools/Logging/dll/Telemetry.cpp:30,1543496400:30,r
+tools/AppInsights/CMakeLists.txt:15,1543496400:15,r
+tools/Logging/lib/LoggingInternal.cpp:15,1543496400:15,r
+tools/Logging/include/LoggingTesting.h:15,1543496400:15,r
