@@ -14,8 +14,7 @@ target_include_directories (Logging PUBLIC
     include/wil
     ../include/WOCStdLib)
 
-target_link_libraries (Logging
-    AppInsights
-    "-def:${CMAKE_CURRENT_SOURCE_DIR}/dll/Logging.def")
+target_link_libraries (Logging PUBLIC AppInsights
+    PRIVATE "-def:${CMAKE_CURRENT_SOURCE_DIR}/dll/Logging.def")
 
 target_compile_options (Logging PUBLIC /ZW)
