@@ -47,7 +47,7 @@ set (SOURCE_FILES
 
 add_library (AppInsights STATIC ${SOURCE_FILES})
 
-add_dependencies (AppInsights prep)
+add_prep_dep (AppInsights)
 
 target_compile_definitions (AppInsights PRIVATE
     TELEMETRY_CLIENT_DLL_EXPORT _WINRT_DLL

@@ -18,7 +18,7 @@ list (TRANSFORM SOURCE_FILES PREPEND lib/)
 
 add_library (WOCStdLib SHARED ${SOURCE_FILES})
 
-add_dependencies (WOCStdLib prep)
+add_prep_dep (WOCStdLib)
 
 target_include_directories (WOCStdLib PUBLIC
     ../include/WOCStdLib
