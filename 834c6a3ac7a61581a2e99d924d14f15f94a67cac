@@ -1,2 +1,7 @@
 [ver:1,total:60]
 ../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:60,1543590000:60,r
+
+[ver:1,total:720]
+CMakeLists.txt:330,1543586400:120,1543590000:210,m
+Frameworks/Starboard/CMakeLists.txt:300,1543525200:180,1543586400:120,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:90,1543590000:90,r
