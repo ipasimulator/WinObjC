@@ -1,0 +1,8 @@
+[ver:1,total:240]
+Frameworks/Starboard/CMakeLists.txt:90,1543590000:90,r
+tools/WOCStdLib/CMakeLists.txt:60,1543590000:60,m
+tools/CMakeLists.txt:30,1543590000:30,r
+CMakeLists.txt:30,1543590000:30,r
+tools/AppInsights/CMakeLists.txt:10,1543590000:10,m
+tools/Logging/CMakeLists.txt:10,1543590000:10,m
+Frameworks/CMakeLists.txt:10,1543590000:10,r
