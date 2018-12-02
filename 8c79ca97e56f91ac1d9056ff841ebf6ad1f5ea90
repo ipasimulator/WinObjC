@@ -1,0 +1,11 @@
+[ver:1,total:2880]
+Frameworks/Starboard/CMakeLists.txt:1280,1543748400:570,1543752000:630,1543762800:80,r
+build/Starboard/lib/Debug/StarboardLib.tlog/CL.command.1.tlog:870,1543748400:180,1543752000:330,1543755600:360,r
+build/Starboard/lib/Debug/StarboardLib.tlog/CL.read.1.tlog:180,1543752000:180,r
+Frameworks/include/WRLHelpers.h:180,1543748400:120,1543752000:60,r
+build/Starboard/lib/StarboardLib.vcxproj:150,1543748400:150,r
+tools/Logging/CMakeLists.txt:100,1543762800:100,m
+tools/WOCStdLib/CMakeLists.txt:60,1543762800:60,r
+tools/AppInsights/CMakeLists.txt:30,1543762800:30,m
+CMakeLists.txt:20,1543762800:20,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:10,1543762800:10,r
