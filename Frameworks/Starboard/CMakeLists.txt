@@ -27,18 +27,24 @@ else (CL_COMPILER)
     add_prep_dep (Starboard)
 endif (CL_COMPILER)
 
-if (NOT CL_COMPILER)
+target_link_libraries (Starboard PUBLIC
+    WindowsApp.lib
+    msvcrtd.lib
+    pthread)
+if (CL_COMPILER)
     target_link_libraries (Starboard PUBLIC
-        WindowsApp.lib
-        msvcrtd.lib
+        WOCStdLib
+        Logging)
+else (CL_COMPILER)
+    target_link_libraries (Starboard PUBLIC
         woc-WOCStdLib
         woc-Logging
         woc-Starboard
-        pthread
-        PRIVATE -Wl,/force:multiple,/debug,/nodefaultlib:libcmt
+        PRIVATE
+        -Wl,/force:multiple,/debug,/nodefaultlib:libcmt
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Starboard/dll/\
 Starboard.def")
-endif (NOT CL_COMPILER)
+endif (CL_COMPILER)
 
 target_include_directories (Starboard PUBLIC
     ../../include
@@ -47,11 +53,7 @@ target_include_directories (Starboard PUBLIC
     # TODO: Where do these come from?
     ../../include/xplat
     ../../tools/include/xplat
-    ../../tools/deps/prebuilt/include # Currently only for `dispatch`.
-    # Logging include directories. See `tools/Logging/CMakeLists.txt`.
-    ../../tools/Logging/include
-    ../../tools/Logging/include/wil
-    ../../tools/include/WOCStdLib)
+    ../../tools/deps/prebuilt/include) # Currently only for `dispatch`
 
 target_compile_definitions (Starboard PUBLIC
     # These come from `clang.command.1.tlog` (i.e., file generated when building
