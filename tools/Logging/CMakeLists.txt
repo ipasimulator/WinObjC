@@ -17,4 +17,4 @@ target_include_directories (Logging PUBLIC
 target_link_libraries (Logging PUBLIC AppInsights
     PRIVATE "-def:${CMAKE_CURRENT_SOURCE_DIR}/dll/Logging.def")
 
-target_compile_options (Logging PUBLIC /ZW)
+target_compile_options (Logging PRIVATE /ZW)

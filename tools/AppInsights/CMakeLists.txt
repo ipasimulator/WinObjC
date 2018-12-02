@@ -55,7 +55,8 @@ target_compile_definitions (AppInsights PRIVATE
     PUBLIC _UNICODE UNICODE)
 
 # TODO: Share also some of these (e.g., the `wchar_t` one).
-target_compile_options (AppInsights PUBLIC /wd4251 /Zc:wchar_t /ZW)
+target_compile_options (AppInsights PUBLIC /wd4251 /Zc:wchar_t
+    PRIVATE /ZW)
 
 target_link_libraries (AppInsights
     # TODO: This doesn't actually seem to be linked by any relevant `.vcxproj`,
