@@ -16,6 +16,7 @@ target_include_directories (CoreFoundationAdditions PUBLIC
     ../../include/xplat
     ../../tools/include/xplat
     # From `CoreFoundationAdditionsLib.vcxproj`.
+    ../../deps/prebuilt/include/icu
     ../CoreFoundation/Base.subproj
     # TODO: Where does this come from?
     ../../tools/include
