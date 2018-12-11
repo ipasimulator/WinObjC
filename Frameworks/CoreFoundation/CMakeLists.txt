@@ -1,5 +1,6 @@
 if (NOT CL_COMPILER)
     set (SOURCE_FILES
+        # From `CoreFoundationLib.vcxproj`.
         Base.subproj/CFBase.c
         Base.subproj/CFFileUtilities.c
         Base.subproj/CFPlatform.c
@@ -118,8 +119,9 @@ if (NOT CL_COMPILER)
     target_compile_options (CoreFoundation PRIVATE
         ${WINOBJC_CLANG_OPTIONS}
         # From `CoreFoundationLib.vcxproj`.
-        # TODO: Do better than this (at least list full path).
-        -includeCoreFoundation_Prefix.h # For `<PrefixHeader>`.
+        # For `<PrefixHeader>`.
+        "-include\
+${CMAKE_CURRENT_SOURCE_DIR}/Base.subproj/CoreFoundation_Prefix.h"
         -xobjective-c++ # For `<CompileAs>CompileAsObjCpp</CompileAs>`.
         # Warnings
         -Wno-error -Werror=incomplete-implementation
