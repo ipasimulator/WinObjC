@@ -1,0 +1,5 @@
+[ver:1,total:1320]
+Frameworks/CoreFoundation/CMakeLists.txt:1174,1544562000:420,1544565600:754,m
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:60,1544565600:60,r
+Frameworks/CoreFoundationAdditions/CMakeLists.txt:60,1544562000:60,r
+build/CoreFoundation/lib/CoreFoundationLib.vcxproj:26,1544565600:26,r
