@@ -24,4 +24,4 @@ target_link_libraries (Logging PRIVATE
 
 set_source_files_properties (dll/Telemetry.cpp PROPERTIES
     # From `Logging.vcxproj`.
-    COMPILE_OPTIONS "/ZW") # For `<CompileAsWinRT>`.
+    COMPILE_OPTIONS "${COMPILE_AS_WINRT}")

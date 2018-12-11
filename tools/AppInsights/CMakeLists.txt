@@ -61,10 +61,9 @@ target_compile_definitions (AppInsights PRIVATE
 target_compile_options (AppInsights PRIVATE
     # From `AppInsights_Win10-UAP.vcxproj`.
     /wd4251 # For `<DisableSpecificWarnings>`.
+    ${COMPILE_AS_WINRT}
     # TODO: Share this (unicode).
-    /Zc:wchar_t
-    # TODO: Share this (compile as winrt).
-    /ZW) # For `<CompileAsWinRT>true</CompileAsWinRT>`.
+    /Zc:wchar_t)
 
 target_link_libraries (AppInsights
     # TODO: This doesn't actually seem to be linked by any relevant `.vcxproj`,
