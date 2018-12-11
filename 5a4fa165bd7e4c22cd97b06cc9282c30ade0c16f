@@ -1,0 +1,9 @@
+[ver:1,total:1020]
+Frameworks/CoreFoundation/CMakeLists.txt:497,1544562000:497,m
+Frameworks/Starboard/CMakeLists.txt:222,1544551200:180,1544562000:42,r
+build/CoreFoundation/dll/CoreFoundation.vcxproj:98,1544562000:98,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:80,1544562000:80,r
+build/CoreFoundation/lib/CoreFoundationLib.vcxproj:66,1544562000:66,r
+Frameworks/CoreFoundationAdditions/CMakeLists.txt:27,1544562000:27,r
+msvc/sdk-build.props:15,1544562000:15,r
+msvc/sdk-build.targets:15,1544562000:15,r
