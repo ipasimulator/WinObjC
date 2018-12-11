@@ -1,0 +1,15 @@
+[ver:1,total:3900]
+Frameworks/CoreFoundation/CMakeLists.txt:1198,1544540400:505,1544544000:693,m
+CMakeLists.txt:894,1544540400:408,1544544000:486,r
+build/CoreFoundation/lib/CoreFoundationLib.vcxproj:604,1544540400:365,1544544000:239,r
+build/CoreFoundation/lib/Debug/CoreFoun.DC123A21.tlog/clang.command.1.tlog:452,1544540400:132,1544544000:320,r
+Frameworks/CoreFoundationAdditions/CMakeLists.txt:395,1544540400:385,1544544000:10,r
+build/CoreFoundation/dll/CoreFoundation.vcxproj:112,1544540400:80,1544544000:32,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:60,1544544000:60,r
+Frameworks/CMakeLists.txt:50,1544540400:30,1544544000:20,m
+common/winobjc.packagereference.override.targets:30,1544540400:30,r
+include/CoreFoundation/CFXMLNode.h:30,1544540400:30,r
+msvc/sdk-build.targets:30,1544540400:30,r
+msvc/package-build.props:15,1544540400:15,r
+Frameworks/CoreFoundation/linux.ld:15,1544540400:15,r
+Frameworks/CoreFoundation/Info.plist:15,1544540400:15,r
