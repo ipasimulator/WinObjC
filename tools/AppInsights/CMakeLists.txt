@@ -1,4 +1,5 @@
 set (SOURCE_FILES
+    # From `AppInsights_Win10-UAP.vcxproj`.
     src/core/BaseTelemetryContext.cpp
     src/core/channel/TelemetryChannel.cpp
     src/core/channel/utils/HttpHeaderField.cpp
@@ -41,22 +42,29 @@ set (SOURCE_FILES
     src/core/TelemetryContextOther.cpp
     src/core/TelemetryContextWin32.cpp
     src/core/TelemetryContextWinStore.cpp
+    # From `ApplicationInsights.vcxproj`.
     Projects/AppInsights_Win10-UAP/ApplicationInsights/SessionTracking.cpp
     Projects/AppInsights_Win10-UAP/ApplicationInsights/PageTracking.cpp
     Projects/AppInsights_Win10-UAP/ApplicationInsights/TelemetryClient.cpp)
 
 add_library (AppInsights STATIC ${SOURCE_FILES})
-
 add_prep_dep (AppInsights)
 
 target_compile_definitions (AppInsights PRIVATE
-    TELEMETRY_CLIENT_DLL_EXPORT _WINRT_DLL
-    # TODO: Share these.
-    PUBLIC _UNICODE UNICODE)
+    # From `AppInsights_Win10-UAP.vcxproj`.
+    TELEMETRY_CLIENT_DLL_EXPORT
+    # From `ApplicationInsights.vcxproj`.
+    _WINRT_DLL
+    # TODO: Share these (unicode).
+    _UNICODE UNICODE)
 
-# TODO: Share also some of these (e.g., the `wchar_t` one).
-target_compile_options (AppInsights PUBLIC /wd4251 /Zc:wchar_t
-    PRIVATE /ZW)
+target_compile_options (AppInsights PRIVATE
+    # From `AppInsights_Win10-UAP.vcxproj`.
+    /wd4251 # For `<DisableSpecificWarnings>`.
+    # TODO: Share this (unicode).
+    /Zc:wchar_t
+    # TODO: Share this (compile as winrt).
+    /ZW) # For `<CompileAsWinRT>true</CompileAsWinRT>`.
 
 target_link_libraries (AppInsights
     # TODO: This doesn't actually seem to be linked by any relevant `.vcxproj`,
@@ -64,5 +72,7 @@ target_link_libraries (AppInsights
     winhttp.lib
     WindowsApp.lib)
 
-target_include_directories (AppInsights PUBLIC
+target_include_directories (AppInsights PRIVATE
+    # From `ApplicationInsights.vcxproj`.
+    # For `<ProjectReference>`.
     Projects/AppInsights_Win10-UAP/ApplicationInsights)
