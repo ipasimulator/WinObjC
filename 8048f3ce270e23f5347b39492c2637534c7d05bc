@@ -1,0 +1,8 @@
+[ver:1,total:840]
+Frameworks/CoreFoundation/CMakeLists.txt:575,1544544000:575,m
+build/CoreFoundation/lib/CoreFoundationLib.vcxproj:100,1544544000:100,r
+build/CoreFoundation/lib/Debug/CoreFoun.DC123A21.tlog/clang.command.1.tlog:70,1544544000:70,r
+tools/WinObjC.Language/assets/Islandwood.props:30,1544544000:30,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:30,1544544000:30,r
+Frameworks/CoreFoundationAdditions/CMakeLists.txt:20,1544544000:20,r
+build/CoreFoundation/dll/CoreFoundation.vcxproj:15,1544544000:15,r
