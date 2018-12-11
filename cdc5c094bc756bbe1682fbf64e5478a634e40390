@@ -1,0 +1,12 @@
+[ver:1,total:1382]
+tools/AppInsights/CMakeLists.txt:722,1544565600:722,m
+tools/AppInsights/Projects/AppInsights_Win10-UAP/ApplicationInsights/ApplicationInsights.vcxproj:156,1544565600:156,r
+tools/AppInsights/Projects/AppInsights_Win10-UAP/AppInsights_Win10-UAP/AppInsights_Win10-UAP.vcxproj:144,1544565600:144,r
+tools/Logging/lib/LoggingLib.vcxproj:91,1544565600:91,r
+Frameworks/CoreFoundation/CMakeLists.txt:60,1544565600:60,r
+tools/Logging/dll/Logging.vcxproj:58,1544565600:58,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:45,1544565600:45,r
+tools/Logging/dll/Debug/Logging.tlog/CL.command.1.tlog:40,1544565600:40,r
+tools/common/common-build.props:38,1544565600:38,r
+Frameworks/CoreFoundationAdditions/CMakeLists.txt:20,1544565600:20,r
+tools/Logging/lib/Debug/LoggingLib.tlog/CL.command.1.tlog:8,1544565600:8,r
