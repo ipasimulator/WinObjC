@@ -1,0 +1,10 @@
+[ver:1,total:840]
+tools/Logging/CMakeLists.txt:255,1544565600:30,1544569200:225,m
+tools/AppInsights/CMakeLists.txt:155,1544565600:60,1544569200:95,m
+tools/CMakeLists.txt:150,1544565600:150,r
+Frameworks/CoreFoundationAdditions/CMakeLists.txt:95,1544565600:75,1544569200:20,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:60,1544569200:60,r
+CMakeLists.txt:50,1544569200:50,r
+Frameworks/CoreFoundation/CMakeLists.txt:30,1544565600:30,r
+tools/WOCStdLib/CMakeLists.txt:30,1544569200:30,r
+tools/Logging/lib/Debug/LoggingLib.tlog/CL.command.1.tlog:15,1544565600:15,r
