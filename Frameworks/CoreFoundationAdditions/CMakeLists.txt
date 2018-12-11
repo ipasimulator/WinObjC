@@ -40,5 +40,14 @@ target_compile_definitions (CoreFoundationAdditions
         INCLUDE_OBJC=1
         DEPLOYMENT_TARGET_WINDOWS=1
         HAVE_STRUCT_TIMESPEC=1
+        STARBOARD_PORT=1
+        TARGET_OS_WIN32=1
+        HAVE_MACH_ABSOLUTE_TIME=1
+        INCLUDE_OBJC=1
+        UNICODE
+        DISPATCH_NO_LEGACY=1
+        __XSI_VISIBLE=500
+        TARGET_IPHONE_SIMULATOR=0
+        __CONSTANT_CFSTRINGS__=1
         # TODO: Share with `Starboard/CMakeLists.txt`.
         DISABLE_WINRT_DEPRECATION)
