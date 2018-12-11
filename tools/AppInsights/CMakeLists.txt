@@ -72,7 +72,7 @@ target_link_libraries (AppInsights
     winhttp.lib
     WindowsApp.lib)
 
-target_include_directories (AppInsights PRIVATE
+target_include_directories (AppInsights PUBLIC
     # From `ApplicationInsights.vcxproj`.
     # For `<ProjectReference>`.
     Projects/AppInsights_Win10-UAP/ApplicationInsights)
