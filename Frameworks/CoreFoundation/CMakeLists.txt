@@ -118,14 +118,21 @@ if (NOT CL_COMPILER)
     target_compile_options (CoreFoundation PRIVATE
         ${WINOBJC_CLANG_OPTIONS}
         # From `CoreFoundationLib.vcxproj`.
-        # For `<PrefixHeader>`.
         # TODO: Do better than this (at least list full path).
-        -includeCoreFoundation_Prefix.h
-        # For `<CompileAs>CompileAsObjCpp</CompileAs>`.
-        -xobjective-c++
+        -includeCoreFoundation_Prefix.h # For `<PrefixHeader>`.
+        -xobjective-c++ # For `<CompileAs>CompileAsObjCpp</CompileAs>`.
         # Warnings
         -Wno-error -Werror=incomplete-implementation
         -Werror=objc-protocol-property-synthesis -Werror=protocol
         -Wno-duplicate-decl-specifier -Wno-nonnull -Wno-receiver-expr
         -Wno-msvc-include -Wno-deprecated-declarations -Wno-switch)
+
+    target_link_libraries (CoreFoundation PRIVATE
+        # From `CoreFoundation.vcxproj`.
+        "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/CoreFoundation/dll/\
+CoreFoundation.def" # For `<ModuleDefinitionFile>`.
+        # TODO: Doesn't even compile when this is included.
+        #CoreFoundationAdditionsLib # For `<ProjectReference>`.
+        # Probably from WinObjC NuGet packages originally.
+        woc-Logging)
 endif (NOT CL_COMPILER)
