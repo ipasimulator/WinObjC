@@ -1,0 +1,5 @@
+[ver:1,total:480]
+Frameworks/Starboard/CMakeLists.txt:180,1544536800:180,r
+Frameworks/CoreFoundationAdditions/CMakeLists.txt:160,1544536800:60,1544540400:100,m
+build/CoreFoundationAdditions/lib/CoreFoundationAdditionsLib.vcxproj:120,1544540400:120,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:20,1544540400:20,r
