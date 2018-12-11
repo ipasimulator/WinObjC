@@ -115,7 +115,11 @@ if (NOT CL_COMPILER)
         WIL_IGNORE_OBJC_EXCEPTIONS)
 
     target_compile_options (CoreFoundation PRIVATE
+        ${WINOBJC_CLANG_OPTIONS}
         # From `CoreFoundationLib.vcxproj`.
+        # For `<PrefixHeader>`.
         # TODO: Do better than this (at least list full path).
-        -includeCoreFoundation_Prefix.h)
+        -includeCoreFoundation_Prefix.h
+        # For `<CompileAs>CompileAsObjCpp</CompileAs>`.
+        -xobjective-c++)
 endif (NOT CL_COMPILER)
