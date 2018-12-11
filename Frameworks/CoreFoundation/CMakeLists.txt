@@ -80,7 +80,7 @@ if (NOT CL_COMPILER)
     add_library (CoreFoundation SHARED ${SOURCE_FILES})
     add_prep_dep (CoreFoundation)
 
-    target_include_directories (CoreFoundation PUBLIC
+    target_include_directories (CoreFoundation PRIVATE
         ${WINOBJC_INCLUDE_DIRS}
         # From `CoreFoundationLib.vcxproj` (minus those from above).
         ../include
@@ -101,6 +101,7 @@ if (NOT CL_COMPILER)
         URL.SubProj)
 
     target_compile_definitions (CoreFoundation PRIVATE
+        ${WINOBJC_DEFS}
         # From `CoreFoundationLib.vcxproj`.
         CF_BUILDING_CF=1
         TARGET_OS_WIN32=1
@@ -121,5 +122,10 @@ if (NOT CL_COMPILER)
         # TODO: Do better than this (at least list full path).
         -includeCoreFoundation_Prefix.h
         # For `<CompileAs>CompileAsObjCpp</CompileAs>`.
-        -xobjective-c++)
+        -xobjective-c++
+        # Warnings
+        -Wno-error -Werror=incomplete-implementation
+        -Werror=objc-protocol-property-synthesis -Werror=protocol
+        -Wno-duplicate-decl-specifier -Wno-nonnull -Wno-receiver-expr
+        -Wno-msvc-include -Wno-deprecated-declarations -Wno-switch)
 endif (NOT CL_COMPILER)

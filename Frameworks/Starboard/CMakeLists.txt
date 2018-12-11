@@ -70,9 +70,7 @@ target_compile_definitions (Starboard PUBLIC
     _DEBUG
     _MT
     _DLL
-    # Without this, there is an error in header `Windows.UI.Notifications.h`.
-    # TODO: Don't define this, rather use older SDK (e.g., the one we used when
-    # we successfully built WinObjC using MSBuild, i.e., 10.0.14393.0).
+    # TODO: Use this from `CommonVariables.cmake`.
     DISABLE_WINRT_DEPRECATION)
 
 if (NOT CL_COMPILER)
