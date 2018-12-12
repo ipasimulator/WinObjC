@@ -10,11 +10,13 @@ set (SOURCE_FILES
 add_library (Logging SHARED ${SOURCE_FILES})
 add_prep_dep (Logging)
 
-target_include_directories (Logging PRIVATE
+target_include_directories (Logging
     # From `LoggingLib.vcxproj`.
-    ../include/WOCStdLib
-    ../include
-    include)
+    PRIVATE
+        ../include/WOCStdLib
+        ../include
+    PUBLIC
+        include)
 
 target_link_libraries (Logging PRIVATE
     # From `Logging.vcxproj`.

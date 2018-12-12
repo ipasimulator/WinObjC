@@ -65,7 +65,7 @@ target_compile_options (AppInsights PRIVATE
     # TODO: Share this (unicode).
     /Zc:wchar_t)
 
-target_link_libraries (AppInsights
+target_link_libraries (AppInsights PRIVATE
     # TODO: This doesn't actually seem to be linked by any relevant `.vcxproj`,
     # but linking fails without it. Why?
     winhttp.lib

@@ -1,30 +1,36 @@
 set (SOURCE_FILES
-    UTSName.cpp
-    mach.cpp
-    String.cpp
-    TaskInfo.cpp
-    unistd.cpp
-    sched.cpp
-    sysctl.cpp
-    version.cpp
-    dlfcn.cpp
-    OSMisc.cpp
-    OSEndian.cpp
-    inet.cpp
-    random.cpp
-    time.cpp
-    OSSpinLock.cpp)
-list (TRANSFORM SOURCE_FILES PREPEND lib/)
+    # From `WOCStdLibLib.vcxproj`.
+    lib/UTSName.cpp
+    lib/mach.cpp
+    lib/String.cpp
+    lib/TaskInfo.cpp
+    lib/unistd.cpp
+    lib/sched.cpp
+    lib/sysctl.cpp
+    lib/version.cpp
+    lib/dlfcn.cpp
+    lib/OSMisc.cpp
+    lib/OSEndian.cpp
+    lib/inet.cpp
+    lib/random.cpp
+    lib/time.cpp
+    lib/OSSpinLock.cpp)
 
 add_library (WOCStdLib SHARED ${SOURCE_FILES})
-
 add_prep_dep (WOCStdLib)
 
-target_include_directories (WOCStdLib PUBLIC
+target_include_directories (WOCStdLib PRIVATE
+    # From `WOCStdLibLib.vcxproj`.
     ../include/WOCStdLib
     ../include)
 
-target_link_libraries (WOCStdLib PUBLIC Logging WindowsApp.lib
-    PRIVATE "-def:${CMAKE_CURRENT_SOURCE_DIR}/dll/WOCStdLib.def")
+target_link_libraries (WOCStdLib PRIVATE
+    # From `WOCStdLib.vcxproj`.
+    Logging
+    "-def:${CMAKE_CURRENT_SOURCE_DIR}/dll/WOCStdLib.def"
+    # TODO: What's the source of this?
+    WindowsApp.lib)
 
-target_compile_definitions (WOCStdLib PUBLIC WINAPI_FAMILY=WINAPI_FAMILY_APP)
+target_compile_definitions (WOCStdLib PRIVATE
+    # TODO: What's the source of this?
+    WINAPI_FAMILY=WINAPI_FAMILY_APP)
