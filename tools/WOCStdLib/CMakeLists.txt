@@ -25,12 +25,10 @@ target_include_directories (WOCStdLib PRIVATE
     ../include)
 
 target_link_libraries (WOCStdLib PRIVATE
+    ${WINOBJC_LIBS}
     # From `WOCStdLib.vcxproj`.
     Logging
-    "-def:${CMAKE_CURRENT_SOURCE_DIR}/dll/WOCStdLib.def"
-    # TODO: What's the source of this?
-    WindowsApp.lib)
+    "-def:${CMAKE_CURRENT_SOURCE_DIR}/dll/WOCStdLib.def")
 
 target_compile_definitions (WOCStdLib PRIVATE
-    # TODO: What's the source of this?
-    WINAPI_FAMILY=WINAPI_FAMILY_APP)
+    ${WINOBJC_DEFS})
