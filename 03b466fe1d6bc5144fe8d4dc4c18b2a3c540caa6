@@ -1,0 +1,8 @@
+[ver:1,total:1260]
+tools/WOCStdLib/CMakeLists.txt:535,1544605200:193,1544648400:342,m
+tools/AppInsights/CMakeLists.txt:313,1544569200:240,1544605200:31,1544648400:42,m
+tools/WOCStdLib/lib/WOCStdLibLib.vcxproj:241,1544605200:241,r
+tools/Logging/CMakeLists.txt:87,1544605200:51,1544648400:36,m
+tools/WOCStdLib/dll/WOCStdLib.vcxproj:60,1544605200:60,r
+CMakeLists.txt:12,1544605200:12,r
+tools/CMakeLists.txt:12,1544605200:12,r
