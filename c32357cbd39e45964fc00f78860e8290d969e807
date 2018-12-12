@@ -1,0 +1,8 @@
+[ver:1,total:660]
+tools/WOCStdLib/CMakeLists.txt:235,1544648400:235,m
+tools/WOCStdLib/dll/WOCStdLib.vcxproj:155,1544648400:155,r
+msvc/sdk-build.props:125,1544648400:125,r
+tools/WinObjC.Language/assets/Islandwood.props:70,1544648400:70,r
+tools/WOCStdLib/lib/WOCStdLibLib.vcxproj:35,1544648400:35,r
+Frameworks/CoreFoundation/CMakeLists.txt:20,1544648400:20,r
+build/CoreFoundation/dll/CoreFoundation.vcxproj:20,1544648400:20,r
