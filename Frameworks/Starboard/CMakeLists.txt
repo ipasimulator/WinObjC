@@ -1,11 +1,13 @@
 if (CL_COMPILER)
     set (SOURCE_FILES
+        # From `StarboardLib.vcxproj`.
         RawBuffer.cpp
         EbrStorageFile.cpp
         PathMapper.cpp
         AssetFile.cpp)
 else (CL_COMPILER)
     set (SOURCE_FILES
+        # From `StarboardLib.vcxproj`.
         #pthread.cpp # We use win-pthreads instead.
         CommonDigest.cpp
         CommonHMAC.cpp
@@ -27,56 +29,52 @@ else (CL_COMPILER)
     add_prep_dep (Starboard)
 endif (CL_COMPILER)
 
-target_link_libraries (Starboard PUBLIC
-    WindowsApp.lib
-    msvcrtd.lib
+target_link_libraries (Starboard PRIVATE
+    ${WINOBJC_LIBS}
     pthread)
 if (CL_COMPILER)
-    target_link_libraries (Starboard PUBLIC
+    target_link_libraries (Starboard PRIVATE
+        # From `sdk-build.props`.
+        # TODO: Share those.
         WOCStdLib
         Logging)
 else (CL_COMPILER)
-    target_link_libraries (Starboard PUBLIC
+    target_link_libraries (Starboard PRIVATE
         woc-WOCStdLib
         woc-Logging
         woc-Starboard
-        PRIVATE
-        -Wl,/force:multiple,/debug,/nodefaultlib:libcmt
+        # From `sdk-build.props`.
+        -Wl,/force:multiple
+        # TODO: Where does this come from?
+        -Wl,/nodefaultlib:libcmt
+        # From `Starboard.vcxproj`.
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Starboard/dll/\
 Starboard.def")
 endif (CL_COMPILER)
 
-target_include_directories (Starboard PUBLIC
-    ../../include
-    ../include
-    ../include/xplat
-    # TODO: Where do these come from?
-    ../../include/xplat
-    ../../tools/include/xplat
-    ../../tools/deps/prebuilt/include) # Currently only for `dispatch`
+target_include_directories (Starboard PRIVATE
+    ${WINOBJC_INCLUDE_DIRS}
+    # From `StarboardLib.vcxproj`.
+    ../include)
 
-target_compile_definitions (Starboard PUBLIC
-    # These come from `clang.command.1.tlog` (i.e., file generated when building
-    # WinObjC using MSBuild).
-    WINAPI_FAMILY=WINAPI_FAMILY_APP
-    _WINSOCK_DEPRECATED_NO_WARNINGS
-    STARBOARD_PORT=1
-    __WRL_NO_DEFAULT_LIB__
-    WINOBJC
-    _HAS_EXCEPTIONS=0
+target_compile_definitions (Starboard PRIVATE
+    ${WINOBJC_DEFS}
     OBJC_PORT
+    # From `StarboardLib.vcxproj`.
+    STARBOARD_PORT=1
     SB_IMPEXP=
+    # From `Islandwood.vcxproj`.
+    _WINSOCK_DEPRECATED_NO_WARNINGS
     # TODO: Include these conditionally (on CMAKE_BUILD_TYPE) and everywhere.
     _DEBUG
     _MT
-    _DLL
-    # TODO: Use this from `CommonVariables.cmake`.
-    DISABLE_WINRT_DEPRECATION)
+    _DLL)
 
 if (NOT CL_COMPILER)
-    target_compile_options (Starboard PUBLIC
-        -fobjc-runtime=ios-11
+    target_compile_options (Starboard PRIVATE
+        ${WINOBJC_CLANG_OPTIONS}
         # Warnings
+        # TODO: Where do these come from?
         -Wno-c++17-extensions -Wno-nullability-completeness
         -Wno-unused-command-line-argument -Wno-c++17-compat-mangling
         -Wno-microsoft)
