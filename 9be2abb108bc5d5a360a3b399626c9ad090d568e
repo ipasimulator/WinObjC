@@ -1,0 +1,11 @@
+[ver:1,total:2400]
+Frameworks/Starboard/CMakeLists.txt:1264,1544652000:1264,m
+build/Starboard/lib/StarboardLib.vcxproj:417,1544652000:417,r
+tools/WOCStdLib/CMakeLists.txt:264,1544648400:180,1544652000:84,r
+build/Starboard/dll/Starboard.vcxproj:146,1544652000:146,r
+tools/WinObjC.Language/assets/Islandwood.props:136,1544652000:136,r
+msvc/sdk-build.props:125,1544652000:125,r
+build/Starboard/dll/Debug/Starboard.tlog/link-proxy.command.1.tlog:12,1544652000:12,r
+Frameworks/CMakeLists.txt:12,1544652000:12,r
+CMakeLists.txt:12,1544652000:12,r
+tools/CMakeLists.txt:12,1544652000:12,r
