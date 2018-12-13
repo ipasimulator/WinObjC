@@ -43,5 +43,8 @@ if (NOT CL_COMPILER)
         DISPATCH_NO_LEGACY=1
         __XSI_VISIBLE=500
         TARGET_IPHONE_SIMULATOR=0
-        __CONSTANT_CFSTRINGS__=1)
+        __CONSTANT_CFSTRINGS__=1
+        FOUNDATION_IMPEXP=
+        COREFOUNDATION_IMPEXP=
+        "OBJC_HOOK=extern __declspec(dllimport)")
 endif (NOT CL_COMPILER)
