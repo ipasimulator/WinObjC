@@ -1,42 +1,36 @@
-set (SOURCE_FILES
-    _NSCFNumber.mm
-    _NSCFTemporaryRootObject.mm
-    _NSCFString.mm
-    _NSCFType.mm
-    _CFLocaleInternal.mm
-    CFStringTokenizer.mm)
+if (NOT CL_COMPILER)
+    set (SOURCE_FILES
+        # From `CoreFoundationAdditionsLib.vcxproj`.
+        _NSCFNumber.mm
+        _NSCFTemporaryRootObject.mm
+        _NSCFString.mm
+        _NSCFType.mm
+        _CFLocaleInternal.mm
+        CFStringTokenizer.mm)
 
-add_library (CoreFoundationAdditions STATIC ${SOURCE_FILES})
-add_prep_dep (CoreFoundationAdditions)
+    add_library (CoreFoundationAdditions STATIC ${SOURCE_FILES})
+    add_prep_dep (CoreFoundationAdditions)
 
-target_include_directories (CoreFoundationAdditions PUBLIC
-    ../../include
-    ../include
-    ../include/xplat
-    ../../include/xplat
-    ../../tools/include/xplat
-    # From `CoreFoundationAdditionsLib.vcxproj`.
-    ../../deps/prebuilt/include/icu
-    ../CoreFoundation/Base.subproj
-    # TODO: Where does this come from?
-    ../../tools/include
-    ../../tools/deps/prebuilt/include) # Currently only for `dispatch`
+    target_include_directories (CoreFoundationAdditions PRIVATE
+        ${WINOBJC_INCLUDE_DIRS}
+        # From `CoreFoundationAdditionsLib.vcxproj`.
+        # TODO: Share these among Frameworks.
+        ../include
+        ../CoreFoundation/Base.subproj)
 
-target_link_libraries (CoreFoundationAdditions PUBLIC
-    woc-Logging)
+    target_link_libraries (CoreFoundationAdditions PRIVATE
+        woc-Logging)
 
-target_compile_options (CoreFoundationAdditions PUBLIC
-    -fblocks
-    -includeStubIncludes.h
-    -includeWOCStdLib.h
-    -includeCoreFoundation_Prefix.h
-    # Warnings
-    -Wno-nullability-completeness)
+    target_compile_options (CoreFoundationAdditions PRIVATE
+        ${WINOBJC_CLANG_OPTIONS}
+        # From `CoreFoundationAdditionsLib.vcxproj`.
+        "-include${CMAKE_CURRENT_SOURCE_DIR}/..\
+/CoreFoundation/Base.subproj/CoreFoundation_Prefix.h") # For `<PrefixHeader>`.
 
-target_compile_definitions (CoreFoundationAdditions
-    PRIVATE
+    target_compile_definitions (CoreFoundationAdditions PRIVATE
+        ${WINOBJC_DEFS}
+        # From `CoreFoundationAdditionsLib.vcxproj`.
         CF_BUILDING_CF=1
-    PUBLIC
         NO_STUBS
         INCLUDE_OBJC=1
         DEPLOYMENT_TARGET_WINDOWS=1
@@ -49,6 +43,5 @@ target_compile_definitions (CoreFoundationAdditions
         DISPATCH_NO_LEGACY=1
         __XSI_VISIBLE=500
         TARGET_IPHONE_SIMULATOR=0
-        __CONSTANT_CFSTRINGS__=1
-        # TODO: Share with `Starboard/CMakeLists.txt`.
-        DISABLE_WINRT_DEPRECATION)
+        __CONSTANT_CFSTRINGS__=1)
+endif (NOT CL_COMPILER)
