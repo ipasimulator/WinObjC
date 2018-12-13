@@ -1,0 +1,17 @@
+[ver:1,total:2100]
+Frameworks/CoreFoundation/CMakeLists.txt:732,1544706000:672,1544709600:60,r
+build/CoreFoundationAdditions/lib/CoreFoundationAdditionsLib.vcxproj:457,1544706000:277,1544709600:180,r
+Frameworks/CoreFoundationAdditions/CMakeLists.txt:325,1544706000:91,1544709600:234,m
+Frameworks/CoreFoundationAdditions/_NSCFString.mm:220,1544706000:220,r
+Frameworks/CoreFoundationAdditions/_NSCFString.h:70,1544706000:70,r
+msvc/sdk-build.props:51,1544706000:51,r
+tools/WinObjC.Language/assets/Islandwood.props:37,1544706000:37,r
+include/Foundation/FoundationExport.h:37,1544706000:7,1544709600:30,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:36,1544709600:36,r
+build/CoreFoundation/dll/CoreFoundation.vcxproj:30,1544706000:30,r
+Frameworks/Starboard/CMakeLists.txt:30,1544706000:30,r
+build/CoreFoundation/lib/CoreFoundationLib.vcxproj:20,1544706000:20,r
+tools/WinObjC.Language/assets/Islandwood.targets:19,1544706000:19,r
+tools/Logging/CMakeLists.txt:12,1544706000:12,r
+include/Foundation/NSValueTransformer.h:12,1544706000:12,r
+tools/AppInsights/CMakeLists.txt:12,1544706000:12,r
