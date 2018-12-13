@@ -130,11 +130,18 @@ ${CMAKE_CURRENT_SOURCE_DIR}/Base.subproj/CoreFoundation_Prefix.h"
         -Wno-msvc-include -Wno-deprecated-declarations -Wno-switch)
 
     target_link_libraries (CoreFoundation PRIVATE
+        ${WINOBJC_LIBS}
+        # From `sdk-build.props`.
+        -Wl,/force:multiple
         # From `CoreFoundation.vcxproj`.
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/CoreFoundation/dll/\
 CoreFoundation.def" # For `<ModuleDefinitionFile>`.
-        # TODO: Doesn't even compile when this is included.
-        #CoreFoundationAdditionsLib # For `<ProjectReference>`.
-        # Probably from WinObjC NuGet packages originally.
-        woc-Logging)
+        CoreFoundationAdditions # For `<ProjectReference>`.
+        # Probably from WinObjC NuGet packages originally (specified in
+        # `sdk-build.props`).
+        woc-Logging
+        pthread
+        # TODO: Headers from `libobjc` are actually mostly duplicates of those
+        # from WOCStdLib. We should use the `libobjc` ones.
+        objc)
 endif (NOT CL_COMPILER)
