@@ -1,0 +1,12 @@
+[ver:1,total:540]
+tools/WinObjCRT/CMakeLists.txt:241,1545134400:241,m
+tools/WinObjCRT/dll/WinObjCRT.vcxproj:141,1545134400:141,r
+tools/CMakeLists.txt:44,1545134400:44,m
+tools/WOCStdLib/CMakeLists.txt:25,1545134400:25,r
+tools/common/tools-build.props:20,1545134400:20,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:20,1545134400:20,r
+tools/common/common-build.props:20,1545134400:20,r
+tools/WinObjCRT/dll/WinObjCRT_Debug.def:10,1545134400:10,r
+tools/WinObjCRT/dll/dllmain.cpp:7,1545134400:7,r
+tools/WOCStdLib/dll/dllmain.cpp:7,1545134400:7,r
+tools/WinObjCRT/dll/WinObjCRT_Release.def:5,1545134400:5,r
