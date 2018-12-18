@@ -1,0 +1,11 @@
+[ver:1,total:1740]
+Frameworks/CoreFoundation/CMakeLists.txt:1327,1545134400:40,1545152400:657,1545156000:300,1545159600:330,m
+tools/WinObjCRT/CMakeLists.txt:140,1545134400:80,1545138000:60,r
+build/CoreFoundation/dll/Debug/CoreFoundation.tlog/link-proxy.command.1.tlog:90,1545152400:90,r
+build/CoreFoundation/lib/Debug/CoreFoun.DC123A21.tlog/clang.command.1.tlog:60,1545152400:60,r
+build/CoreFoundation/dll/CoreFoundation.vcxproj:30,1545152400:30,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:30,1545159600:30,r
+tools/WinObjC.Language/assets/Islandwood.props:24,1545152400:24,r
+tools/WinObjCRT/dll/WinObjCRT.vcxproj:15,1545152400:15,r
+msvc/sdk-build.props:12,1545152400:12,r
+tools/common/common-build.props:12,1545152400:12,r
