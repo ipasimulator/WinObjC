@@ -1,0 +1,12 @@
+[ver:1,total:840]
+build/CoreFoundation/dll/Debug/CoreFoundation.tlog/link-proxy.command.1.tlog:210,1545130800:210,r
+include/Foundation/FoundationExport.h:210,1544709600:180,1545130800:30,r
+Frameworks/CoreFoundation/CMakeLists.txt:202,1545130800:162,1545134400:40,m
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:80,1545134400:80,r
+build/CoreFoundation/lib/Debug/CoreFoun.DC123A21.tlog/clang.command.1.tlog:30,1545130800:30,r
+build/Starboard/dll/Debug/Starboard.tlog/link-proxy.command.1.tlog:30,1545130800:30,r
+build/CoreFoundation/dll/CoreFoundation.def:30,1545130800:30,r
+tools/Logging/CMakeLists.txt:12,1545130800:12,r
+Frameworks/Starboard/CMakeLists.txt:12,1545130800:12,r
+tools/AppInsights/CMakeLists.txt:12,1545130800:12,r
+tools/WOCStdLib/CMakeLists.txt:12,1545130800:12,r
