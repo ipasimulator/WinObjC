@@ -147,7 +147,7 @@ CoreFoundation.def" # For `<ModuleDefinitionFile>`.
         # TODO: Headers from `libobjc` are actually mostly duplicates of those
         # from WOCStdLib. We should use the `libobjc` ones.
         objc
-        # TODO: Add `WinObjCRT.lib`.
+        woc-WinObjCRT
         # These were copied from a `.tlog` file.
         # TODO: Share them or something.
         -Wl,/DISALLOWLIB:libucrt.lib,/DISALLOWLIB:libucrtd.lib
