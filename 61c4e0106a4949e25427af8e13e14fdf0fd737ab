@@ -1,0 +1,4 @@
+[ver:1,total:360]
+Frameworks/CoreFoundation/CMakeLists.txt:270,1545134400:270,m
+tools/WinObjCRT/CMakeLists.txt:75,1545134400:75,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:15,1545134400:15,r
