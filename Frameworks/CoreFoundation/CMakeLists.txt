@@ -140,6 +140,8 @@ CoreFoundation.def" # For `<ModuleDefinitionFile>`.
         # Probably from WinObjC NuGet packages originally (specified in
         # `sdk-build.props`).
         woc-Logging
+        woc-WOCStdLib
+        objc
         pthread
         # TODO: Headers from `libobjc` are actually mostly duplicates of those
         # from WOCStdLib. We should use the `libobjc` ones.
