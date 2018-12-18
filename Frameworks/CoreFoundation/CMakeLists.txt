@@ -137,6 +137,9 @@ ${CMAKE_CURRENT_SOURCE_DIR}/Base.subproj/CoreFoundation_Prefix.h"
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/CoreFoundation/dll/\
 CoreFoundation.def" # For `<ModuleDefinitionFile>`.
         CoreFoundationAdditions # For `<ProjectReference>`.
+        # For `<AdditionalDependencies>`.
+        mincore.lib icudt icuin icuuc
+        # TODO: Add `libxml2.lib`.
         # Probably from WinObjC NuGet packages originally (specified in
         # `sdk-build.props`).
         woc-Logging
@@ -152,5 +155,8 @@ CoreFoundation.def" # For `<ModuleDefinitionFile>`.
         # TODO: Share them or something.
         -Wl,/DISALLOWLIB:libucrt.lib,/DISALLOWLIB:libucrtd.lib
         -Wl,/nodefaultlib:ucrt,/nodefaultlib:ucrtd,/nodefaultlib:vccorlib
-        -Wl,/nodefaultlib:msvcrt,/nodefaultlib:vccorlibd,/nodefaultlib:msvcrtd)
+        -Wl,/nodefaultlib:msvcrt,/nodefaultlib:vccorlibd,/nodefaultlib:msvcrtd
+        # See also <https://docs.microsoft.com/en-us/cpp/c-runtime-library/
+        # crt-library-features?view=vs-2017>.
+        ucrtd.lib)
 endif (NOT CL_COMPILER)
