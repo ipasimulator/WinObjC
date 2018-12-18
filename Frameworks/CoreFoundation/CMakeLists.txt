@@ -143,6 +143,7 @@ CoreFoundation.def" # For `<ModuleDefinitionFile>`.
         woc-WOCStdLib
         objc
         pthread
+        dispatch
         # TODO: Headers from `libobjc` are actually mostly duplicates of those
         # from WOCStdLib. We should use the `libobjc` ones.
         objc)
