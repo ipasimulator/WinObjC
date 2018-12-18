@@ -1,0 +1,6 @@
+[ver:1,total:360]
+Frameworks/CoreFoundation/CMakeLists.txt:270,1545134400:270,m
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:30,1545134400:30,r
+deps/3rdparty/libdispatch/Makefile.am:30,1545134400:30,r
+deps/3rdparty/libdispatch/configure.ac:15,1545134400:15,r
+deps/3rdparty/libdispatch/dispatch/Makefile.am:15,1545134400:15,r
