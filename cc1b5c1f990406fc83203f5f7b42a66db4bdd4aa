@@ -1,0 +1,16 @@
+[ver:1,total:4140]
+Frameworks/CoreFoundation/CMakeLists.txt:2474,1545159600:1465,1545249600:420,1545256800:589,m
+build/CoreFoundation/dll/Debug/CoreFoundation.tlog/link-proxy.command.1.tlog:398,1545159600:338,1545256800:60,r
+Frameworks/CoreFoundation/Base.subproj/CFPlatform.c:250,1545256800:250,r
+tools/WinObjC.Language/assets/Islandwood.props:210,1545256800:210,r
+Frameworks/CoreFoundation/RunLoop.subproj/CFSocket.c:204,1545256800:204,r
+Frameworks/CoreFoundation/Base.subproj/CFUtilities.c:162,1545256800:162,r
+build/CoreFoundation/dll/Debug/CoreFoundation.tlog/lld-link.read.1.tlog:109,1545159600:109,r
+build/CoreFoundation/lib/Debug/CoreFoun.DC123A21.tlog/clang.command.1.tlog:104,1545159600:8,1545256800:96,r
+Frameworks/Foundation/NSRunLoopState.mm:60,1545256800:60,r
+Frameworks/include/Platform/EbrPlatform.h:50,1545256800:50,r
+Frameworks/Starboard/CMakeLists.txt:32,1545256800:32,r
+Frameworks/CoreFoundation/RunLoop.subproj/CFSocket.h:30,1545256800:30,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:30,1545256800:30,r
+include/StarboardExport.h:15,1545256800:15,r
+Frameworks/CoreFoundation/String.subproj/CFString.h:12,1545256800:12,r
