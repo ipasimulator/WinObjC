@@ -1,0 +1,11 @@
+[ver:1,total:420]
+build/CoreFoundation/dll/Debug/CoreFoundation.tlog/link-proxy.command.1.tlog:135,1545256800:135,r
+Frameworks/CoreFoundation/CMakeLists.txt:95,1545256800:95,m
+build/CoreFoundation/lib/Debug/CoreFoun.DC123A21.tlog/clang.command.1.tlog:45,1545256800:45,r
+tools/WinObjC.Compiler/ClangCompile.xml:32,1545256800:32,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:30,1545256800:30,r
+tools/common/common-build.props:24,1545256800:24,r
+tools/ClangCompileTask/ClangCompile.cs:20,1545256800:20,r
+tools/WinObjC.Language/assets/Islandwood.props:15,1545256800:15,r
+msvc/sdk-build.props:12,1545256800:12,r
+Frameworks/CoreFoundationAdditions/_NSCFString.mm:12,1545256800:12,r
