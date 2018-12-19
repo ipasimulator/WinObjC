@@ -62,13 +62,7 @@ target_compile_definitions (Starboard PRIVATE
     OBJC_PORT
     # From `StarboardLib.vcxproj`.
     STARBOARD_PORT=1
-    SB_IMPEXP=
-    # From `Islandwood.vcxproj`.
-    _WINSOCK_DEPRECATED_NO_WARNINGS
-    # TODO: Include these conditionally (on CMAKE_BUILD_TYPE) and everywhere.
-    _DEBUG
-    _MT
-    _DLL)
+    SB_IMPEXP=)
 
 if (NOT CL_COMPILER)
     target_compile_options (Starboard PRIVATE
