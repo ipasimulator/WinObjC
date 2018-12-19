@@ -151,6 +151,7 @@ CoreFoundation.def" # For `<ModuleDefinitionFile>`.
         # from WOCStdLib. We should use the `libobjc` ones.
         objc
         woc-WinObjCRT
+        Starboard # TODO: This is not in `lld-link`'s `.tlog` file!
         # These were copied from a `.tlog` file.
         # TODO: Share them or something.
         -Wl,/DISALLOWLIB:libucrt.lib,/DISALLOWLIB:libucrtd.lib
