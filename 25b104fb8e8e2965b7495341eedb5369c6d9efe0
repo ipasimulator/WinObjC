@@ -1,0 +1,11 @@
+[ver:1,total:1260]
+Frameworks/CoreFoundation/CMakeLists.txt:620,1545256800:600,1545260400:20,r
+Frameworks/Starboard/CMakeLists.txt:280,1545260400:280,m
+tools/WinObjC.Compiler/ClangCompile.xml:175,1545260400:175,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:100,1545260400:100,r
+tools/AppInsights/CMakeLists.txt:25,1545260400:25,r
+Frameworks/CoreFoundationAdditions/CMakeLists.txt:15,1545260400:15,r
+tools/WinObjC.Language/assets/Islandwood.props:15,1545260400:15,r
+tools/WinObjCRT/CMakeLists.txt:10,1545260400:10,r
+tools/WOCStdLib/CMakeLists.txt:10,1545260400:10,r
+tools/Logging/CMakeLists.txt:10,1545260400:10,r
