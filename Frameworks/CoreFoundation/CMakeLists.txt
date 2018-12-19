@@ -159,5 +159,7 @@ CoreFoundation.def" # For `<ModuleDefinitionFile>`.
         -Wl,/nodefaultlib:msvcrt,/nodefaultlib:vccorlibd,/nodefaultlib:msvcrtd
         # See also <https://docs.microsoft.com/en-us/cpp/c-runtime-library/
         # crt-library-features?view=vs-2017>.
-        ucrtd.lib)
+        ucrtd.lib
+        # From `ClangCompile.xml`, for `--dependent-lib=oldnames`.
+        oldnames)
 endif (NOT CL_COMPILER)
