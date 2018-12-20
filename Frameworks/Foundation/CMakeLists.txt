@@ -257,4 +257,8 @@ if (NOT CL_COMPILER)
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Foundation/dll/\
 Foundation.def")
 
+    # From `FoundationLib.vcxproj`.
+    set_source_files_properties (NSUserActivity.mm PROPERTIES
+        COMPILE_OPTIONS -fobjc-arc)
+
 endif (NOT CL_COMPILER)
