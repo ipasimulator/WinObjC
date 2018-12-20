@@ -59,7 +59,6 @@ target_include_directories (Starboard PRIVATE
 
 target_compile_definitions (Starboard PRIVATE
     ${WINOBJC_DEFS}
-    OBJC_PORT
     # From `StarboardLib.vcxproj`.
     STARBOARD_PORT=1
     SB_IMPEXP=)
