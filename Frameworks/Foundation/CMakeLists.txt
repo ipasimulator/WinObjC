@@ -252,6 +252,9 @@ if (NOT CL_COMPILER)
     target_link_libraries (Foundation PRIVATE
         ${WINOBJC_LIBS}
         woc-Logging
-        pthread)
+        pthread
+        # From `Foundation.vcxproj`.
+        "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Foundation/dll/\
+Foundation.def")
 
 endif (NOT CL_COMPILER)
