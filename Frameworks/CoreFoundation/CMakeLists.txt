@@ -131,8 +131,6 @@ ${CMAKE_CURRENT_SOURCE_DIR}/Base.subproj/CoreFoundation_Prefix.h"
 
     target_link_libraries (CoreFoundation PRIVATE
         ${WINOBJC_LIBS}
-        # From `sdk-build.props`.
-        -Wl,/force:multiple
         # From `CoreFoundation.vcxproj`.
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/CoreFoundation/dll/\
 CoreFoundation.def" # For `<ModuleDefinitionFile>`.
