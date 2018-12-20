@@ -1,0 +1,8 @@
+[ver:1,total:180]
+Frameworks/Starboard/CMakeLists.txt:48,1545264000:48,m
+tools/Logging/CMakeLists.txt:42,1545264000:42,r
+tools/AppInsights/CMakeLists.txt:30,1545264000:30,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:24,1545264000:24,r
+Frameworks/CoreFoundationAdditions/CMakeLists.txt:12,1545264000:12,r
+tools/WOCStdLib/CMakeLists.txt:12,1545264000:12,r
+tools/WinObjCRT/CMakeLists.txt:12,1545264000:12,r
