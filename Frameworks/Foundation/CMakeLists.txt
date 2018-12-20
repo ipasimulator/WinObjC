@@ -251,6 +251,7 @@ if (NOT CL_COMPILER)
 
     target_link_libraries (Foundation PRIVATE
         ${WINOBJC_LIBS}
-        woc-Logging)
+        woc-Logging
+        pthread)
 
 endif (NOT CL_COMPILER)
