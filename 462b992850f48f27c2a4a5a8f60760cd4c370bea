@@ -1,0 +1,6 @@
+[ver:1,total:1050]
+Frameworks/Foundation/CMakeLists.txt:740,1545314400:150,1545325200:150,1545328800:440,m
+build/Foundation/lib/Debug/FoundationLib.tlog/clang.command.1.tlog:180,1545328800:180,r
+build/Foundation/lib/FoundationLib.vcxproj:60,1545328800:60,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:40,1545328800:40,r
+include/pthread.h:30,1545325200:30,r
