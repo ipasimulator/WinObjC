@@ -1,0 +1,14 @@
+[ver:1,total:2940]
+Frameworks/Foundation/CMakeLists.txt:1139,1545267600:518,1545271200:621,m
+Frameworks/CoreFoundationAdditions/CMakeLists.txt:399,1545267600:327,1545271200:72,r
+build/Foundation/lib/FoundationLib.vcxproj:313,1545267600:208,1545271200:105,r
+CMakeLists.txt:252,1545267600:252,r
+build/Foundation/dll/Foundation.vcxproj:222,1545267600:202,1545271200:20,r
+build/Foundation/dll/Foundation.def:195,1545267600:195,r
+build/Foundation/dll/dllmain.cpp:150,1545267600:150,r
+Frameworks/CoreFoundation/CMakeLists.txt:81,1545267600:19,1545271200:62,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:60,1545271200:60,r
+tools/Logging/CMakeLists.txt:54,1545267600:54,r
+Frameworks/CMakeLists.txt:40,1545267600:20,1545271200:20,m
+build/Foundation/lib/Debug/FoundationLib.tlog/clang.command.1.tlog:20,1545267600:20,r
+Frameworks/Foundation/_NSInvocation.arm.asm:15,1545267600:15,r
