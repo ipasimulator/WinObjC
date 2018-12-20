@@ -1,0 +1,10 @@
+[ver:1,total:630]
+build/Foundation/lib/Debug/FoundationLib.tlog/clang.command.1.tlog:375,1545314400:375,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:72,1545314400:72,r
+include/pthread.h:54,1545314400:54,m
+tools/include/xplat/Starboard/SmartTypes.h:30,1545314400:30,r
+include/Foundation/Foundation.h:27,1545314400:27,r
+tools/include/WOCStdLib/sys/_pthreadtypes.h:27,1545314400:27,r
+Frameworks/CoreFoundation/CMakeLists.txt:15,1545314400:15,r
+include/StubIncludes.h:15,1545314400:15,r
+tools/include/WOCStdLib/WOCStdLib.h:15,1545314400:15,r
