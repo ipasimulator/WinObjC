@@ -1,0 +1,17 @@
+[ver:1,total:1500]
+tools/AppInsights/CMakeLists.txt:737,1545260400:597,1545264000:140,m
+tools/objc2winmd/objc2winmd.vcxproj:225,1545260400:225,r
+Frameworks/CoreFoundationAdditions/CMakeLists.txt:174,1545260400:174,r
+build/Foundation/dll/Foundation.natvis:60,1545260400:60,r
+Frameworks/Starboard/CMakeLists.txt:60,1545260400:60,r
+tools/common/common-build.props:42,1545260400:42,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:40,1545264000:40,r
+tools/WinObjC.Language/assets/Islandwood.props:27,1545260400:27,r
+msvc/sdk-build.props:27,1545260400:27,r
+tools/AppInsights/Projects/AppInsights_Win10-UAP/AppInsights_Win10-UAP/AppInsights_Win10-UAP.vcxproj:24,1545260400:24,r
+build/Accelerate/lib/AccelerateLib.vcxproj:15,1545260400:15,r
+build/CoreFoundation/dll/CoreFoundation.vcxproj:15,1545260400:15,r
+build/CoreFoundation/dll/CoreFoundation.natvis:15,1545260400:15,r
+tools/WinObjC.Compiler/ClangCompile.xml:15,1545260400:15,r
+tools/AppInsights/Projects/AppInsights_Win10-UAP/ApplicationInsights/ApplicationInsights.vcxproj:12,1545260400:12,r
+Frameworks/CoreFoundation/CMakeLists.txt:12,1545260400:12,r
