@@ -280,7 +280,7 @@ void __pthread_cleanup_push_imp(void (*)(void*), void*, struct _pthread_cleanup_
 void __pthread_cleanup_pop_imp(int);
 __END_DECLS
 
+// !defined(OBJC_PORT)
 #endif
 
-// !defined(OBJC_PORT)
 #endif
