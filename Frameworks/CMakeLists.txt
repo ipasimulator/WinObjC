@@ -4,4 +4,5 @@
 
 add_subdirectory (CoreFoundation)
 add_subdirectory (CoreFoundationAdditions)
+add_subdirectory (Foundation)
 add_subdirectory (Starboard)
