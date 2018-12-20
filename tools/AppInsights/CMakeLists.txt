@@ -51,19 +51,16 @@ add_library (AppInsights STATIC ${SOURCE_FILES})
 add_prep_dep (AppInsights)
 
 target_compile_definitions (AppInsights PRIVATE
+    ${WINOBJC_DEFS}
     # From `AppInsights_Win10-UAP.vcxproj`.
     TELEMETRY_CLIENT_DLL_EXPORT
     # From `ApplicationInsights.vcxproj`.
-    _WINRT_DLL
-    # TODO: Share these (unicode).
-    _UNICODE UNICODE)
+    _WINRT_DLL)
 
 target_compile_options (AppInsights PRIVATE
     # From `AppInsights_Win10-UAP.vcxproj`.
     /wd4251 # For `<DisableSpecificWarnings>`.
-    ${COMPILE_AS_WINRT}
-    # TODO: Share this (unicode).
-    /Zc:wchar_t)
+    ${COMPILE_AS_WINRT})
 
 target_link_libraries (AppInsights PRIVATE
     # TODO: This doesn't actually seem to be linked by any relevant `.vcxproj`,
