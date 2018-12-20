@@ -62,12 +62,6 @@ target_compile_options (AppInsights PRIVATE
     /wd4251 # For `<DisableSpecificWarnings>`.
     ${COMPILE_AS_WINRT})
 
-target_link_libraries (AppInsights PRIVATE
-    # TODO: This doesn't actually seem to be linked by any relevant `.vcxproj`,
-    # but linking fails without it. Why?
-    winhttp.lib
-    WindowsApp.lib)
-
 target_include_directories (AppInsights PUBLIC
     # From `ApplicationInsights.vcxproj`.
     # For `<ProjectReference>`.
