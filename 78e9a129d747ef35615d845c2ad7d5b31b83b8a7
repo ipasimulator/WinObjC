@@ -1,0 +1,13 @@
+[ver:1,total:1449]
+Frameworks/Foundation/CMakeLists.txt:729,1545328800:295,1545332400:200,1545494400:234,m
+build/Foundation/lib/Debug/FoundationLib.tlog/clang.command.1.tlog:350,1545328800:20,1545332400:150,1545494400:180,r
+include/Foundation/NSHTTPCookie.h:90,1545328800:90,r
+tools/include_next/WOCStdLib/strings.h:80,1545328800:80,r
+build/Foundation/lib/FoundationLib.vcxproj:60,1545328800:60,r
+include/pthread.h:30,1545328800:30,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:30,1545494400:30,r
+Frameworks/include/NSInputSource.h:20,1545332400:20,r
+deps/prebuilt/include/icu/unicode/ustring.h:20,1545328800:20,r
+tools/WinObjC.Language/WinObjC.Language.Packaging.targets:20,1545328800:20,r
+.apianalyzer/clangargs.txt:10,1545328800:10,r
+.gtm/1545332156.event:10,1545328800:10,d
