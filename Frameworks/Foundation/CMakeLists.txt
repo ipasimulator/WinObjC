@@ -231,7 +231,8 @@ if (NOT CL_COMPILER)
     target_include_directories (Foundation PRIVATE
         ${WINOBJC_INCLUDE_DIRS}
         # TODO: From where?
-        ../include)
+        ../include
+        C:/packages/cppwinrt.2017.4.6.1/build/native/include)
 
     target_compile_definitions (Foundation PRIVATE
         ${WINOBJC_DEFS}
@@ -253,6 +254,7 @@ if (NOT CL_COMPILER)
         ${WINOBJC_LIBS}
         woc-Logging
         pthread
+        oldnames
         # From `Foundation.vcxproj`.
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Foundation/dll/\
 Foundation.def")
