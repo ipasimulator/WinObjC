@@ -1,0 +1,7 @@
+[ver:1,total:300]
+Frameworks/Foundation/CMakeLists.txt:206,1545768000:206,m
+build/Foundation/dll/Foundation.vcxproj:30,1545768000:30,r
+Frameworks/Foundation/NSExceptionInternal.h:20,1545768000:20,r
+Frameworks/Foundation/NSException.cl.cpp:20,1545768000:20,r
+Frameworks/CoreFoundation/CMakeLists.txt:12,1545768000:12,r
+Frameworks/Foundation/_NSInvocation.x86.asm:12,1545768000:12,r
