@@ -1,0 +1,9 @@
+[ver:1,total:540]
+Frameworks/CFNetwork/CMakeLists.txt:185,1545768000:185,m
+Frameworks/CoreFoundation/CMakeLists.txt:102,1545768000:102,r
+build/CFNetwork/dll/CFNetwork.vcxproj:79,1545768000:79,r
+build/CFNetwork/lib/CFNetworkLib.vcxproj:68,1545768000:68,r
+Frameworks/Foundation/CMakeLists.txt:47,1545768000:47,r
+Frameworks/CMakeLists.txt:30,1545768000:30,m
+Frameworks/CFNetwork/CFSocketStream.mm:20,1545768000:20,r
+build/CFNetwork/dll/dllmain.cpp:9,1545768000:9,r
