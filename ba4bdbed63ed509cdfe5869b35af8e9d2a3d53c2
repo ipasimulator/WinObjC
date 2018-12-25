@@ -1,0 +1,9 @@
+[ver:1,total:780]
+Frameworks/Foundation/CMakeLists.txt:490,1545764400:490,m
+tools/WinObjC.Language/WinObjC.Language.Packaging.targets:110,1545764400:110,r
+Frameworks/Starboard/CMakeLists.txt:75,1545764400:75,r
+Frameworks/Foundation/NSCFData.mm:30,1545764400:30,r
+../../.git/modules/deps/WinObjC/COMMIT_EDITMSG:30,1545764400:30,r
+tools/include_next/WOCStdLib/Windows.h:15,1545764400:15,r
+build/Foundation/lib/FoundationLib.vcxproj:15,1545764400:15,r
+Frameworks/Foundation/NSHTTPCookie.mm:15,1545764400:15,r
