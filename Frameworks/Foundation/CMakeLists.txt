@@ -254,6 +254,11 @@ if (NOT CL_COMPILER)
         woc-Logging
         pthread
         oldnames
+        objc
+        CoreFoundation
+        dispatch
+        Starboard
+        ucrtd.lib
         # From `Foundation.vcxproj`.
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Foundation/dll/\
 Foundation.def")
