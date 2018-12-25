@@ -232,7 +232,8 @@ if (NOT CL_COMPILER)
         ${WINOBJC_INCLUDE_DIRS}
         # TODO: From where?
         ../include
-        C:/packages/cppwinrt.2017.4.6.1/build/native/include)
+        C:/packages/cppwinrt.2017.4.6.1/build/native/include
+        ../../tools/include_next/WOCStdLib)
 
     target_compile_definitions (Foundation PRIVATE
         ${WINOBJC_DEFS}

@@ -35,11 +35,6 @@
 #ifndef _PTHREAD_H_
 #define _PTHREAD_H_
 
-// [port] CHANGED: Use win-pthreads.
-#if defined(OBJC_PORT)
-#include_next <pthread.h>
-#else
-
 /*
  * Header files.
  */
@@ -279,8 +274,5 @@ int pthread_setconcurrency(int);
 void __pthread_cleanup_push_imp(void (*)(void*), void*, struct _pthread_cleanup_info*);
 void __pthread_cleanup_pop_imp(int);
 __END_DECLS
-
-// !defined(OBJC_PORT)
-#endif
 
 #endif
