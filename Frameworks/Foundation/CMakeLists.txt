@@ -229,11 +229,9 @@ if (NOT CL_COMPILER)
     add_prep_dep (Foundation)
 
     target_include_directories (Foundation PRIVATE
-        ${WINOBJC_INCLUDE_DIRS}
-        # TODO: From where?
-        ../include
-        C:/packages/cppwinrt.2017.4.6.1/build/native/include
-        ../../tools/include_next/WOCStdLib)
+        ${WOCFX_INCLUDE_DIRS}
+        # From `FoundationLib.vcxproj`.
+        ../include)
 
     target_compile_definitions (Foundation PRIVATE
         ${WINOBJC_DEFS}
