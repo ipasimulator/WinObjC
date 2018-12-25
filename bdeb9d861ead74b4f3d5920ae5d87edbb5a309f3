@@ -1,0 +1,9 @@
+[ver:1,total:360]
+Frameworks/Foundation/CMakeLists.txt:170,1545768000:170,m
+msvc/sdk-build.props:75,1545768000:75,r
+tools/WOCStdLib/dll/WOCStdLib.def:30,1545768000:30,r
+tools/WinObjCRT/dll/WinObjCRT_Debug.def:20,1545768000:20,r
+Frameworks/CoreFoundation/CMakeLists.txt:20,1545768000:20,r
+build/Foundation/lib/FoundationLib.vcxproj:15,1545768000:15,r
+build/Foundation/dll/Foundation.vcxproj:15,1545768000:15,r
+Frameworks/Starboard/CMakeLists.txt:15,1545768000:15,r
