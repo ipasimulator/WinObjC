@@ -268,6 +268,7 @@ else (CL_COMPILER)
         CFNetwork
         woc-Foundation
         # From `Foundation.vcxproj`.
+        icudt icuin icuuc
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Foundation/dll/\
 Foundation.def")
 
