@@ -1,4 +1,10 @@
-if (NOT CL_COMPILER)
+if (CL_COMPILER)
+    set (SOURCE_FILES
+        NSException.cl.cpp)
+
+    add_library (Foundation STATIC ${SOURCE_FILES})
+
+else (CL_COMPILER)
     set (SOURCE_FILES
         # From `FoundationLib.vcxproj`.
         # TODO: _NSInvocation.x86.asm
@@ -259,6 +265,8 @@ if (NOT CL_COMPILER)
         dispatch
         Starboard
         ucrtd.lib
+        CFNetwork
+        woc-Foundation
         # From `Foundation.vcxproj`.
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Foundation/dll/\
 Foundation.def")
@@ -267,4 +275,5 @@ Foundation.def")
     set_source_files_properties (NSUserActivity.mm PROPERTIES
         COMPILE_OPTIONS -fobjc-arc)
 
-endif (NOT CL_COMPILER)
+# NOT CL_COMPILER
+endif (CL_COMPILER)
