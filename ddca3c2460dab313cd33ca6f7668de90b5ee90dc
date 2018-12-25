@@ -1,0 +1,9 @@
+[ver:1,total:780]
+Frameworks/Foundation/CMakeLists.txt:520,1545768000:520,m
+build/CFNetwork/dll/CFNetwork.def:60,1545768000:60,r
+msvc/sdk-build.props:60,1545768000:60,r
+build/Foundation/lib/FoundationLib.vcxproj:50,1545768000:50,r
+Frameworks/CFNetwork/CMakeLists.txt:40,1545768000:40,r
+Frameworks/CoreFoundation/CMakeLists.txt:20,1545768000:20,r
+Frameworks/CMakeLists.txt:20,1545768000:20,r
+Frameworks/Foundation/NSException.cl.cpp:10,1545768000:10,r
