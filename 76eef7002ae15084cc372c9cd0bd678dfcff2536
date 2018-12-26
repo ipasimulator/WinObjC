@@ -1,0 +1,9 @@
+[ver:1,total:960]
+Frameworks/Foundation/CMakeLists.txt:544,1545843600:360,1545854400:184,m
+Frameworks/CoreFoundation/CMakeLists.txt:302,1545854400:302,m
+tools/WinObjC.Language/assets/Islandwood.targets:30,1545854400:30,r
+Frameworks/MobileCoreServices/CMakeLists.txt:22,1545854400:22,m
+tools/WinObjC.Compiler/ClangCompile.xml:20,1545854400:20,r
+Frameworks/Starboard/CMakeLists.txt:20,1545854400:20,r
+Frameworks/CFNetwork/CMakeLists.txt:12,1545854400:12,r
+tools/WOCStdLib/CMakeLists.txt:10,1545854400:10,r
