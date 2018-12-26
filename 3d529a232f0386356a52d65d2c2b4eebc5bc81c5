@@ -1,0 +1,11 @@
+[ver:1,total:300]
+Frameworks/AdSupport/CMakeLists.txt:77,1545861600:77,m
+Frameworks/AddressBook/CMakeLists.txt:71,1545861600:71,m
+Frameworks/Accounts/CMakeLists.txt:37,1545861600:37,m
+build/AdSupport/lib/AdSupportLib.vcxproj:32,1545861600:32,r
+Frameworks/AddressBookUI/CMakeLists.txt:30,1545861600:30,m
+build/AddressBookUI/dll/AddressBookUI.vcxproj:15,1545861600:15,r
+Frameworks/AdSupport/ASIdentifierManager.mm:15,1545861600:15,r
+build/AdSupport/dll/AdSupport.vcxproj:10,1545861600:10,r
+Frameworks/Accelerate/CMakeLists.txt:8,1545861600:8,r
+build/AdSupport/dll/dllmain.cpp:5,1545861600:5,r
