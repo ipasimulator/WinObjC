@@ -19,7 +19,12 @@ if (NOT CL_COMPILER)
     add_library (AudioToolbox SHARED ${SOURCE_FILES})
     add_prep_dep (AudioToolbox)
 
-    target_include_directories (AudioToolbox PRIVATE ${WOCFX_INCLUDE_DIRS})
+    target_include_directories (AudioToolbox PRIVATE
+        ${WOCFX_INCLUDE_DIRS}
+        # TODO: Add this one couple levels higher. Needed in, e.g.,
+        # `SystemSound.mm`.
+        "C:/Program Files (x86)/Windows Kits/10/Extension SDKs/WindowsMobile/\
+10.0.15063.0/Include/WinRT")
 
     target_compile_definitions (AudioToolbox PRIVATE
         ${WINOBJC_DEFS}
@@ -34,6 +39,7 @@ if (NOT CL_COMPILER)
     target_link_libraries (AudioToolbox PRIVATE
         ${WOCFX_LIBS}
         # From `AudioToolbox.vcxproj`.
+        mfuuid.lib
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/AudioToolbox/dll/\
 AudioToolbox.def")
 endif (NOT CL_COMPILER)
