@@ -231,6 +231,7 @@ else (CL_COMPILER)
         NSDictionary+NSFileManagerExtensions.mm)
 
     # Build `_NSInvocation.x86.asm` (from `FoundationLib.vcxproj`).
+    # TODO: Maybe actually use CMake's support for MASM.
     set (ASM_INPUT "${CMAKE_CURRENT_SOURCE_DIR}/_NSInvocation.x86.asm")
     set (ASM_OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/_NSInvocation.x86.asm.obj")
     add_custom_command (
