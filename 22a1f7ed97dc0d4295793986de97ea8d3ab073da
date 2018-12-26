@@ -1,0 +1,10 @@
+[ver:1,total:1620]
+Frameworks/Accelerate/CMakeLists.txt:772,1545854400:133,1545858000:639,m
+Frameworks/MobileCoreServices/CMakeLists.txt:295,1545854400:295,r
+build/Accelerate/lib/AccelerateLib.vcxproj:274,1545854400:122,1545858000:152,r
+Frameworks/Foundation/CMakeLists.txt:72,1545854400:30,1545858000:42,m
+msvc/sdk-build.props:71,1545854400:71,r
+Frameworks/Starboard/CMakeLists.txt:69,1545854400:69,r
+Frameworks/CMakeLists.txt:32,1545858000:32,m
+tools/Logging/CMakeLists.txt:20,1545858000:20,r
+build/Accelerate/dll/Accelerate.vcxproj:15,1545858000:15,r
