@@ -1,5 +1,6 @@
 if (NOT CL_COMPILER)
     set (SOURCE_FILES
+        # From `AddressBookUILib.vcxproj`.
         ABNewPersonViewController.mm
         ABPeoplePickerNavigationController.mm
         ABPersonViewController.mm

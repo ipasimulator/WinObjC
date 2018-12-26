@@ -1,5 +1,6 @@
 if (NOT CL_COMPILER)
     set (SOURCE_FILES
+        # From `AddressBookLib.vcxproj`.
         ABAddressBook.mm
         ABGroup.mm
         ABMultiValue.mm

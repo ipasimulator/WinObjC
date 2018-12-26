@@ -1,5 +1,6 @@
 if (NOT CL_COMPILER)
     set (SOURCE_FILES
+        # From `AccountsLib.vcxproj`.
         ACAccount.mm
         ACAccountCredential.mm
         ACAccountStore.mm
