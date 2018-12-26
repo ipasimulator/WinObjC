@@ -1,15 +1,20 @@
 [submodule "deps/3rdparty/openssl"]
 	path = deps/3rdparty/openssl
 	url = https://github.com/microsoft/openssl
+	shallow = true
 [submodule "deps/3rdparty/zlib"]
 	path = deps/3rdparty/zlib
 	url = https://github.com/madler/zlib
+	shallow = true
 [submodule "deps/3rdparty/libobjc2"]
 	path = deps/3rdparty/libobjc2
 	url = https://github.com/Microsoft/libobjc2
+	shallow = true
 [submodule "tools/vsimporter/third-party/PlistCpp"]
 	path = tools/vsimporter/third-party/PlistCpp
-	url = https://github.com/Microsoft/PlistCpp
+	url = https://github.com/Microsoft/PlistCpp.git
+	shallow = true
 [submodule "tools/vsimporter/third-party/sole"]
 	path = tools/vsimporter/third-party/sole
 	url = https://github.com/r-lyeh/sole.git
+	shallow = true
