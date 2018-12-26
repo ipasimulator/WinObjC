@@ -1,0 +1,8 @@
+[ver:1,total:360]
+Frameworks/AVFoundation/CMakeLists.txt:103,1545865200:103,m
+Frameworks/CMakeLists.txt:80,1545865200:80,m
+build/AVFoundation/dll/AVFoundation.vcxproj:63,1545865200:63,r
+build/AVFoundation/lib/AVFoundationLib.vcxproj:53,1545865200:53,r
+Frameworks/AutoLayout/CMakeLists.txt:40,1545865200:40,r
+Frameworks/AddressBook/CMakeLists.txt:13,1545865200:13,r
+build/AVFoundation/dll/dllmain.cpp:8,1545865200:8,r
