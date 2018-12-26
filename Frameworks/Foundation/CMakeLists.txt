@@ -7,7 +7,6 @@ if (CL_COMPILER)
 else (CL_COMPILER)
     set (SOURCE_FILES
         # From `FoundationLib.vcxproj`.
-        # TODO: _NSInvocation.x86.asm
         _NSInvocation.x86.mm
         CFBridgeBase.mm
         CFHelpers.mm
@@ -231,7 +230,17 @@ else (CL_COMPILER)
         NSString+HSTRING.mm
         NSDictionary+NSFileManagerExtensions.mm)
 
-    add_library (Foundation SHARED ${SOURCE_FILES})
+    # Build `_NSInvocation.x86.asm` (from `FoundationLib.vcxproj`).
+    set (ASM_INPUT "${CMAKE_CURRENT_SOURCE_DIR}/_NSInvocation.x86.asm")
+    set (ASM_OUTPUT "${CMAKE_CURRENT_BINARY_DIR}/_NSInvocation.x86.asm.obj")
+    add_custom_command (
+        OUTPUT "${ASM_OUTPUT}"
+        # `/safeseh` for `<UseSafeExceptionHandlers>`.
+        COMMAND ml /nologo /safeseh /c /Fo"${ASM_OUTPUT}" "${ASM_INPUT}"
+        USES_TERMINAL
+        DEPENDS "${ASM_INPUT}")
+
+    add_library (Foundation SHARED ${SOURCE_FILES} "${ASM_OUTPUT}")
     add_prep_dep (Foundation)
 
     target_include_directories (Foundation PRIVATE
