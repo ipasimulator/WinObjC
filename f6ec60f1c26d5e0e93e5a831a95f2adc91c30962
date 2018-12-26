@@ -1,0 +1,9 @@
+[ver:1,total:540]
+Frameworks/Accounts/CMakeLists.txt:141,1545858000:141,m
+Frameworks/Foundation/CMakeLists.txt:135,1545858000:135,m
+build/Accounts/lib/AccountsLib.vcxproj:126,1545858000:126,r
+Frameworks/CoreGraphics/CMakeLists.txt:52,1545858000:52,r
+Frameworks/CMakeLists.txt:30,1545858000:30,m
+build/Accounts/dll/Accounts.vcxproj:24,1545858000:24,r
+Frameworks/Accounts/ACAccount.mm:20,1545858000:20,r
+build/Accelerate/lib/AccelerateLib.vcxproj.filters:12,1545858000:12,r
