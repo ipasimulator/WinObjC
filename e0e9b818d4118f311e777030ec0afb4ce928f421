@@ -1,0 +1,8 @@
+[ver:1,total:420]
+build/AutoLayout/dll/AutoLayout.vcxproj:157,1545865200:157,r
+Frameworks/AutoLayout/CMakeLists.txt:102,1545865200:102,m
+Frameworks/CMakeLists.txt:75,1545865200:75,m
+build/AutoLayout/lib/AutoLayoutLib.vcxproj:68,1545865200:68,r
+Frameworks/AudioUnit/CMakeLists.txt:6,1545865200:6,r
+Frameworks/AutoLayout/AutoLayout.mm:6,1545865200:6,r
+Frameworks/AddressBook/CMakeLists.txt:6,1545865200:6,r
