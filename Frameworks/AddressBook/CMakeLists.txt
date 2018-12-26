@@ -26,7 +26,7 @@ if (NOT CL_COMPILER)
         ${WINOBJC_DEFS}
         # From `AddressBookLib.vcxproj`.
         STARBOARD_PORT=1
-        DADDRESSBOOK_IMPEXP=)
+        ADDRESSBOOK_IMPEXP=)
 
     target_compile_options (AddressBook PRIVATE
         ${WINOBJC_CLANG_OPTIONS}
