@@ -1,0 +1,6 @@
+[ver:1,total:1080]
+Frameworks/AudioToolbox/CMakeLists.txt:520,1545861600:140,1545865200:380,m
+build/AudioToolbox/lib/Debug/AudioToolboxLib.tlog/clang.command.1.tlog:210,1545861600:30,1545865200:180,r
+Frameworks/AudioToolbox/SystemSound.mm:170,1545861600:170,r
+build/AudioToolbox/lib/AudioToolboxLib.vcxproj:160,1545861600:140,1545865200:20,r
+build/AudioToolbox/dll/AudioToolbox.vcxproj:20,1545865200:20,r
