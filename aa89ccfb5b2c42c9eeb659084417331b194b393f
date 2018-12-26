@@ -1,0 +1,8 @@
+[ver:1,total:300]
+Frameworks/CMakeLists.txt:105,1545858000:105,m
+Frameworks/AddressBook/CMakeLists.txt:83,1545858000:83,m
+build/AddressBook/lib/AddressBookLib.vcxproj:50,1545858000:50,r
+Frameworks/CoreGraphics/CMakeLists.txt:23,1545858000:23,r
+build/AddressBook/dll/AddressBook.vcxproj:23,1545858000:23,r
+Frameworks/AddressBook/ABAddressBookManagerInternal.h:8,1545858000:8,r
+Frameworks/Accounts/CMakeLists.txt:8,1545858000:8,r
