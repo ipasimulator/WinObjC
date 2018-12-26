@@ -1,0 +1,11 @@
+[ver:1,total:540]
+Frameworks/AddressBook/CMakeLists.txt:214,1545861600:214,m
+Frameworks/AddressBookUI/CMakeLists.txt:97,1545861600:97,m
+Frameworks/AddressBookUI/ABNewPersonViewController.mm:72,1545861600:72,r
+build/AddressBookUI/dll/AddressBookUI.vcxproj:45,1545861600:45,r
+build/AddressBookUI/lib/AddressBookUILib.vcxproj:32,1545861600:32,r
+Frameworks/CMakeLists.txt:20,1545861600:20,m
+Frameworks/CoreGraphics/CMakeLists.txt:20,1545861600:20,r
+Frameworks/Accounts/CMakeLists.txt:20,1545861600:20,r
+deps/prebuilt/.gitignore:12,1545861600:12,r
+build/AddressBookUI/dll/dllmain.cpp:8,1545861600:8,r
