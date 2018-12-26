@@ -23,7 +23,6 @@ if (NOT CL_COMPILER)
         ${WINOBJC_LIBS}
         woc-Logging
         CoreFoundation
-        msvcrtd
         # From `MobileCoreServices.vcxproj`.
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/MobileCoreServices/\
 dll/MobileCoreServices.def") # For `<ModuleDefinitionFile>`.

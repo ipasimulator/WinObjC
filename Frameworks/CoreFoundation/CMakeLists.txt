@@ -149,15 +149,5 @@ CoreFoundation.def" # For `<ModuleDefinitionFile>`.
         # from WOCStdLib. We should use the `libobjc` ones.
         objc
         woc-WinObjCRT
-        Starboard # TODO: This is not in `lld-link`'s `.tlog` file!
-        # These were copied from a `.tlog` file.
-        # TODO: Share them or something.
-        -Wl,/DISALLOWLIB:libucrt.lib,/DISALLOWLIB:libucrtd.lib
-        -Wl,/nodefaultlib:ucrt,/nodefaultlib:ucrtd,/nodefaultlib:vccorlib
-        -Wl,/nodefaultlib:msvcrt,/nodefaultlib:vccorlibd,/nodefaultlib:msvcrtd
-        # See also <https://docs.microsoft.com/en-us/cpp/c-runtime-library/
-        # crt-library-features?view=vs-2017>.
-        ucrtd.lib
-        # From `ClangCompile.xml`, for `--dependent-lib=oldnames`.
-        oldnames)
+        Starboard) # TODO: This is not in `lld-link`'s `.tlog` file!
 endif (NOT CL_COMPILER)

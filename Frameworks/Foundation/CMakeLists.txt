@@ -269,7 +269,6 @@ else (CL_COMPILER)
         ${WINOBJC_LIBS}
         woc-Logging
         pthread
-        oldnames
         objc
         CoreFoundation
         dispatch
@@ -277,7 +276,6 @@ else (CL_COMPILER)
         CFNetwork
         woc-Foundation
         MobileCoreServices
-        msvcrtd
         # From `Foundation.vcxproj`.
         libxml2 icudt icuin icuuc
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Foundation/dll/\
