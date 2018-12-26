@@ -1,0 +1,8 @@
+[ver:1,total:240]
+Frameworks/AudioToolbox/CMakeLists.txt:67,1545861600:67,m
+Frameworks/CMakeLists.txt:67,1545861600:67,m
+build/AudioToolbox/lib/AudioToolboxLib.vcxproj:55,1545861600:55,r
+build/AudioToolbox/dll/AudioToolbox.vcxproj:27,1545861600:27,r
+Frameworks/AddressBook/CMakeLists.txt:10,1545861600:10,r
+build/AudioToolbox/dll/dllmain.cpp:7,1545861600:7,r
+Frameworks/AssetsLibrary/CMakeLists.txt:7,1545861600:7,r
