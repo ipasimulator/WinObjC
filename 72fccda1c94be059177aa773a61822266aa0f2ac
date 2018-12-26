@@ -1,0 +1,14 @@
+[ver:1,total:1080]
+Frameworks/MobileCoreServices/CMakeLists.txt:421,1545843600:421,m
+Frameworks/CMakeLists.txt:192,1545843600:192,m
+Frameworks/Foundation/CMakeLists.txt:180,1545840000:60,1545843600:120,r
+build/MobileCoreServices/lib/MobileCoreServicesLib.vcxproj:62,1545843600:62,r
+msvc/sdk-build.props:60,1545843600:60,r
+Frameworks/CFNetwork/CMakeLists.txt:40,1545843600:40,r
+tools/WOCStdLib/dll/WOCStdLib.def:32,1545843600:32,r
+build/MobileCoreServices/dll/MobileCoreServices.vcxproj:29,1545843600:29,r
+tools/WinObjCRT/dll/WinObjCRT_Debug.def:20,1545843600:20,r
+Frameworks/CoreFoundation/CMakeLists.txt:12,1545843600:12,r
+build/MobileCoreServices/lib/Debug/MobileCo.3FB3DD16.tlog/clang.command.1.tlog:12,1545843600:12,r
+build/Starboard/dll/Starboard.def:12,1545843600:12,r
+Frameworks/MobileCoreServices/UTType.cpp:8,1545843600:8,r
