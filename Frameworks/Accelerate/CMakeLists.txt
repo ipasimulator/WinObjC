@@ -172,10 +172,9 @@ else (CL_COMPILER)
 
     target_link_libraries (Accelerate PRIVATE
         ${WOCFX_LIBS}
-        objc
         # From `Accelerate.vcxproj`.
         woc-Accelerate
-        # TODO: Add CoreGraphics.
+        CoreGraphics
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Accelerate/dll/\
 Accelerate.def")
 
