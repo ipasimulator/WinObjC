@@ -9,7 +9,7 @@
 	url = https://github.com/Microsoft/libobjc2
 [submodule "tools/vsimporter/third-party/PlistCpp"]
 	path = tools/vsimporter/third-party/PlistCpp
-	url = https://github.com/Microsoft/PlistCpp.git
+	url = https://github.com/Microsoft/PlistCpp
 [submodule "tools/vsimporter/third-party/sole"]
 	path = tools/vsimporter/third-party/sole
 	url = https://github.com/r-lyeh/sole.git
