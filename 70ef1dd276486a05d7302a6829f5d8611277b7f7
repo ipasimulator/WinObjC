@@ -1,0 +1,5 @@
+[ver:1,total:780]
+Frameworks/AddressBook/CMakeLists.txt:654,1545858000:594,1545861600:60,m
+include/Platform/Universal Windows/UWP/WindowsWebHttpHeaders.h:90,1545858000:90,r
+Frameworks/CoreGraphics/CMakeLists.txt:24,1545858000:24,r
+Frameworks/Accounts/CMakeLists.txt:12,1545858000:12,r
