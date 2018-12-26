@@ -4,6 +4,7 @@
 
 add_subdirectory (Accelerate)
 add_subdirectory (Accounts)
+add_subdirectory (AddressBook)
 add_subdirectory (CFNetwork)
 add_subdirectory (CoreFoundation)
 add_subdirectory (CoreFoundationAdditions)
