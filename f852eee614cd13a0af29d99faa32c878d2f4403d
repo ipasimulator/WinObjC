@@ -1,0 +1,9 @@
+[ver:1,total:240]
+Frameworks/CMakeLists.txt:80,1545865200:80,m
+build/AVKit/lib/AVKitLib.vcxproj:44,1545865200:44,r
+Frameworks/AVKit/CMakeLists.txt:38,1545865200:38,m
+Frameworks/AddressBook/CMakeLists.txt:32,1545865200:32,r
+Frameworks/AVFoundation/CMakeLists.txt:20,1545865200:20,r
+build/AVKit/dll/AVKit.vcxproj:14,1545865200:14,r
+build/AVKit/dll/dllmain.cpp:6,1545865200:6,r
+build/AVKit/dll/AVKit.def:6,1545865200:6,r
