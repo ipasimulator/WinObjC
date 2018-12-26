@@ -280,7 +280,7 @@ Foundation.def")
 
     # From `FoundationLib.vcxproj`.
     set_source_files_properties (NSUserActivity.mm PROPERTIES
-        COMPILE_OPTIONS -fobjc-arc)
+        COMPILE_OPTIONS "${OBJC_ARC}")
 
 # NOT CL_COMPILER
 endif (CL_COMPILER)
