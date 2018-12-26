@@ -274,9 +274,10 @@ else (CL_COMPILER)
         CoreFoundation
         dispatch
         Starboard
-        ucrtd.lib
         CFNetwork
         woc-Foundation
+        MobileCoreServices
+        msvcrtd
         # From `Foundation.vcxproj`.
         libxml2 icudt icuin icuuc
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/Foundation/dll/\
