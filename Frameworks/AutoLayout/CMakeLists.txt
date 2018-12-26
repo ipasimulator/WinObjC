@@ -1,0 +1,26 @@
+if (NOT CL_COMPILER)
+    set (SOURCE_FILES
+        # From `AutoLayoutLib.vcxproj`.
+        AutoLayout.mm)
+
+    add_library (AutoLayout SHARED ${SOURCE_FILES})
+    add_prep_dep (AutoLayout)
+
+    target_include_directories (AutoLayout PRIVATE ${WOCFX_INCLUDE_DIRS})
+
+    target_compile_definitions (AutoLayout PRIVATE
+        ${WINOBJC_DEFS}
+        # From `AutoLayoutLib.vcxproj`.
+        HAVE_CONFIG_H
+        _ITERATOR_DEBUG_LEVEL=0)
+
+    target_compile_options (AutoLayout PRIVATE ${WINOBJC_CLANG_OPTIONS})
+
+    target_link_libraries (AutoLayout PRIVATE
+        ${WOCFX_LIBS}
+        # From `AutoLayout.vcxproj`.
+        cassowary
+        # TODO: Add UIKit.
+        "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/AutoLayout/dll/\
+AutoLayout.def")
+endif (NOT CL_COMPILER)
