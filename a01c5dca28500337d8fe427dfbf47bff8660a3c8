@@ -1,0 +1,9 @@
+[ver:1,total:1920]
+Frameworks/Foundation/CMakeLists.txt:1150,1545825600:90,1545829200:1060,m
+build/Foundation/lib/FoundationLib.vcxproj:580,1545825600:360,1545829200:220,r
+Frameworks/Foundation/_NSInvocation.x86.asm:130,1545825600:90,1545829200:40,r
+build/Foundation/lib/Debug/FoundationLib.tlog/clang.command.1.tlog:15,1545825600:15,r
+build/Foundation/lib/Debug/FoundationLib.tlog/Masm.read.1u.tlog:15,1545825600:15,r
+build/Foundation/dll/Foundation.vcxproj:15,1545825600:15,r
+build/Foundation/lib/Debug/FoundationLib.tlog/Masm.write.1u.tlog:8,1545825600:8,r
+build/Foundation/lib/Debug/FoundationLib.tlog/CL.command.1.tlog:7,1545825600:7,r
