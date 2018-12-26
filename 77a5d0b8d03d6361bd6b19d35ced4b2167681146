@@ -1,0 +1,7 @@
+[ver:1,total:540]
+Frameworks/CoreGraphics/CMakeLists.txt:201,1545858000:201,m
+Frameworks/Accelerate/CMakeLists.txt:192,1545858000:192,m
+build/CoreGraphics/lib/CoreGraphicsLib.vcxproj:62,1545858000:62,r
+Frameworks/CMakeLists.txt:45,1545858000:45,m
+build/CoreGraphics/dll/CoreGraphics.vcxproj:30,1545858000:30,r
+build/CoreGraphics/dll/dllmain.cpp:10,1545858000:10,r
