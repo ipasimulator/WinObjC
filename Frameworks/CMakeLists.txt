@@ -2,6 +2,7 @@
 # from the parent directory. The difference is that once `CL_COMPILER` is set to
 # `OFF` and the other time to `ON`, respectively.
 
+add_subdirectory (Accelerate)
 add_subdirectory (CFNetwork)
 add_subdirectory (CoreFoundation)
 add_subdirectory (CoreFoundationAdditions)

@@ -244,10 +244,7 @@ else (CL_COMPILER)
     add_library (Foundation SHARED ${SOURCE_FILES} "${ASM_OUTPUT}")
     add_prep_dep (Foundation)
 
-    target_include_directories (Foundation PRIVATE
-        ${WOCFX_INCLUDE_DIRS}
-        # From `FoundationLib.vcxproj`.
-        ../include)
+    target_include_directories (Foundation PRIVATE ${WOCFX_INCLUDE_DIRS})
 
     target_compile_definitions (Foundation PRIVATE
         ${WINOBJC_DEFS}
