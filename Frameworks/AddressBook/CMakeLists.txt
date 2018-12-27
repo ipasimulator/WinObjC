@@ -14,9 +14,7 @@ if (NOT CL_COMPILER)
         ABSourceInternal.mm
         ABMultiValueInternal.mm)
 
-    # For `ObjCUWP*.lib`s specified in source files.
-    link_directories (AddressBook PRIVATE
-        "../../deps/prebuilt/Universal Windows/x86")
+    add_objcuwp_libs ()
 
     add_library (AddressBook SHARED ${SOURCE_FILES})
     add_prep_dep (AddressBook)
