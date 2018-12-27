@@ -1,0 +1,8 @@
+[ver:1,total:180]
+Frameworks/CMakeLists.txt:60,1545912000:60,m
+Frameworks/MessageUI/CMakeLists.txt:55,1545912000:55,m
+build/MessageUI/dll/MessageUI.vcxproj:30,1545912000:30,r
+build/MessageUI/lib/MessageUILib.vcxproj:20,1545912000:20,r
+Frameworks/AddressBook/CMakeLists.txt:5,1545912000:5,r
+build/MessageUI/dll/dllmain.cpp:5,1545912000:5,r
+Frameworks/MediaPlayer/CMakeLists.txt:5,1545912000:5,r
