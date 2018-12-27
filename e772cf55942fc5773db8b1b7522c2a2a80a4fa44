@@ -1,0 +1,9 @@
+[ver:1,total:270]
+Frameworks/AddressBookUI/CMakeLists.txt:48,1545937200:40,1545948000:8,m
+Frameworks/AVFoundation/CMakeLists.txt:48,1545937200:40,1545948000:8,m
+Frameworks/CoreImage/CMakeLists.txt:38,1545937200:30,1545948000:8,m
+Frameworks/EventKitUI/CMakeLists.txt:38,1545937200:30,1545948000:8,m
+Frameworks/GameKit/CMakeLists.txt:30,1545937200:30,m
+Frameworks/AVKit/CMakeLists.txt:28,1545937200:20,1545948000:8,m
+Frameworks/CoreAudioKit/CMakeLists.txt:28,1545937200:20,1545948000:8,m
+Frameworks/OpenGLES/CMakeLists.txt:12,1545948000:12,r
