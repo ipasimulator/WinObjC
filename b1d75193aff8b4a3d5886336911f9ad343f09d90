@@ -1,0 +1,7 @@
+[ver:1,total:180]
+Frameworks/CMakeLists.txt:60,1545912000:60,m
+Frameworks/GamePlayKit/CMakeLists.txt:50,1545912000:50,m
+Frameworks/AddressBook/CMakeLists.txt:30,1545912000:30,r
+build/GamePlayKit/lib/GamePlayKitLib.vcxproj:26,1545912000:26,r
+build/GamePlayKit/dll/dllmain.cpp:8,1545912000:8,r
+build/GamePlayKit/dll/GamePlayKit.vcxproj:6,1545912000:6,r
