@@ -1,0 +1,9 @@
+[ver:1,total:180]
+Frameworks/CoreAudioKit/CMakeLists.txt:50,1545868800:50,m
+Frameworks/AddressBook/CMakeLists.txt:28,1545868800:28,r
+Frameworks/CMakeLists.txt:20,1545868800:20,m
+Frameworks/CoreAudio/CMakeLists.txt:20,1545868800:20,r
+build/CoreAudioKit/lib/CoreAudioKitLib.vcxproj:19,1545868800:19,r
+build/CoreAudioKit/dll/dllmain.cpp:18,1545868800:18,r
+build/CoreAudioKit/dll/CoreAudioKit.vcxproj:17,1545868800:17,r
+Frameworks/CoreAudioKit/CABTMIDICentralViewController.mm:8,1545868800:8,r
