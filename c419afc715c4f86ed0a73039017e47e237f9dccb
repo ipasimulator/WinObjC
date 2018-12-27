@@ -1,0 +1,8 @@
+[ver:1,total:120]
+Frameworks/Security/CMakeLists.txt:34,1545915600:34,m
+build/Security/lib/SecurityLib.vcxproj:29,1545915600:29,r
+Frameworks/CMakeLists.txt:19,1545915600:19,m
+Frameworks/AddressBook/CMakeLists.txt:12,1545915600:12,r
+Frameworks/SafariServices/CMakeLists.txt:12,1545915600:12,r
+build/Security/dll/dllmain.cpp:7,1545915600:7,r
+build/Security/dll/Security.vcxproj:7,1545915600:7,r
