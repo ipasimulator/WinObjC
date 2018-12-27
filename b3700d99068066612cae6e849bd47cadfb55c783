@@ -1,0 +1,8 @@
+[ver:1,total:180]
+Frameworks/SafariServices/CMakeLists.txt:55,1545915600:55,m
+build/SafariServices/dll/SafariServices.vcxproj:28,1545915600:28,r
+build/SafariServices/dll/dllmain.cpp:26,1545915600:26,r
+Frameworks/AddressBook/CMakeLists.txt:21,1545915600:21,r
+build/SafariServices/lib/SafariServicesLib.vcxproj:20,1545915600:20,r
+Frameworks/CMakeLists.txt:15,1545915600:15,m
+Frameworks/QuickLook/CMakeLists.txt:15,1545915600:15,r
