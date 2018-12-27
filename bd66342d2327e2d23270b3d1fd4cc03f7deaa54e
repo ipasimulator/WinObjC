@@ -1,0 +1,8 @@
+[ver:1,total:180]
+Frameworks/CMakeLists.txt:60,1545908400:60,m
+Frameworks/EventKit/CMakeLists.txt:41,1545908400:41,m
+build/EventKit/lib/EventKitLib.vcxproj:37,1545908400:37,r
+build/EventKit/dll/dllmain.cpp:15,1545908400:15,r
+build/EventKit/dll/EventKit.vcxproj:15,1545908400:15,r
+Frameworks/CoreVideo/CMakeLists.txt:6,1545908400:6,r
+Frameworks/AddressBook/CMakeLists.txt:6,1545908400:6,r
