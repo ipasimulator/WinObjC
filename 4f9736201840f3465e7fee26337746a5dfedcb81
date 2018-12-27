@@ -1,0 +1,8 @@
+[ver:1,total:240]
+Frameworks/CMakeLists.txt:90,1545930000:90,m
+Frameworks/SystemConfiguration/CMakeLists.txt:51,1545930000:51,m
+build/SystemConfiguration/dll/SystemConfiguration.vcxproj:42,1545930000:42,r
+build/SystemConfiguration/lib/SystemConfigurationLib.vcxproj:35,1545930000:35,r
+build/SystemConfiguration/dll/dllmain.cpp:12,1545930000:12,r
+Frameworks/StoreKit/CMakeLists.txt:5,1545930000:5,r
+Frameworks/AddressBook/CMakeLists.txt:5,1545930000:5,r
