@@ -1,0 +1,9 @@
+[ver:1,total:660]
+build/OpenGLES/lib/Debug/OpenGLESLib.tlog/clang.command.1.tlog:225,1545912000:225,r
+Frameworks/OpenGLES/CMakeLists.txt:202,1545912000:202,m
+build/OpenGLES/dll/OpenGLES.vcxproj:89,1545912000:89,r
+build/OpenGLES/lib/OpenGLESLib.vcxproj:84,1545912000:84,r
+Frameworks/CMakeLists.txt:24,1545912000:24,m
+Frameworks/Metal/CMakeLists.txt:15,1545912000:15,r
+Frameworks/AddressBook/CMakeLists.txt:15,1545912000:15,r
+build/OpenGLES/dll/dllmain.cpp:6,1545912000:6,r
