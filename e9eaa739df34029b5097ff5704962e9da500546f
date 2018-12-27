@@ -1,0 +1,15 @@
+[ver:1,total:3420]
+Frameworks/UIKit/CMakeLists.txt:1365,1545933600:610,1545937200:755,m
+Frameworks/AutoLayout/CMakeLists.txt:840,1545933600:420,1545937200:420,m
+build/AutoLayout/dll/AutoLayout.vcxproj:205,1545937200:205,r
+Frameworks/UIKit/UIView.mm:180,1545937200:180,m
+Frameworks/AddressBook/CMakeLists.txt:180,1545933600:180,r
+build/AutoLayout/lib/AutoLayoutLib.vcxproj:170,1545937200:170,r
+build/UIKit/lib/UIKitLib.vcxproj:150,1545933600:150,r
+Frameworks/AutoLayout/AutoLayout.mm:95,1545937200:95,r
+build/UIKit/dll/UIKit.vcxproj:60,1545933600:60,r
+build/UIKit/dll/UIKit.def:60,1545933600:60,r
+Frameworks/include/AutoLayout.h:45,1545937200:45,r
+Frameworks/include/UIView+AutoLayout.h:30,1545937200:30,r
+msvc/sdk-build.props:20,1545937200:20,r
+deps/3rdparty/cassowary-0.60/cassowary-0.60-Windows.vcxproj:20,1545933600:20,r
