@@ -1,0 +1,8 @@
+[ver:1,total:120]
+Frameworks/CoreMedia/CMakeLists.txt:50,1545908400:50,m
+build/CoreMedia/lib/CoreMediaLib.vcxproj:20,1545908400:20,r
+Frameworks/CMakeLists.txt:10,1545908400:10,m
+build/CoreMedia/dll/dllmain.cpp:10,1545908400:10,r
+build/CoreMedia/dll/CoreMedia.vcxproj:10,1545908400:10,r
+Frameworks/CoreLocation/CMakeLists.txt:10,1545908400:10,r
+Frameworks/AddressBook/CMakeLists.txt:10,1545908400:10,r
