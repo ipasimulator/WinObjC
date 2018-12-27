@@ -1,0 +1,8 @@
+[ver:1,total:120]
+Frameworks/HomeKit/CMakeLists.txt:46,1545912000:46,m
+build/HomeKit/lib/HomeKitLib.vcxproj:22,1545912000:22,r
+Frameworks/CMakeLists.txt:12,1545912000:12,m
+Frameworks/AddressBook/CMakeLists.txt:12,1545912000:12,r
+Frameworks/HealthKit/CMakeLists.txt:12,1545912000:12,r
+build/HomeKit/dll/dllmain.cpp:9,1545912000:9,r
+build/HomeKit/dll/HomeKit.vcxproj:7,1545912000:7,r
