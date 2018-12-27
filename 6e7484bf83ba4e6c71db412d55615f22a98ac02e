@@ -1,0 +1,8 @@
+[ver:1,total:180]
+Frameworks/GameController/CMakeLists.txt:65,1545908400:65,m
+build/GameController/lib/GameControllerLib.vcxproj:30,1545908400:30,r
+build/GameController/dll/GameController.vcxproj:20,1545908400:20,r
+build/GameController/dll/dllmain.cpp:20,1545908400:20,r
+Frameworks/EventKitUI/CMakeLists.txt:15,1545908400:15,r
+Frameworks/AddressBook/CMakeLists.txt:15,1545908400:15,r
+Frameworks/CMakeLists.txt:15,1545908400:15,m
