@@ -1,0 +1,8 @@
+[ver:1,total:120]
+Frameworks/Metal/CMakeLists.txt:42,1545912000:42,m
+build/Metal/lib/MetalLib.vcxproj:23,1545912000:23,r
+Frameworks/CMakeLists.txt:15,1545912000:15,m
+Frameworks/MessageUI/CMakeLists.txt:15,1545912000:15,r
+Frameworks/AddressBook/CMakeLists.txt:15,1545912000:15,r
+build/Metal/dll/dllmain.cpp:5,1545912000:5,r
+build/Metal/dll/Metal.vcxproj:5,1545912000:5,r
