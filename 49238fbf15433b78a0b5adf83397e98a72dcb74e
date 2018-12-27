@@ -1,0 +1,8 @@
+[ver:1,total:120]
+Frameworks/Twitter/CMakeLists.txt:49,1545930000:49,m
+build/Twitter/lib/TwitterLib.vcxproj:20,1545930000:20,r
+Frameworks/SystemConfiguration/CMakeLists.txt:12,1545930000:12,r
+Frameworks/AddressBook/CMakeLists.txt:12,1545930000:12,r
+build/Twitter/dll/dllmain.cpp:11,1545930000:11,r
+Frameworks/CMakeLists.txt:8,1545930000:8,m
+build/Twitter/dll/Twitter.vcxproj:8,1545930000:8,r
