@@ -1,0 +1,23 @@
+[ver:1,total:540]
+Frameworks/AddressBook/CMakeLists.txt:194,1545908400:194,m
+Frameworks/CMakeLists.txt:90,1545908400:90,m
+Frameworks/AddressBook/NSDate+AddressBookAdditions.mm:63,1545908400:63,r
+Frameworks/CoreMotion/CMakeLists.txt:60,1545908400:60,m
+include/Platform/Universal Windows/UWP/WindowsGraphicsDisplay.h:30,1545908400:30,r
+build/CoreMotion/lib/CoreMotionLib.vcxproj:16,1545908400:16,r
+build/CoreMotion/dll/CoreMotion.vcxproj:15,1545908400:15,r
+build/CoreMotion/dll/dllmain.cpp:15,1545908400:15,r
+Frameworks/AddressBook/ABAddressBookManagerInternal.h:14,1545908400:14,r
+Frameworks/CoreMIDI/CMakeLists.txt:7,1545908400:7,r
+Frameworks/AddressBook/NSDate+AddressBookAdditions.h:3,1545908400:3,r
+Frameworks/AddressBook/ABAddressBook.mm:3,1545908400:3,r
+Frameworks/AddressBook/ABMultiValueInternal.h:3,1545908400:3,r
+Frameworks/AddressBook/ABMultiValueInternal.mm:3,1545908400:3,r
+Frameworks/AddressBook/ABGroup.mm:3,1545908400:3,r
+Frameworks/AddressBook/ABSource.mm:3,1545908400:3,r
+Frameworks/AddressBook/ABMultiValue.mm:3,1545908400:3,r
+Frameworks/AddressBook/ABRecordInternal.mm:3,1545908400:3,r
+Frameworks/AddressBook/ABRecordInternal.h:3,1545908400:3,r
+Frameworks/AddressBook/ABAddressBookManagerInternal.mm:3,1545908400:3,r
+Frameworks/AddressBook/ABMutableMultiValue.mm:3,1545908400:3,r
+Frameworks/AddressBook/ABPerson.mm:3,1545908400:3,r
