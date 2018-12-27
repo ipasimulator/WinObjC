@@ -1,0 +1,9 @@
+[ver:1,total:300]
+build/QuartzCore/lib/QuartzCoreLib.vcxproj:133,1545912000:103,1545915600:30,r
+Frameworks/QuartzCore/CMakeLists.txt:107,1545912000:77,1545915600:30,m
+Frameworks/CMakeLists.txt:15,1545912000:15,m
+Frameworks/OpenGLES/CMakeLists.txt:15,1545912000:15,r
+build/OpenGLES/lib/OpenGLESLib.vcxproj:8,1545912000:8,r
+Frameworks/AddressBook/CMakeLists.txt:8,1545912000:8,r
+build/QuartzCore/dll/QuartzCore.vcxproj:7,1545912000:7,r
+build/QuartzCore/dll/dllmain.cpp:7,1545912000:7,r
