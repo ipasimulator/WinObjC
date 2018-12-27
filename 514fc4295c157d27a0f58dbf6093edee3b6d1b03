@@ -1,0 +1,8 @@
+[ver:1,total:240]
+Frameworks/iAd/CMakeLists.txt:112,1545912000:112,m
+Frameworks/CMakeLists.txt:39,1545912000:39,m
+build/iAd/dll/iAd.vcxproj:35,1545912000:35,r
+build/iAd/lib/iAdLib.vcxproj:20,1545912000:20,r
+Frameworks/HomeKit/CMakeLists.txt:17,1545912000:17,r
+Frameworks/AddressBook/CMakeLists.txt:12,1545912000:12,r
+build/iAd/dll/dllmain.cpp:5,1545912000:5,r
