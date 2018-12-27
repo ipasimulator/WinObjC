@@ -568,7 +568,11 @@ static std::string _printViewhierarchy(UIView* leafView) {
     self->priv = new UIViewPrivateState(self);
 
     // Configure autolayout
+    // [port] CHANGED: `InitializeAutoLayout` doesn't do anything useful,
+    // [port] anyway (see `AutoLayout.mm`). See #11.
+#if !defined(OBJC_PORT)
     static bool isAutoLayoutInitialized = InitializeAutoLayout();
+#endif
     [self autoLayoutAlloc];
 
     // Set the XAML element's name so it's easily found in the VS live tree viewer

@@ -304,7 +304,8 @@ UIKit.Xaml.lib")
         CoreData
         UIKit.Xaml
         libxml2
-        # TODO: DWrite.lib;RTObjCInterop.lib;Windowscodecs.lib
+        RTObjCInterop
+        # TODO: DWrite.lib;Windowscodecs.lib
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/UIKit/dll/\
 UIKit.def")
 

@@ -18,9 +18,9 @@ if (NOT CL_COMPILER)
 
     target_link_libraries (AutoLayout PRIVATE
         ${WOCFX_LIBS}
+        UIKit # See #11.
         # From `AutoLayout.vcxproj`.
         cassowary
-        # TODO: Add UIKit.
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/AutoLayout/dll/\
 AutoLayout.def")
 endif (NOT CL_COMPILER)
