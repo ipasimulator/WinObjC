@@ -1,0 +1,7 @@
+[ver:1,total:180]
+Frameworks/CMakeLists.txt:80,1545908400:80,m
+Frameworks/GameKit/CMakeLists.txt:46,1545908400:46,m
+build/GameKit/lib/GameKitLib.vcxproj:20,1545908400:20,r
+Frameworks/GameController/CMakeLists.txt:16,1545908400:16,r
+Frameworks/AddressBook/CMakeLists.txt:10,1545908400:10,r
+build/GameKit/dll/GameKit.vcxproj:8,1545908400:8,r
