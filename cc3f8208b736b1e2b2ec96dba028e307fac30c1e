@@ -1,0 +1,8 @@
+[ver:1,total:180]
+Frameworks/CMakeLists.txt:60,1545908400:60,m
+Frameworks/EventKitUI/CMakeLists.txt:49,1545908400:49,m
+build/EventKitUI/lib/EventKitUILib.vcxproj:31,1545908400:31,r
+build/EventKitUI/dll/EventKitUI.vcxproj:12,1545908400:12,r
+build/EventKitUI/dll/dllmain.cpp:12,1545908400:12,r
+Frameworks/EventKit/CMakeLists.txt:8,1545908400:8,r
+Frameworks/AddressBook/CMakeLists.txt:8,1545908400:8,r
