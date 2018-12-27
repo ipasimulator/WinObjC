@@ -1,0 +1,8 @@
+[ver:1,total:540]
+Frameworks/CMakeLists.txt:240,1545868800:180,1545901200:60,m
+Frameworks/CoreBluetooth/CBUUID.mm:180,1545868800:180,r
+Frameworks/CoreData/CMakeLists.txt:49,1545901200:49,m
+build/CoreData/lib/CoreDataLib.vcxproj:29,1545901200:29,r
+Frameworks/AddressBook/CMakeLists.txt:24,1545901200:24,r
+build/CoreData/dll/dllmain.cpp:10,1545901200:10,r
+build/CoreData/dll/CoreData.vcxproj:8,1545901200:8,r
