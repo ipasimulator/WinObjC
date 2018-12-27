@@ -1,0 +1,8 @@
+[ver:1,total:180]
+Frameworks/StoreKit/CMakeLists.txt:57,1545930000:57,m
+Frameworks/Social/CMakeLists.txt:40,1545930000:40,r
+build/StoreKit/dll/StoreKit.vcxproj:30,1545930000:30,r
+build/StoreKit/lib/StoreKitLib.vcxproj:21,1545930000:21,r
+Frameworks/CMakeLists.txt:20,1545930000:20,m
+build/StoreKit/dll/dllmain.cpp:7,1545930000:7,r
+Frameworks/AddressBook/CMakeLists.txt:5,1545930000:5,r
