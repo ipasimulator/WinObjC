@@ -1,0 +1,7 @@
+[ver:1,total:120]
+Frameworks/ImageIO/CMakeLists.txt:55,1545912000:55,m
+build/ImageIO/lib/ImageIOLib.vcxproj:19,1545912000:19,r
+build/ImageIO/dll/dllmain.cpp:15,1545912000:15,r
+build/ImageIO/dll/ImageIO.vcxproj:15,1545912000:15,r
+Frameworks/AddressBook/CMakeLists.txt:8,1545912000:8,r
+Frameworks/iAd/CMakeLists.txt:8,1545912000:8,r
