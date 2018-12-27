@@ -1,0 +1,7 @@
+[ver:1,total:120]
+Frameworks/MediaAccessibility/CMakeLists.txt:52,1545912000:52,m
+build/MediaAccessibility/lib/MediaAccessibilityLib.vcxproj:32,1545912000:32,r
+build/MediaAccessibility/dll/dllmain.cpp:12,1545912000:12,r
+build/MediaAccessibility/dll/MediaAccessibility.vcxproj:12,1545912000:12,r
+Frameworks/MapKit/CMakeLists.txt:6,1545912000:6,r
+Frameworks/AddressBook/CMakeLists.txt:6,1545912000:6,r
