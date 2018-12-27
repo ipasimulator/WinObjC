@@ -1,0 +1,8 @@
+[ver:1,total:180]
+Frameworks/WebKit/CMakeLists.txt:62,1545948000:62,m
+build/WebKit/dll/WebKit.vcxproj:40,1545948000:40,r
+Frameworks/AddressBook/CMakeLists.txt:23,1545948000:23,r
+build/WebKit/lib/WebKitLib.vcxproj:17,1545948000:17,r
+Frameworks/CMakeLists.txt:15,1545948000:15,m
+Frameworks/GameKit/CMakeLists.txt:15,1545948000:15,r
+build/WebKit/dll/dllmain.cpp:8,1545948000:8,r
