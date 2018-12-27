@@ -1,0 +1,8 @@
+[ver:1,total:180]
+Frameworks/CoreMotion/CMakeLists.txt:70,1545908400:70,r
+Frameworks/CoreTelephony/CMakeLists.txt:46,1545908400:46,m
+build/CoreTelephony/lib/CoreTelephonyLib.vcxproj:23,1545908400:23,r
+Frameworks/AddressBook/CMakeLists.txt:20,1545908400:20,r
+build/CoreTelephony/dll/CoreTelephony.vcxproj:9,1545908400:9,r
+Frameworks/CMakeLists.txt:6,1545908400:6,m
+build/CoreTelephony/dll/dllmain.cpp:6,1545908400:6,r
