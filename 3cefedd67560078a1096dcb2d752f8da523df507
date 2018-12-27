@@ -1,0 +1,9 @@
+[ver:1,total:360]
+Frameworks/CMakeLists.txt:140,1545904800:140,m
+Frameworks/CoreLocation/CMakeLists.txt:69,1545908400:69,m
+build/CoreLocation/lib/CoreLocationLib.vcxproj:41,1545908400:41,r
+Frameworks/AddressBook/CMakeLists.txt:40,1545908400:40,r
+build/CoreImage/lib/CoreImageLib.vcxproj:20,1545904800:20,r
+Frameworks/CoreImage/CMakeLists.txt:20,1545904800:20,r
+build/CoreLocation/dll/CoreLocation.vcxproj:15,1545908400:15,r
+build/CoreLocation/dll/dllmain.cpp:15,1545908400:15,r
