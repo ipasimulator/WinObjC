@@ -1,0 +1,8 @@
+[ver:1,total:120]
+Frameworks/LocalAuthentication/CMakeLists.txt:46,1545912000:46,m
+build/LocalAuthentication/lib/LocalAuthenticationLib.vcxproj:30,1545912000:30,r
+Frameworks/ImageIO/CMakeLists.txt:10,1545912000:10,r
+Frameworks/AddressBook/CMakeLists.txt:10,1545912000:10,r
+Frameworks/CMakeLists.txt:10,1545912000:10,m
+build/LocalAuthentication/dll/dllmain.cpp:8,1545912000:8,r
+build/LocalAuthentication/dll/LocalAuthentication.vcxproj:6,1545912000:6,r
