@@ -23,10 +23,7 @@ if (NOT CL_COMPILER)
     add_library (OpenGLES SHARED ${SOURCE_FILES})
     add_prep_dep (OpenGLES)
 
-    target_include_directories (OpenGLES PRIVATE
-        ${WOCFX_INCLUDE_DIRS}
-        # From `OpenGLESLib.vcxproj`.
-        C:/packages/ANGLE.WindowsStore.2.1.13/Include)
+    target_include_directories (OpenGLES PRIVATE ${WOCFX_INCLUDE_DIRS})
 
     target_compile_definitions (OpenGLES PRIVATE
         ${WINOBJC_DEFS}
@@ -40,6 +37,7 @@ if (NOT CL_COMPILER)
     target_link_libraries (OpenGLES PRIVATE
         ${WOCFX_LIBS}
         # From `OpenGLES.vcxproj`.
+        EGL GLESv2 # For NuGet package ANGLE.WindowsStore.
         QuartzCore
         d3d11.lib
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/OpenGLES/dll/\
