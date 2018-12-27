@@ -1,0 +1,8 @@
+[ver:1,total:180]
+Frameworks/CoreText/CMakeLists.txt:61,1545908400:61,m
+Frameworks/CMakeLists.txt:35,1545908400:35,m
+build/CoreText/lib/CoreTextLib.vcxproj:26,1545908400:26,r
+build/CoreText/dll/CoreText.vcxproj:20,1545908400:20,r
+Frameworks/AddressBook/CMakeLists.txt:15,1545908400:15,r
+Frameworks/CoreTelephony/CMakeLists.txt:15,1545908400:15,r
+build/CoreText/dll/dllmain.cpp:8,1545908400:8,r
