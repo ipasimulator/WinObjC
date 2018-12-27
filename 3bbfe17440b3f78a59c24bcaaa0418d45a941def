@@ -1,0 +1,7 @@
+[ver:1,total:240]
+Frameworks/AddressBook/CMakeLists.txt:140,1545912000:140,r
+Frameworks/HealthKit/CMakeLists.txt:50,1545912000:50,m
+Frameworks/GLKit/CMakeLists.txt:20,1545912000:20,r
+build/HealthKit/lib/HealthKitLib.vcxproj:18,1545912000:18,r
+build/HealthKit/dll/HealthKit.vcxproj:6,1545912000:6,r
+build/HealthKit/dll/dllmain.cpp:6,1545912000:6,r
