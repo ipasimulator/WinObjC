@@ -1,0 +1,12 @@
+[ver:1,total:480]
+Frameworks/GLKit/CMakeLists.txt:178,1545912000:178,m
+build/GLKit/dll/GLKit.vcxproj:101,1545912000:101,r
+build/GLKit/lib/GLKitLib.vcxproj:70,1545912000:70,r
+Frameworks/AddressBook/CMakeLists.txt:34,1545912000:34,r
+build/GLKit/lib/GLKitShaderLib/GLKitShaderLib.vcxproj:24,1545912000:24,r
+Frameworks/GamePlayKit/CMakeLists.txt:19,1545912000:19,r
+Frameworks/CMakeLists.txt:16,1545912000:16,m
+build/GLKit/dll/dllmain.cpp:15,1545912000:15,r
+Frameworks/CoreGraphics/CMakeLists.txt:11,1545912000:11,r
+Frameworks/Foundation/CMakeLists.txt:6,1545912000:6,r
+Frameworks/CoreMotion/CMakeLists.txt:6,1545912000:6,r
