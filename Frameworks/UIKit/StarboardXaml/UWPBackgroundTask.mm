@@ -195,9 +195,10 @@ static const double s_backgroundTaskTimeout = 10 * 60; // 10 minutes
     FAIL_FAST_IF_FAILED(applicationTrigger->RequestAsync(&triggerResult));
 
     StrongId<UWPBackgroundTask> strongSelf(self);
+    // [port] CHANGED: Added `mutable`, so that `strongSelf` is not `const`.
     auto triggerResultCallback =
         MakeApplicationTriggerRequestCompletedCallback([strongSelf](IAsyncOperation<ApplicationTriggerResult> * triggerResult,
-                                                                    AsyncStatus status) noexcept->HRESULT {
+                                                                    AsyncStatus status) mutable noexcept->HRESULT {
             if (status == AsyncStatus::Completed) {
                 TraceVerbose(TAG, L"Background task request completed successfully.");
                 ApplicationTriggerResult result;

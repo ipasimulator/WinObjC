@@ -17,5 +17,7 @@
 #pragma once
 
 #include <COMIncludes.h>
-#include_next <dxgi1_3.h>
+// [port] CHANGED: Changed `include_next` to `include`. `include_next` didn't
+// [port] work.
+#include <dxgi1_3.h>
 #include <COMIncludes_End.h>
