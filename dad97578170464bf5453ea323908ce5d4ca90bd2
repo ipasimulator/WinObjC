@@ -1,0 +1,8 @@
+[ver:1,total:180]
+Frameworks/Contacts/CMakeLists.txt:63,1545868800:63,m
+build/Contacts/dll/Contacts.vcxproj:30,1545868800:30,r
+Frameworks/AddressBook/CMakeLists.txt:24,1545868800:24,r
+build/Contacts/lib/ContactsLib.vcxproj:24,1545868800:24,r
+build/Contacts/dll/dllmain.cpp:15,1545868800:15,r
+Frameworks/CloudKit/CMakeLists.txt:12,1545868800:12,r
+Frameworks/CMakeLists.txt:12,1545868800:12,m
