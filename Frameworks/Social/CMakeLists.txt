@@ -21,6 +21,14 @@ if (NOT CL_COMPILER)
 
     target_compile_options (Social PRIVATE ${WINOBJC_CLANG_OPTIONS})
 
+    # See #9.
+    add_library (Social.Xaml SHARED IMPORTED)
+    set_target_properties (Social.Xaml PROPERTIES
+        IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/../Social.Xaml/prebuilt/\
+Socal.Xaml.dll"
+        IMPORTED_IMPLIB "${CMAKE_CURRENT_SOURCE_DIR}/../Social.Xaml/prebuilt/\
+Social.Xaml.lib")
+
     target_link_libraries (Social PRIVATE
         ${WOCFX_LIBS}
         # From `Social.vcxproj`.
