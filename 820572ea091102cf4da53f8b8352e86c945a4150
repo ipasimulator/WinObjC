@@ -1,0 +1,7 @@
+[ver:1,total:120]
+Frameworks/CoreVideo/CMakeLists.txt:56,1545908400:56,m
+Frameworks/CoreText/CMakeLists.txt:21,1545908400:21,r
+Frameworks/AddressBook/CMakeLists.txt:15,1545908400:15,r
+build/CoreVideo/lib/CoreVideoLib.vcxproj:13,1545908400:13,r
+build/CoreVideo/dll/CoreVideo.vcxproj:9,1545908400:9,r
+build/CoreVideo/dll/dllmain.cpp:6,1545908400:6,r
