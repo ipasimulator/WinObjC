@@ -1,0 +1,8 @@
+[ver:1,total:360]
+Frameworks/CloudKit/CMakeLists.txt:170,1545865200:60,1545868800:110,m
+Frameworks/CMakeLists.txt:60,1545865200:30,1545868800:30,m
+build/CloudKit/lib/CloudKitLib.vcxproj:50,1545868800:50,r
+Frameworks/AddressBook/CMakeLists.txt:40,1545865200:30,1545868800:10,r
+build/CloudKit/dll/CloudKit.vcxproj:20,1545868800:20,r
+build/CloudKit/dll/dllmain.cpp:10,1545868800:10,r
+build/BuildSupport/TestPlatformMultiplexer.msbuildproj:10,1545868800:10,r
