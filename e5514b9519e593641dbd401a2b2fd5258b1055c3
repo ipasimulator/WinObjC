@@ -1,0 +1,6 @@
+[ver:1,total:180]
+Frameworks/CoreAudio/CMakeLists.txt:84,1545868800:84,m
+build/CoreAudio/dll/CoreAudio.vcxproj:30,1545868800:30,r
+build/CoreAudio/lib/CoreAudioLib.vcxproj:30,1545868800:30,r
+Frameworks/AddressBook/CMakeLists.txt:24,1545868800:24,r
+Frameworks/CMakeLists.txt:12,1545868800:12,m
