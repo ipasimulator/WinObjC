@@ -1,0 +1,9 @@
+[ver:1,total:180]
+Frameworks/Social/CMakeLists.txt:52,1545915600:52,m
+Frameworks/AddressBook/CMakeLists.txt:37,1545915600:37,r
+Frameworks/CMakeLists.txt:30,1545915600:30,m
+build/Social/lib/SocialLib.vcxproj:23,1545915600:23,r
+build/Social/dll/Social.vcxproj:18,1545915600:18,r
+build/Security/dll/Security.vcxproj:7,1545915600:7,r
+Frameworks/Security/CMakeLists.txt:7,1545915600:7,r
+build/Social/dll/dllmain.cpp:6,1545915600:6,r
