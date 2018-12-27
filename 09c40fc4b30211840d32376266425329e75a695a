@@ -1,0 +1,8 @@
+[ver:1,total:120]
+Frameworks/CoreMIDI/CMakeLists.txt:46,1545908400:46,m
+build/CoreMIDI/lib/CoreMIDILib.vcxproj:29,1545908400:29,r
+build/CoreMIDI/dll/CoreMIDI.vcxproj:12,1545908400:12,r
+build/CoreMIDI/dll/dllmain.cpp:12,1545908400:12,r
+Frameworks/CoreMedia/CMakeLists.txt:7,1545908400:7,r
+Frameworks/AddressBook/CMakeLists.txt:7,1545908400:7,r
+Frameworks/CMakeLists.txt:7,1545908400:7,m
