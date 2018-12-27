@@ -1,0 +1,8 @@
+[ver:1,total:120]
+Frameworks/MediaPlayer/CMakeLists.txt:48,1545912000:48,m
+build/MediaPlayer/lib/MediaPlayerLib.vcxproj:30,1545912000:30,r
+build/MediaPlayer/dll/dllmain.cpp:12,1545912000:12,r
+build/MediaPlayer/dll/MediaPlayer.vcxproj:12,1545912000:12,r
+Frameworks/CMakeLists.txt:6,1545912000:6,m
+Frameworks/MediaAccessibility/CMakeLists.txt:6,1545912000:6,r
+Frameworks/AddressBook/CMakeLists.txt:6,1545912000:6,r
