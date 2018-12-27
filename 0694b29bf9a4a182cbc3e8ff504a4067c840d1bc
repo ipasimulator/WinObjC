@@ -1,0 +1,8 @@
+[ver:1,total:180]
+Frameworks/MapKit/CMakeLists.txt:46,1545912000:46,m
+build/MapKit/lib/MapKitLib.vcxproj:43,1545912000:43,r
+build/MapKit/dll/MapKit.vcxproj:35,1545912000:35,r
+Frameworks/CMakeLists.txt:30,1545912000:30,m
+Frameworks/LocalAuthentication/CMakeLists.txt:10,1545912000:10,r
+Frameworks/AddressBook/CMakeLists.txt:10,1545912000:10,r
+build/MapKit/dll/dllmain.cpp:6,1545912000:6,r
