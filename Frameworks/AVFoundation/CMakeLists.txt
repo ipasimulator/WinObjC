@@ -153,7 +153,8 @@ if (NOT CL_COMPILER)
     target_link_libraries (AVFoundation PRIVATE
         ${WOCFX_LIBS}
         # From `AVFoundation.vcxproj`.
-        # TODO: Add UIKit, QuartzCore.
+        UIKit
+        QuartzCore
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/AVFoundation/dll/\
 AVFoundation.def")
 endif (NOT CL_COMPILER)

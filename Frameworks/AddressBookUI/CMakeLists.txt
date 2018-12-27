@@ -26,7 +26,8 @@ if (NOT CL_COMPILER)
     target_link_libraries (AddressBookUI PRIVATE
         ${WOCFX_LIBS}
         # From `AddressBookUI.vcxproj`.
-        # TODO: Add UIKit, AddressBook.
+        UIKit
+        # TODO: Add AddressBook.
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/AddressBookUI/dll/\
 AddressBookUI.def")
 endif (NOT CL_COMPILER)

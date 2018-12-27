@@ -50,7 +50,7 @@ if (NOT CL_COMPILER)
     target_link_libraries (GameKit PRIVATE
         ${WOCFX_LIBS}
         # From `GameKit.vcxproj`.
-        # TODO: Add UIKit.
+        UIKit
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/GameKit/dll/\
 GameKit.def")
 endif (NOT CL_COMPILER)

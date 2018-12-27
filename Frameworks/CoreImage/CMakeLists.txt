@@ -35,7 +35,7 @@ if (NOT CL_COMPILER)
     target_link_libraries (CoreImage PRIVATE
         ${WOCFX_LIBS}
         # From `CoreImageLib.vcxproj`.
-        # TODO: Add UIKit.
+        UIKit
         # From `CoreImage.vcxproj`.
         CoreGraphics
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/CoreImage/dll/\

@@ -19,7 +19,7 @@ if (NOT CL_COMPILER)
     target_link_libraries (CoreAudioKit PRIVATE
         ${WOCFX_LIBS}
         # From `CoreAudioKit.vcxproj`.
-        # TODO: Add UIKit.
+        UIKit
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/CoreAudioKit/dll/\
 CoreAudioKit.def")
 endif (NOT CL_COMPILER)

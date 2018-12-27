@@ -22,6 +22,6 @@ if (NOT CL_COMPILER)
     target_link_libraries (AVKit PRIVATE
         ${WOCFX_LIBS}
         # From `AVKit.vcxproj`.
-        # TODO: Add UIKit.
+        UIKit
         "-Wl,/def:${CMAKE_CURRENT_SOURCE_DIR}/../../build/AVKit/dll/AVKit.def")
 endif (NOT CL_COMPILER)
