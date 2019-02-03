@@ -150,4 +150,22 @@ CoreFoundation.def" # For `<ModuleDefinitionFile>`.
         objc
         woc-WinObjCRT
         Starboard) # TODO: This is not in `lld-link`'s `.tlog` file!
+
+    # Copy header files. See #13.
+    list (TRANSFORM CF_PUBLIC_HEADERS PREPEND
+        "${SOURCE_DIR}/deps/WinObjC/include/CoreFoundation/")
+    list (TRANSFORM CF_PRIVATE_HEADERS PREPEND
+        "${SOURCE_DIR}/deps/WinObjC/Frameworks/include/")
+    add_custom_command (OUTPUT ${CF_PUBLIC_HEADERS} ${CF_PRIVATE_HEADERS}
+        COMMAND "${CMAKE_COMMAND}" "-DSOURCE_DIR=${SOURCE_DIR}"
+            "-DBINARY_DIR=${BINARY_DIR}"
+            -P "${SOURCE_DIR}/scripts/CopyWocHeaders.cmake"
+        COMMENT "Copy CoreFoundation headers"
+        USES_TERMINAL
+        # TODO: Wrong usage of `DEPENDS`.
+        DEPENDS "${CMAKE_SOURCE_DIR}/scripts/CopyWocHeaders.cmake"
+            "${CMAKE_SOURCE_DIR}/scripts/CommonVariables.cmake")
+    add_custom_target (CoreFoundationHeaders
+        DEPENDS ${CF_PUBLIC_HEADERS} ${CF_PRIVATE_HEADERS})
+    add_dependencies (CoreFoundation CoreFoundationHeaders)
 endif (NOT CL_COMPILER)
