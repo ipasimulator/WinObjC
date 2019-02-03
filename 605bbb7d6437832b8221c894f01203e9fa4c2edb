@@ -1,0 +1,11 @@
+[ver:1,total:3300]
+Frameworks/CoreFoundation/CMakeLists.txt:1556,1549184400:180,1549188000:1376,m
+msvc/sdk-build.props:654,1549184400:230,1549188000:424,r
+.gitignore:580,1549184400:240,1549188000:340,r
+Frameworks/CoreFoundationAdditions/_NSCFType.mm:180,1549184400:180,r
+Frameworks/CMakeLists.txt:180,1545948000:180,r
+include/AssertMacros.h:60,1549188000:60,r
+Frameworks/CoreFoundation/Base.subproj/CFBase.h:30,1549184400:30,r
+CMakeLists.txt:20,1549184400:20,r
+include/module.modulemap:20,1549188000:20,d
+msvc/sdk-build.targets:20,1549184400:20,r
