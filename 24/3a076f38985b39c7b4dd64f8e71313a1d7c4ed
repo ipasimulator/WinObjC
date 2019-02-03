@@ -1,0 +1,7 @@
+[ver:1,total:1260]
+Frameworks/CoreFoundation/CMakeLists.txt:555,1549188000:180,1549198800:15,1549209600:330,1549213200:30,m
+CMakeLists.txt:510,1549209600:180,1549213200:330,r
+Frameworks/CoreFoundation/Base.subproj/CFBase.h:135,1549198800:135,r
+Frameworks/CoreFoundation/linux.ld:30,1549209600:30,r
+.gitignore:15,1549198800:15,r
+msvc/sdk-build.props:15,1549198800:15,r
