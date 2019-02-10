@@ -238,7 +238,6 @@ else (CL_COMPILER)
         OUTPUT "${ASM_OUTPUT}"
         # `/safeseh` for `<UseSafeExceptionHandlers>`.
         COMMAND ml /nologo /safeseh /c /Fo"${ASM_OUTPUT}" "${ASM_INPUT}"
-        USES_TERMINAL
         DEPENDS "${ASM_INPUT}")
 
     add_library (Foundation SHARED ${SOURCE_FILES} "${ASM_OUTPUT}")
