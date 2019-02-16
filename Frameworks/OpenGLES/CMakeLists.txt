@@ -21,7 +21,7 @@ if (NOT CL_COMPILER)
         GLES1122/OpenGLESUtil.mm)
 
     add_library (OpenGLES SHARED ${SOURCE_FILES})
-    add_prep_dep (OpenGLES)
+    woc_framework (OpenGLES)
 
     target_include_directories (OpenGLES PRIVATE ${WOCFX_INCLUDE_DIRS})
 

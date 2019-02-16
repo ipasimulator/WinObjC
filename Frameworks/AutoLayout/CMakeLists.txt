@@ -4,7 +4,7 @@ if (NOT CL_COMPILER)
         AutoLayout.mm)
 
     add_library (AutoLayout SHARED ${SOURCE_FILES})
-    add_prep_dep (AutoLayout)
+    woc_framework (AutoLayout)
 
     target_include_directories (AutoLayout PRIVATE ${WOCFX_INCLUDE_DIRS})
 

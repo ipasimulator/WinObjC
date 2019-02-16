@@ -21,7 +21,7 @@ if (NOT CL_COMPILER)
         CIContext.mm)
 
     add_library (CoreImage SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreImage)
+    woc_framework (CoreImage)
 
     target_include_directories (CoreImage PRIVATE ${WOCFX_INCLUDE_DIRS})
 

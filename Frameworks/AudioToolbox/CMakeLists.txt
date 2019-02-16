@@ -17,7 +17,7 @@ if (NOT CL_COMPILER)
         SystemSound.mm)
 
     add_library (AudioToolbox SHARED ${SOURCE_FILES})
-    add_prep_dep (AudioToolbox)
+    woc_framework (AudioToolbox)
 
     target_include_directories (AudioToolbox PRIVATE
         ${WOCFX_INCLUDE_DIRS}

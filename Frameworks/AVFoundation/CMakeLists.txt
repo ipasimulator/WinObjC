@@ -136,7 +136,7 @@ if (NOT CL_COMPILER)
         AVVideoCompositionInstruction.mm)
 
     add_library (AVFoundation SHARED ${SOURCE_FILES})
-    add_prep_dep (AVFoundation)
+    woc_framework (AVFoundation)
 
     target_include_directories (AVFoundation PRIVATE ${WOCFX_INCLUDE_DIRS})
 

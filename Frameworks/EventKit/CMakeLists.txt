@@ -17,7 +17,7 @@ if (NOT CL_COMPILER)
         EventKitConstants.mm)
 
     add_library (EventKit SHARED ${SOURCE_FILES})
-    add_prep_dep (EventKit)
+    woc_framework (EventKit)
 
     target_include_directories (EventKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

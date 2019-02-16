@@ -5,7 +5,7 @@ if (NOT CL_COMPILER)
         MFMessageComposeViewController.mm)
 
     add_library (MessageUI SHARED ${SOURCE_FILES})
-    add_prep_dep (MessageUI)
+    woc_framework (MessageUI)
 
     target_include_directories (MessageUI PRIVATE ${WOCFX_INCLUDE_DIRS})
 

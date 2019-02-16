@@ -22,7 +22,7 @@ if (NOT CL_COMPILER)
     add_objcuwp_libs ()
 
     add_library (CoreMotion SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreMotion)
+    woc_framework (CoreMotion)
 
     target_include_directories (CoreMotion PRIVATE ${WOCFX_INCLUDE_DIRS})
 

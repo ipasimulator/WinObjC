@@ -46,7 +46,7 @@ if (NOT CL_COMPILER)
         MKUserTrackingBarButtonItem.mm)
 
     add_library (MapKit SHARED ${SOURCE_FILES})
-    add_prep_dep (MapKit)
+    woc_framework (MapKit)
 
     target_include_directories (MapKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

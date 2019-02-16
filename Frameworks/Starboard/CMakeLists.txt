@@ -26,7 +26,7 @@ if (CL_COMPILER)
     add_library (Starboard STATIC ${SOURCE_FILES})
 else (CL_COMPILER)
     add_library (Starboard SHARED ${SOURCE_FILES})
-    add_prep_dep (Starboard)
+    woc_framework (Starboard)
 endif (CL_COMPILER)
 
 target_link_libraries (Starboard PRIVATE

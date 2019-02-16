@@ -30,7 +30,7 @@ if (NOT CL_COMPILER)
         ../Starboard/Quaternion.mm)
 
     add_library (QuartzCore SHARED ${SOURCE_FILES})
-    add_prep_dep (QuartzCore)
+    woc_framework (QuartzCore)
 
     target_include_directories (QuartzCore PRIVATE
         ${WOCFX_INCLUDE_DIRS}

@@ -33,7 +33,7 @@ if (NOT CL_COMPILER)
         GKStateMachine.mm)
 
     add_library (GamePlayKit SHARED ${SOURCE_FILES})
-    add_prep_dep (GamePlayKit)
+    woc_framework (GamePlayKit)
 
     target_include_directories (GamePlayKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

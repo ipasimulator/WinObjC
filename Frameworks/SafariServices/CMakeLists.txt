@@ -7,7 +7,7 @@ if (NOT CL_COMPILER)
         # TODO: Add `dllmain.cpp`?
 
     add_library (SafariServices SHARED ${SOURCE_FILES})
-    add_prep_dep (SafariServices)
+    woc_framework (SafariServices)
 
     target_include_directories (SafariServices PRIVATE ${WOCFX_INCLUDE_DIRS})
 

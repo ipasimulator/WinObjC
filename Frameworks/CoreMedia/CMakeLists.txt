@@ -12,7 +12,7 @@ if (NOT CL_COMPILER)
         CMTimeRange.mm)
 
     add_library (CoreMedia SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreMedia)
+    woc_framework (CoreMedia)
 
     target_include_directories (CoreMedia PRIVATE ${WOCFX_INCLUDE_DIRS})
 

@@ -38,7 +38,7 @@ if (NOT CL_COMPILER)
         HKWorkoutType.mm)
 
     add_library (HealthKit SHARED ${SOURCE_FILES})
-    add_prep_dep (HealthKit)
+    woc_framework (HealthKit)
 
     target_include_directories (HealthKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

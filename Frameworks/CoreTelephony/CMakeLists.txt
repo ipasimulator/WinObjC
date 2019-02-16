@@ -8,7 +8,7 @@ if (NOT CL_COMPILER)
         CTTelephonyNetworkInfo.mm)
 
     add_library (CoreTelephony SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreTelephony)
+    woc_framework (CoreTelephony)
 
     target_include_directories (CoreTelephony PRIVATE ${WOCFX_INCLUDE_DIRS})
 

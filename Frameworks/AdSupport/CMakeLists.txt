@@ -4,7 +4,7 @@ if (NOT CL_COMPILER)
         ASIdentifierManager.mm)
 
     add_library (AdSupport SHARED ${SOURCE_FILES})
-    add_prep_dep (AdSupport)
+    woc_framework (AdSupport)
 
     target_include_directories (AdSupport PRIVATE ${WOCFX_INCLUDE_DIRS})
 

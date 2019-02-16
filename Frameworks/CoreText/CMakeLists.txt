@@ -21,7 +21,7 @@ if (NOT CL_COMPILER)
         DWriteWrapper_CoreText.mm)
 
     add_library (CoreText SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreText)
+    woc_framework (CoreText)
 
     target_include_directories (CoreText PRIVATE ${WOCFX_INCLUDE_DIRS})
 

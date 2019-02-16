@@ -12,7 +12,7 @@ if (NOT CL_COMPILER)
         SecureTransport.mm)
 
     add_library (Security SHARED ${SOURCE_FILES})
-    add_prep_dep (Security)
+    woc_framework (Security)
 
     target_include_directories (Security PRIVATE ${WOCFX_INCLUDE_DIRS})
 

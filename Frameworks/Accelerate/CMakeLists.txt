@@ -159,7 +159,7 @@ else (CL_COMPILER)
         ErrorHandler.mm)
 
     add_library (Accelerate SHARED ${SOURCE_FILES})
-    add_prep_dep (Accelerate)
+    woc_framework (Accelerate)
 
     target_include_directories (Accelerate PRIVATE ${WOCFX_INCLUDE_DIRS})
 

@@ -7,7 +7,7 @@ if (NOT CL_COMPILER)
         ACAccountType.mm)
 
     add_library (Accounts SHARED ${SOURCE_FILES})
-    add_prep_dep (Accounts)
+    woc_framework (Accounts)
 
     target_include_directories (Accounts PRIVATE ${WOCFX_INCLUDE_DIRS})
 

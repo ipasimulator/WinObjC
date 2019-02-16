@@ -36,7 +36,7 @@ if (NOT CL_COMPILER)
         GKConstants.mm)
 
     add_library (GameKit SHARED ${SOURCE_FILES})
-    add_prep_dep (GameKit)
+    woc_framework (GameKit)
 
     target_include_directories (GameKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

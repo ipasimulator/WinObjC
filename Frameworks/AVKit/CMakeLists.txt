@@ -5,7 +5,7 @@ if (NOT CL_COMPILER)
         AVPlayerViewController.mm)
 
     add_library (AVKit SHARED ${SOURCE_FILES})
-    add_prep_dep (AVKit)
+    woc_framework (AVKit)
 
     target_include_directories (AVKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

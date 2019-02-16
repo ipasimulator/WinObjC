@@ -17,7 +17,7 @@ if (NOT CL_COMPILER)
     add_objcuwp_libs ()
 
     add_library (AddressBook SHARED ${SOURCE_FILES})
-    add_prep_dep (AddressBook)
+    woc_framework (AddressBook)
 
     target_include_directories (AddressBook PRIVATE ${WOCFX_INCLUDE_DIRS})
 

@@ -15,7 +15,7 @@ if (NOT CL_COMPILER)
         AUParameterTree.mm)
 
     add_library (AudioUnit SHARED ${SOURCE_FILES})
-    add_prep_dep (AudioUnit)
+    woc_framework (AudioUnit)
 
     target_include_directories (AudioUnit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

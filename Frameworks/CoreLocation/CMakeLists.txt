@@ -17,7 +17,7 @@ if (NOT CL_COMPILER)
         NSValue+CoreLocationAdditions.mm)
 
     add_library (CoreLocation SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreLocation)
+    woc_framework (CoreLocation)
 
     target_include_directories (CoreLocation PRIVATE ${WOCFX_INCLUDE_DIRS})
 

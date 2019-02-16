@@ -15,7 +15,7 @@ if (NOT CL_COMPILER)
         ShaderProg.mm)
 
     add_library (GLKit SHARED ${SOURCE_FILES})
-    add_prep_dep (GLKit)
+    woc_framework (GLKit)
 
     target_include_directories (GLKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

@@ -6,7 +6,7 @@ if (NOT CL_COMPILER)
         EKEventViewController.mm)
 
     add_library (EventKitUI SHARED ${SOURCE_FILES})
-    add_prep_dep (EventKitUI)
+    woc_framework (EventKitUI)
 
     target_include_directories (EventKitUI PRIVATE ${WOCFX_INCLUDE_DIRS})
 

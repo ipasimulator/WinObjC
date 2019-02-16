@@ -13,7 +13,7 @@ if (NOT CL_COMPILER)
         CVTime.mm)
 
     add_library (CoreVideo SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreVideo)
+    woc_framework (CoreVideo)
 
     target_include_directories (CoreVideo PRIVATE ${WOCFX_INCLUDE_DIRS})
 

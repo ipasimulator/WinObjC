@@ -7,7 +7,7 @@ if (NOT CL_COMPILER)
         UIViewController.mm)
 
     add_library (iAd SHARED ${SOURCE_FILES})
-    add_prep_dep (iAd)
+    woc_framework (iAd)
 
     target_include_directories (iAd PRIVATE ${WOCFX_INCLUDE_DIRS})
 

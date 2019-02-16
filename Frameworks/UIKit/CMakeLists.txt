@@ -271,7 +271,7 @@ if (NOT CL_COMPILER)
     add_objcuwp_libs ()
 
     add_library (UIKit SHARED ${SOURCE_FILES})
-    add_prep_dep (UIKit)
+    woc_framework (UIKit)
 
     target_include_directories (UIKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

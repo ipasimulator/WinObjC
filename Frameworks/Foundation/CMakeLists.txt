@@ -241,7 +241,7 @@ else (CL_COMPILER)
         DEPENDS "${ASM_INPUT}")
 
     add_library (Foundation SHARED ${SOURCE_FILES} "${ASM_OUTPUT}")
-    add_prep_dep (Foundation)
+    woc_framework (Foundation)
 
     target_include_directories (Foundation PRIVATE ${WOCFX_INCLUDE_DIRS})
 

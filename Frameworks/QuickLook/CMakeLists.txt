@@ -4,7 +4,7 @@ if (NOT CL_COMPILER)
         QLPreviewController.mm)
 
     add_library (QuickLook SHARED ${SOURCE_FILES})
-    add_prep_dep (QuickLook)
+    woc_framework (QuickLook)
 
     target_include_directories (QuickLook PRIVATE ${WOCFX_INCLUDE_DIRS})
 

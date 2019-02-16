@@ -4,7 +4,7 @@ if (NOT CL_COMPILER)
         SCNetworkReachability.mm)
 
     add_library (SystemConfiguration SHARED ${SOURCE_FILES})
-    add_prep_dep (SystemConfiguration)
+    woc_framework (SystemConfiguration)
 
     target_include_directories (SystemConfiguration PRIVATE
         ${WOCFX_INCLUDE_DIRS})

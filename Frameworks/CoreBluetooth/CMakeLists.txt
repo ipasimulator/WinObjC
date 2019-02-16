@@ -20,7 +20,7 @@ if (NOT CL_COMPILER)
         CBUUID.mm)
 
     add_library (CoreBluetooth SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreBluetooth)
+    woc_framework (CoreBluetooth)
 
     target_include_directories (CoreBluetooth PRIVATE ${WOCFX_INCLUDE_DIRS})
 

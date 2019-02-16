@@ -10,7 +10,7 @@ if (NOT CL_COMPILER)
     add_objcuwp_libs ()
 
     add_library (Social SHARED ${SOURCE_FILES})
-    add_prep_dep (Social)
+    woc_framework (Social)
 
     target_include_directories (Social PRIVATE ${WOCFX_INCLUDE_DIRS})
 

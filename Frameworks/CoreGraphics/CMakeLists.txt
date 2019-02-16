@@ -37,7 +37,7 @@ if (NOT CL_COMPILER)
         D2DWrapper_CGPathApply.mm)
 
     add_library (CoreGraphics SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreGraphics)
+    woc_framework (CoreGraphics)
 
     target_include_directories (CoreGraphics PRIVATE ${WOCFX_INCLUDE_DIRS})
 

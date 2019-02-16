@@ -9,7 +9,7 @@ if (NOT CL_COMPILER)
         CFStringTokenizer.mm)
 
     add_library (CoreFoundationAdditions STATIC ${SOURCE_FILES})
-    add_prep_dep (CoreFoundationAdditions)
+    woc_framework (CoreFoundationAdditions)
 
     target_include_directories (CoreFoundationAdditions PRIVATE
         ${WINOBJC_INCLUDE_DIRS}

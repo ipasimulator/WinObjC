@@ -9,7 +9,7 @@ if (NOT CL_COMPILER)
         MIDIThruConnection.mm)
 
     add_library (CoreMIDI SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreMIDI)
+    woc_framework (CoreMIDI)
 
     target_include_directories (CoreMIDI PRIVATE ${WOCFX_INCLUDE_DIRS})
 

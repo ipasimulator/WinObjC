@@ -13,7 +13,7 @@ if (NOT CL_COMPILER)
         CFSocketStream.mm)
 
     add_library (CFNetwork SHARED ${SOURCE_FILES})
-    add_prep_dep (CFNetwork)
+    woc_framework (CFNetwork)
 
     target_include_directories (CFNetwork PRIVATE
         ${WINOBJC_INCLUDE_DIRS}

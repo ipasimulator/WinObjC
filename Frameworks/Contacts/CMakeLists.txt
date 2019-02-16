@@ -23,7 +23,7 @@ if (NOT CL_COMPILER)
         ContactsConstants.mm)
 
     add_library (Contacts SHARED ${SOURCE_FILES})
-    add_prep_dep (Contacts)
+    woc_framework (Contacts)
 
     target_include_directories (Contacts PRIVATE ${WOCFX_INCLUDE_DIRS})
 

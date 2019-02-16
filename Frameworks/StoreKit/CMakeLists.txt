@@ -15,7 +15,7 @@ if (NOT CL_COMPILER)
         StoreKitConstants.mm)
 
     add_library (StoreKit SHARED ${SOURCE_FILES})
-    add_prep_dep (StoreKit)
+    woc_framework (StoreKit)
 
     target_include_directories (StoreKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

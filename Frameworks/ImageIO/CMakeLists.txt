@@ -6,7 +6,7 @@ if (NOT CL_COMPILER)
         CGImageSource.mm)
 
     add_library (ImageIO SHARED ${SOURCE_FILES})
-    add_prep_dep (ImageIO)
+    woc_framework (ImageIO)
 
     target_include_directories (ImageIO PRIVATE ${WOCFX_INCLUDE_DIRS})
 

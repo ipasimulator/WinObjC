@@ -7,7 +7,7 @@ if (NOT CL_COMPILER)
         ALAssetsLibrary.mm)
 
     add_library (AssetsLibrary SHARED ${SOURCE_FILES})
-    add_prep_dep (AssetsLibrary)
+    woc_framework (AssetsLibrary)
 
     target_include_directories (AssetsLibrary PRIVATE ${WOCFX_INCLUDE_DIRS})
 

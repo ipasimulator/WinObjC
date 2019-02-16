@@ -5,7 +5,7 @@ if (NOT CL_COMPILER)
         UTTypeInternal.cpp)
 
     add_library (MobileCoreServices SHARED ${SOURCE_FILES})
-    add_prep_dep (MobileCoreServices)
+    woc_framework (MobileCoreServices)
 
     target_include_directories (MobileCoreServices PRIVATE
         ${WINOBJC_INCLUDE_DIRS}

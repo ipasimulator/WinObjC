@@ -5,7 +5,7 @@ if (NOT CL_COMPILER)
         MAConstants.mm)
 
     add_library (MediaAccessibility SHARED ${SOURCE_FILES})
-    add_prep_dep (MediaAccessibility)
+    woc_framework (MediaAccessibility)
 
     target_include_directories (MediaAccessibility PRIVATE
         ${WOCFX_INCLUDE_DIRS})

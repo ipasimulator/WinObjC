@@ -5,7 +5,7 @@ if (NOT CL_COMPILER)
         TWTweetComposeViewController.mm)
 
     add_library (Twitter SHARED ${SOURCE_FILES})
-    add_prep_dep (Twitter)
+    woc_framework (Twitter)
 
     target_include_directories (Twitter PRIVATE ${WOCFX_INCLUDE_DIRS})
 

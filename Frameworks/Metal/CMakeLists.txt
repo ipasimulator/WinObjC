@@ -33,7 +33,7 @@ if (NOT CL_COMPILER)
         MTLVertexDescriptor.mm)
 
     add_library (Metal SHARED ${SOURCE_FILES})
-    add_prep_dep (Metal)
+    woc_framework (Metal)
 
     target_include_directories (Metal PRIVATE ${WOCFX_INCLUDE_DIRS})
 

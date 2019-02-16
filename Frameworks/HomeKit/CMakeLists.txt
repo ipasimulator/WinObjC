@@ -20,7 +20,7 @@ if (NOT CL_COMPILER)
         HomeKitConstants.mm)
 
     add_library (HomeKit SHARED ${SOURCE_FILES})
-    add_prep_dep (HomeKit)
+    woc_framework (HomeKit)
 
     target_include_directories (HomeKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

@@ -38,7 +38,7 @@ if (NOT CL_COMPILER)
         CloudKitFrameworkConstants.mm)
 
     add_library (CloudKit SHARED ${SOURCE_FILES})
-    add_prep_dep (CloudKit)
+    woc_framework (CloudKit)
 
     target_include_directories (CloudKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

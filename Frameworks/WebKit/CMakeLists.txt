@@ -21,7 +21,7 @@ if (NOT CL_COMPILER)
         WKWindowFeatures.mm)
 
     add_library (WebKit SHARED ${SOURCE_FILES})
-    add_prep_dep (WebKit)
+    woc_framework (WebKit)
 
     target_include_directories (WebKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

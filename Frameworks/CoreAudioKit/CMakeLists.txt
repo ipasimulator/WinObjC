@@ -5,7 +5,7 @@ if (NOT CL_COMPILER)
         CABTMIDILocalPeripheralViewController.mm)
 
     add_library (CoreAudioKit SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreAudioKit)
+    woc_framework (CoreAudioKit)
 
     target_include_directories (CoreAudioKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 

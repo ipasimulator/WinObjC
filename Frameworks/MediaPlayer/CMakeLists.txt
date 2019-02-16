@@ -40,7 +40,7 @@ if (NOT CL_COMPILER)
         UIViewController.mm)
 
     add_library (MediaPlayer SHARED ${SOURCE_FILES})
-    add_prep_dep (MediaPlayer)
+    woc_framework (MediaPlayer)
 
     target_include_directories (MediaPlayer PRIVATE ${WOCFX_INCLUDE_DIRS})
 

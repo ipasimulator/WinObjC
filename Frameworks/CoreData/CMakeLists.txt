@@ -33,7 +33,7 @@ if (NOT CL_COMPILER)
         NSSaveChangesRequest.mm)
 
     add_library (CoreData SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreData)
+    woc_framework (CoreData)
 
     target_include_directories (CoreData PRIVATE ${WOCFX_INCLUDE_DIRS})
 

@@ -14,7 +14,7 @@ if (NOT CL_COMPILER)
         GCSnapshot.mm)
 
     add_library (GameController SHARED ${SOURCE_FILES})
-    add_prep_dep (GameController)
+    woc_framework (GameController)
 
     target_include_directories (GameController PRIVATE ${WOCFX_INCLUDE_DIRS})
 

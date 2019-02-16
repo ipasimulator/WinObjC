@@ -4,7 +4,7 @@ if (NOT CL_COMPILER)
         LAContext.mm)
 
     add_library (LocalAuthentication SHARED ${SOURCE_FILES})
-    add_prep_dep (LocalAuthentication)
+    woc_framework (LocalAuthentication)
 
     target_include_directories (LocalAuthentication PRIVATE
         ${WOCFX_INCLUDE_DIRS})

@@ -4,7 +4,7 @@ if (NOT CL_COMPILER)
         CoreAudioData.mm)
 
     add_library (CoreAudio SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreAudio)
+    woc_framework (CoreAudio)
 
     target_include_directories (CoreAudio PRIVATE ${WOCFX_INCLUDE_DIRS})
 

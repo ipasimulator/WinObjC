@@ -8,7 +8,7 @@ if (NOT CL_COMPILER)
         AddressBookUIFunctions.mm)
 
     add_library (AddressBookUI SHARED ${SOURCE_FILES})
-    add_prep_dep (AddressBookUI)
+    woc_framework (AddressBookUI)
 
     target_include_directories (AddressBookUI PRIVATE ${WOCFX_INCLUDE_DIRS})
 

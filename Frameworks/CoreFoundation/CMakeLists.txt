@@ -79,7 +79,7 @@ if (NOT CL_COMPILER)
         URL.subproj/CFURLComponents_URIParser.c)
 
     add_library (CoreFoundation SHARED ${SOURCE_FILES})
-    add_prep_dep (CoreFoundation)
+    woc_framework (CoreFoundation)
 
     target_include_directories (CoreFoundation PRIVATE
         ${WINOBJC_INCLUDE_DIRS}
