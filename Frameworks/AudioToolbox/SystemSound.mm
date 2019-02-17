@@ -26,7 +26,10 @@
 
 #include <COMIncludes.h>
 #import <wrl\wrappers\corewrappers.h>
+// [port] CHANGED: See #16.
+#if !defined(OBJC_PORT)
 #import <windows.phone.devices.notification.h>
+#endif
 #import <windows.foundation.metadata.h>
 #import <winrt/Windows.Media.Playback.h>
 #include <COMIncludes_End.h>
@@ -36,7 +39,10 @@
 
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
+// [port] CHANGED: See #16.
+#if !defined(OBJC_PORT)
 using namespace ABI::Windows::Phone::Devices::Notification;
+#endif
 using namespace ABI::Windows::Foundation;
 using namespace winrt::Windows::Media::Playback;
 namespace WF = winrt::Windows::Foundation;
@@ -49,13 +55,13 @@ static const SystemSoundID c_systemSoundIDStart = 5000;
 // We use the NSMutableDictionary to map SystemSoundID to URL via a SystemSound object.
 NSMutableDictionary* _systemSoundDictionary = [NSMutableDictionary dictionary];
 
-// The following variables and methods keep track of the currently playing file 
+// The following variables and methods keep track of the currently playing file
 // and call the respective callback function if any.
 static SystemSoundID _latestSystemSoundID = 0;
 static int _numberOfCallbacksRegistered = 0;
 static winrt::event_token _mediaEndedToken;
 static std::mutex _mutex;
-void _handleMediaEndedEvent(); 
+void _handleMediaEndedEvent();
 
 
 // Local class to store URL and callback function for an audio file.
@@ -82,7 +88,7 @@ void _handleMediaEndedEvent();
 
         NSURL* url = [[NSBundle mainBundle] _msAppxURLForResourceWithURL:(__bridge NSURL*)inFileURL];
         _mediaUri = WF::Uri(objcwinrt::string(url.absoluteString));
-        TraceInfo(TAG, L"Loading media at URI: %hs\n", [url.absoluteString UTF8String]);  
+        TraceInfo(TAG, L"Loading media at URI: %hs\n", [url.absoluteString UTF8String]);
     }
 
     return self;
@@ -139,13 +145,13 @@ void _handleMediaEndedEvent() {
 OSStatus AudioServicesCreateSystemSoundID(CFURLRef inFileURL, SystemSoundID* outSystemSoundID) {
     static SystemSoundID lastSystemSoundID = c_systemSoundIDStart;
 
-    if (inFileURL) {         
+    if (inFileURL) {
         SystemSound* systemSoundObject = [[SystemSound alloc] initWithContentsOfURL:inFileURL forSystemSoundID:++lastSystemSoundID];
         *outSystemSoundID = lastSystemSoundID;
         [_systemSoundDictionary setObject:systemSoundObject forKey:[NSNumber numberWithUnsignedInt:*outSystemSoundID]];
         return kAudioServicesNoError;
     }
-    
+
     return kAudioServicesSystemSoundUnspecifiedError;
 }
 
@@ -171,9 +177,12 @@ OSStatus AudioServicesDisposeSystemSoundID(SystemSoundID inSystemSoundID) {
 
 // Calls into C++ to access Windows.Phone.Devices.Notification namespace to vibrate devices with vibration capability.
 void vibrateDevice() {
+    // [port] CHANGED: See #16.
+    // [port] TODO: Implement this, though.
+#if !defined(OBJC_PORT)
     Boolean vibrationCapable = false;
-    HRESULT status; 
-    
+    HRESULT status;
+
     ComPtr<Metadata::IApiInformationStatics> apiInformation;
     status = GetActivationFactory(HStringReference(RuntimeClass_Windows_Foundation_Metadata_ApiInformation).Get(),
                                                    &apiInformation);
@@ -182,7 +191,7 @@ void vibrateDevice() {
         return;
     }
 
-    status = apiInformation->IsTypePresent(HStringReference(RuntimeClass_Windows_Phone_Devices_Notification_VibrationDevice).Get(), 
+    status = apiInformation->IsTypePresent(HStringReference(RuntimeClass_Windows_Phone_Devices_Notification_VibrationDevice).Get(),
                                            &vibrationCapable);
     if (!SUCCEEDED(status)) {
         NSTraceInfo(TAG, @"VibrationDevice availability check failed");
@@ -205,7 +214,7 @@ void vibrateDevice() {
             return;
         }
 
-        // Vibration duration set as 0.5 second. The unit is 100-nanoseconds. 
+        // Vibration duration set as 0.5 second. The unit is 100-nanoseconds.
         TimeSpan vibrationDuration = { 5000000 };
 
         status = vibrationDevice->Vibrate(vibrationDuration);
@@ -214,6 +223,7 @@ void vibrateDevice() {
             return;
         }
     }
+#endif // !defined(OBJC_PORT)
 }
 
 
@@ -245,9 +255,9 @@ static inline void _playSound(SystemSoundID inSystemSoundID, BOOL vibration) {
             mediaPlayer.Play();
         }
     } else if (inSystemSoundID == kSystemSoundID_Vibrate) {
-        vibrateDevice();        
+        vibrateDevice();
     } else if (inSystemSoundID > 0) {
-        // System supplied sounds not supported. 
+        // System supplied sounds not supported.
         UNIMPLEMENTED();
     }
 }
@@ -280,7 +290,7 @@ OSStatus AudioServicesAddSystemSoundCompletion(SystemSoundID inSystemSoundID,
                                                CFStringRef inRunLoopMode,
                                                AudioServicesSystemSoundCompletionProc inCompletionRoutine,
                                                void* inClientData) {
-    
+
     if (inSystemSoundID > c_systemSoundIDStart) {
         SystemSound* systemSoundObject = _systemSoundDictionary[[NSNumber numberWithUnsignedInt:inSystemSoundID]];
 
@@ -302,7 +312,7 @@ OSStatus AudioServicesAddSystemSoundCompletion(SystemSoundID inSystemSoundID,
 
             [systemSoundObject setCallbackFunction:inCompletionRoutine withClientData:inClientData];
             return kAudioServicesNoError;
-        }   
+        }
     }
 
     return kAudioServicesSystemSoundUnspecifiedError;
@@ -317,7 +327,7 @@ void AudioServicesRemoveSystemSoundCompletion(SystemSoundID inSystemSoundID) {
 
     if (inSystemSoundID > c_systemSoundIDStart) {
         SystemSound* systemSoundObject = _systemSoundDictionary[[NSNumber numberWithUnsignedInt:inSystemSoundID]];
-        
+
         if (systemSoundObject) {
             std::lock_guard<std::mutex> lock(_mutex);
 

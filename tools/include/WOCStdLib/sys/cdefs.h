@@ -255,6 +255,7 @@
 #endif
 
 // [port] CHANGED: This macro got used by Windows SDK and it failed to compile.
+// [port] See #16.
 // [port] TODO: Is this change OK?
 #if !__GNUC_PREREQ__(2, 95) && !defined(OBJC_PORT)
 #define __alignof(x) __offsetof(struct { char __a; x __b; }, __b)
