@@ -20,7 +20,8 @@
 @implementation NSNull
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-objc-isa-usage"
-+ (void)load {
+// [port] CHANGED: `load` -> `initialize`. See #18.
++ (void)initialize {
     _CFRuntimeBridgeTypeToClass(CFNullGetTypeID(), self);
 
     // We have to do this for Objective-C dispatch, but we can't rely on type ID bridging to set it for us
