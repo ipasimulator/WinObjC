@@ -40,7 +40,7 @@
 #include <CoreFoundation/CFURLComponents.h>
 
 // WINOBJC: Add in CFFoundationInternal so that internal stuff here is correctly externed
-#include "CFFoundationInternal.h" 
+#include "CFFoundationInternal.h"
 #include <objc/objc-arc.h>
 #include <Foundation/NSObject.h>
 
@@ -275,7 +275,7 @@ void _CFRuntimeBridgeTypeToClass(CFTypeID cf_typeID, const void *cls_ref) {
 
     // WINOBJC: Label the class with the 'bridged object' protocol, so that it can be quickly distinguished from non-bridged objects
     class_addProtocol((Class)cls_ref, __CFRuntimeGetBridgeProtocol());
-    
+
     __CFUnlock(&__CFBigRuntimeFunnel);
 }
 
@@ -329,7 +329,7 @@ CF_INLINE CFOptionFlags CF_GET_COLLECTABLE_MEMORY_TYPE(const CFRuntimeClass *cls
 
 CF_INLINE CFRuntimeBase *_cf_aligned_malloc(size_t align, CFIndex size, const char *className) {
     CFRuntimeBase *memory;
-    
+
 #if DEPLOYMENT_TARGET_MACOSX || DEPLOYMENT_TARGET_EMBEDDED
     memory = malloc_zone_memalign(malloc_default_zone(), align, size);
 #elif DEPLOYMENT_TARGET_LINUX
@@ -351,14 +351,14 @@ CF_INLINE CFRuntimeBase *_cf_aligned_malloc(size_t align, CFIndex size, const ch
     CFLog(kCFLogLevelWarning, CFSTR("*** _CFRuntimeCreateInstance() tried to allocate an instance of '%s', which requires %u-byte alignment, but aligned memory is not supported on this platform"), className);
     memory = NULL;
 #endif
-    
+
     return memory;
 }
 
 CFTypeRef _CFRuntimeCreateInstance(CFAllocatorRef allocator, CFTypeID typeID, CFIndex extraBytes, unsigned char *category) {
 #if DEPLOYMENT_RUNTIME_SWIFT
     // Under the Swift runtime, all CFTypeRefs are _NSCFTypes or a toll-free bridged type
-    
+
     extern  void *swift_allocObject(uintptr_t metadata, size_t requiredSize, size_t requiredAlignmentMask);
     uintptr_t isa = __CFRuntimeObjCClassTable[typeID];
     CFIndex size = sizeof(CFRuntimeBase) + extraBytes;
@@ -510,7 +510,7 @@ CF_PRIVATE void _CFRuntimeSetInstanceTypeIDAndIsa(CFTypeRef cf, CFTypeID newType
         ((CFRuntimeBase *)cf)->_cfisa = (uintptr_t)__CFISAForTypeID(newTypeID);
     }
 #endif
-    
+
 }
 
 
@@ -617,13 +617,13 @@ CF_INLINE Boolean CFTYPE_IS_SWIFT(const void *obj) {
 
 
 CFTypeID CFGetTypeID(CFTypeRef cf) {
-    
+
 #if defined(DEBUG)
     if (NULL == cf) { CRSetCrashLogMessage("*** CFGetTypeID() called with NULL ***"); HALT; }
 #endif
     CFTYPE_OBJC_FUNCDISPATCH0(CFTypeID, cf, _cfTypeID);
     // CF_SWIFT_FUNCDISPATCH0(CFTypeID, cf, NSObject._cfTypeID);
-    
+
     __CFGenericAssertIsCF(cf);
     return __CFGenericTypeID_inline(cf);
 }
@@ -716,7 +716,7 @@ CF_PRIVATE const void *__CFTypeCollectionRetain(CFAllocatorRef allocator, const 
 #if DEPLOYMENT_RUNTIME_SWIFT
     return CFRetain((CFTypeRef)ptr);
 #else
-    // WINOBJC: don't really need below NULL check. CFRetain handles anyway and this allows a nil objC object to go through this path 
+    // WINOBJC: don't really need below NULL check. CFRetain handles anyway and this allows a nil objC object to go through this path
     // (For example when added to a CFDictionary).
     // if (NULL == ptr) { CRSetCrashLogMessage("*** __CFTypeCollectionRetain() called with NULL; likely a collection has been corrupted ***"); HALT; }
     CFTypeRef cf = (CFTypeRef)ptr;
@@ -889,7 +889,7 @@ CFHashCode CFHash(CFTypeRef cf) {
     CFTYPE_OBJC_FUNCDISPATCH0(CFHashCode, cf, hash);
     // CF_SWIFT_FUNCDISPATCH0(CFHashCode, cf, NSObject.hash);
     __CFGenericAssertIsCF(cf);
-    CFHashCode (*hash)(CFTypeRef cf) = __CFRuntimeClassTable[__CFGenericTypeID_inline(cf)]->hash; 
+    CFHashCode (*hash)(CFTypeRef cf) = __CFRuntimeClassTable[__CFGenericTypeID_inline(cf)]->hash;
     if (NULL != hash) {
     return hash(cf);
     }
@@ -902,11 +902,11 @@ CFStringRef CFCopyDescription(CFTypeRef cf) {
     if (NULL == cf) return NULL;
     // CFTYPE_OBJC_FUNCDISPATCH0(CFStringRef, cf, _copyDescription);  // XXX returns 0 refcounted item under GC
     // WINOBJC: still needed but using description instead.
-    if (!__CF_IsCFObject(cf)) { 
+    if (!__CF_IsCFObject(cf)) {
         CFStringRef stringRef = static_cast<CFStringRef>(CF_OBJC_CALLV(cf, description));
         CFRetain(stringRef);
         return stringRef;
-    } 
+    }
     __CFGenericAssertIsCF(cf);
     if (NULL != __CFRuntimeClassTable[__CFGenericTypeID_inline(cf)]->copyDebugDesc) {
     CFStringRef result = __CFRuntimeClassTable[__CFGenericTypeID_inline(cf)]->copyDebugDesc(cf);
@@ -920,7 +920,7 @@ CF_PRIVATE CFStringRef __CFCopyFormattingDescription(CFTypeRef cf, CFDictionaryR
     // WINOBJC: add check for class being cf. This is a slow check maybe just just that the entry isn't null?
     if (NULL == cf || !__CF_IsCFObject(cf)) return NULL;
     __CFGenericAssertIsCF(cf);
-    
+
     if (NULL != __CFRuntimeClassTable[__CFGenericTypeID_inline(cf)]->copyFormattingDesc) {
         return __CFRuntimeClassTable[__CFGenericTypeID_inline(cf)]->copyFormattingDesc(cf, formatOptions);
     }
@@ -1107,10 +1107,14 @@ void __CFInitialize(void) {
     // [port] later, when message was sent to them, for example, but we are first calling `class_addProtocol` on
     // [port] them and that method requires the classes to be already realized.
 #if defined(OBJC_PORT)
-        objc_getClass("_NSCFString");
-        objc_getClass("_NSCFNumber");
-        objc_getClass("_NSCFBoolean");
-        objc_getClass("_NSCFType");
+    // [port] Also ensure Objective-C runtime initialized this library.
+    void ipasim_initializer();
+    ipasim_initializer();
+
+    objc_getClass("_NSCFString");
+    objc_getClass("_NSCFNumber");
+    objc_getClass("_NSCFBoolean");
+    objc_getClass("_NSCFType");
 #endif
 
 #if DEPLOYMENT_TARGET_WINDOWS || DEPLOYMENT_TARGET_IPHONESIMULATOR
@@ -1125,13 +1129,13 @@ void __CFInitialize(void) {
 #elif DEPLOYMENT_TARGET_LINUX || DEPLOYMENT_TARGET_MACOSX
         __CFTSDInitialize();
 #endif
-        
+
         __CFProphylacticAutofsAccess = true;
 
         for (CFIndex idx = 0; idx < sizeof(__CFEnv) / sizeof(__CFEnv[0]); idx++) {
             __CFEnv[idx].value = NULL; // WINOBJC: no env variables in an appcontainer. // __CFEnv[idx].name ? getenv(__CFEnv[idx].name) : NULL;
         }
-        
+
 #if !defined(kCFUseCollectableAllocator)
         kCFUseCollectableAllocator = objc_collectingEnabled();
 #endif
@@ -1160,7 +1164,7 @@ void __CFInitialize(void) {
         class_addProtocol(_OBJC_CLASS__NSCFType, __CFRuntimeGetBridgeProtocol());
 
 #endif
-        
+
 #if DEPLOYMENT_RUNTIME_SWIFT
 
         #ifndef __CFSwiftGetBaseClass
@@ -1170,7 +1174,7 @@ void __CFInitialize(void) {
         #define __CFSwiftGetBaseClass _TF15SwiftFoundation21__CFSwiftGetBaseClassFT_PMPs9AnyObject_
         #endif
         #endif
-        extern uintptr_t __CFSwiftGetBaseClass();        
+        extern uintptr_t __CFSwiftGetBaseClass();
 
         uintptr_t NSCFType = __CFSwiftGetBaseClass();
         for (CFIndex idx = 1; idx < __CFRuntimeClassTableSize; idx++) {
@@ -1217,7 +1221,7 @@ void __CFInitialize(void) {
 
         __CFRuntimeClassTableCount = 7;
         __CFStringInitialize();     // CFString's TypeID must be 0x7, now and forever
-    
+
         __CFRuntimeClassTableCount = 16;
         CFNullGetTypeID();      // See above for hard-coding of this position
         CFSetGetTypeID();       // See above for hard-coding of this position
@@ -1235,7 +1239,7 @@ void __CFInitialize(void) {
         CFTreeGetTypeID();
         CFURLGetTypeID();
         _CFURLComponentsGetTypeID();
-        
+
 #if DEPLOYMENT_TARGET_MACOSX || DEPLOYMENT_TARGET_EMBEDDED || DEPLOYMENT_TARGET_WINDOWS
         CFBundleGetTypeID();
         __CFPFactoryInitialize();
@@ -1259,7 +1263,7 @@ void __CFInitialize(void) {
         // WINOBJC: WinObjC project does not include Named Pipes.
         // CFWindowsNamedPipeGetTypeID();
 #endif
-        
+
         CFDateGetTypeID();
 
 #if (DEPLOYMENT_TARGET_MACOSX || DEPLOYMENT_TARGET_EMBEDDED || DEPLOYMENT_TARGET_EMBEDDED_MINI || DEPLOYMENT_TARGET_WINDOWS) && !DEPLOYMENT_RUNTIME_SWIFT
@@ -1335,7 +1339,7 @@ void __CFInitialize(void) {
         _CFProcessPath();   // cache this early
 
         __CFOAInitialize();
-        
+
 
         if (__CFRuntimeClassTableCount < 256) __CFRuntimeClassTableCount = 256;
 
@@ -1352,7 +1356,7 @@ void __CFInitialize(void) {
 #endif
 
         __CFProphylacticAutofsAccess = false;
-        
+
         __CFInitializing = 0;
         __CFInitialized = 1;
     }
@@ -1944,7 +1948,7 @@ const char *_NSPrintForDebugger(void *cf) {
         if (cheapResult) {
             return cheapResult;
         }
-        
+
         CFIndex bufferSize = 0;
         CFIndex numberConverted = CFStringGetBytes((CFStringRef)cf, CFRangeMake(0, CFStringGetLength((CFStringRef)cf)), kCFStringEncodingUTF8, 0, false, NULL, 0, &bufferSize);
         const char *result = static_cast<const char*>(malloc(bufferSize));
