@@ -1,0 +1,4 @@
+[ver:1,total:1740]
+Frameworks/CoreFoundation/Base.subproj/CFRuntime.c:1656,1550480400:396,1550484000:1260,m
+Frameworks/CoreFoundation/URL.subproj/CFURL.c:57,1550480400:12,1550484000:45,r
+Frameworks/CoreFoundation/String.subproj/CFString.c:27,1550480400:12,1550484000:15,r
