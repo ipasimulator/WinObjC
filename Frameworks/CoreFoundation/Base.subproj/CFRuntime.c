@@ -1063,8 +1063,15 @@ CF_PRIVATE Boolean __CFProcessIsRestricted() {
 }
 
 #if DEPLOYMENT_TARGET_WINDOWS
+// [port] CHANGED: See #17.
+#if defined(OBJC_PORT)
+#define kNilPthreadT pthread_t{nullptr, 0}
+// defined(OBJC_PORT)
+#else
 //#define kNilPthreadT  { nil, nil }
 #define kNilPthreadT  (pthread_t)0
+// !defined(OBJC_PORT)
+#endif
 #else
 #define kNilPthreadT  (pthread_t)0
 #endif

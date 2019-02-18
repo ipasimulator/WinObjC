@@ -171,7 +171,8 @@ the default thread priority. Utilizes win32 thread priority.
 */
 - (void)setThreadPriority:(double)priority {
     _threadPriority = priority;
-    if (_pthread) {
+    // [port] CHANGED: Wrapped `_pthread` in `pthreadPtr`. See #17.
+    if (pthreadPtr(_pthread)) {
         [self _updateThreadPriority:priority];
     }
 }
