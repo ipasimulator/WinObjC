@@ -1,0 +1,6 @@
+[ver:1,total:660]
+build/Social.Xaml/dll/Social.Xaml.vcxproj:240,1550671200:240,r
+Frameworks/include/CFBridgeUtilities.h:180,1550505600:180,r
+Frameworks/UIKit/CMakeLists.txt:180,1550671200:180,r
+Frameworks/include/BridgeHelpers.h:30,1550505600:30,r
+Frameworks/Foundation/NSURLProtocol.mm:30,1550505600:30,r
