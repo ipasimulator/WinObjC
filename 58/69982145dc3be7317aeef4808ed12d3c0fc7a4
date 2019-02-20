@@ -1,0 +1,12 @@
+[ver:1,total:3960]
+Frameworks/UIKit/UIPasteboard.mm:1500,1550682000:360,1550685600:1080,1550689200:60,r
+Frameworks/UIKit.Xaml/TextField.xaml.cpp:710,1550671200:200,1550674800:150,1550678400:360,r
+Frameworks/UIKit.Xaml/Label.xaml.cpp:410,1550678400:410,r
+Frameworks/UIKit.Xaml/ProgressView.xaml.cpp:340,1550671200:20,1550674800:30,1550678400:290,r
+samples/HelloUI/Debug/HelloUI/AppX/AppxManifest.xml:180,1550674800:180,r
+Frameworks/UIKit.Xaml/ActivityIndicatorView.xaml.cpp:170,1550671200:170,r
+samples/HelloUI/HelloUI/main.m:150,1550678400:150,r
+Frameworks/UIKit/StarboardXaml/StarboardXaml.cpp:150,1550678400:150,r
+Frameworks/UIKit.Xaml/Layer.xaml.cpp:140,1550671200:30,1550674800:60,1550678400:50,r
+Frameworks/UIKit.Xaml/Button.xaml.cpp:120,1550678400:120,r
+Frameworks/UIKit.Xaml/ILayer.cpp:90,1550678400:90,r
