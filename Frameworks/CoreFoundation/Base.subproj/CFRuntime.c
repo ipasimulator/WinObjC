@@ -1114,10 +1114,6 @@ void __CFInitialize(void) {
     // [port] later, when message was sent to them, for example, but we are first calling `class_addProtocol` on
     // [port] them and that method requires the classes to be already realized.
 #if defined(OBJC_PORT)
-    // [port] Also ensure Objective-C runtime initialized this library.
-    void ipasim_initializer();
-    ipasim_initializer();
-
     objc_getClass("_NSCFString");
     objc_getClass("_NSCFNumber");
     objc_getClass("_NSCFBoolean");
