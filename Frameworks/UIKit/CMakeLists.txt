@@ -1,4 +1,24 @@
-if (NOT CL_COMPILER)
+if (CL_COMPILER)
+    set (SOURCE_FILES
+        # From `UIKitLib.vcxproj`.
+        StarboardXaml/XamlCompositor.cpp
+        StarboardXaml/DisplayTexture.cpp
+        StarboardXaml/LayerCoordinator.cpp
+        StarboardXaml/StoryboardManager.cpp
+        StarboardXaml/StarboardXaml.cpp
+        StarboardXaml/LayerAnimation.cpp
+        StarboardXaml/LayerProxy.cpp)
+
+    add_library (UIKit STATIC ${SOURCE_FILES})
+
+    target_include_directories (UIKit PRIVATE ${WOCFX_INCLUDE_DIRS})
+
+    target_compile_options (UIKit PRIVATE
+        "/FU${CMAKE_CURRENT_SOURCE_DIR}/../UIKit.Xaml/prebuilt/UIKit.Xaml.winmd"
+        /ZW)
+
+    target_link_libraries (UIKit PRIVATE Logging)
+else (CL_COMPILER)
     set (SOURCE_FILES
         # From `UIKitLib.vcxproj`.
         art.mm
@@ -256,14 +276,6 @@ if (NOT CL_COMPILER)
         StarboardXaml/StringConversion.mm
         StarboardXaml/ApplicationMain.mm
         StarboardXaml/UWPBackgroundTask.mm
-        # TODO: Build these.
-        prebuilt/XamlCompositor.obj
-        prebuilt/DisplayTexture.obj
-        prebuilt/LayerCoordinator.obj
-        prebuilt/StoryboardManager.obj
-        prebuilt/StarboardXaml.obj
-        prebuilt/LayerAnimation.obj
-        prebuilt/LayerProxy.obj
         # From `UIKit.vcxproj`.
         NSCoder+UIKitAdditions.mm
         NSMutableAttributedString+UIKitAdditions.mm)
@@ -295,6 +307,7 @@ UIKit.Xaml.lib")
 
     target_link_libraries (UIKit PRIVATE
         ${WOCFX_LIBS}
+        woc-UIKit
         # From `UIKit.vcxproj`.
         CoreText
         # TODO: AutoLayout
@@ -341,4 +354,4 @@ UIKit.def")
         WYStoryboardPopoverSegue.m
         UWPBackgroundTask.mm
         PROPERTIES COMPILE_OPTIONS "${OBJC_ARC}")
-endif (NOT CL_COMPILER)
+endif (CL_COMPILER)
