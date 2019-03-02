@@ -1,0 +1,17 @@
+[ver:1,total:4620]
+Frameworks/Foundation/Utils.mm:1200,1551272400:780,1551340800:180,1551344400:240,r
+Frameworks/UIKit/StarboardXaml/StarboardXaml.cpp:1090,1551387600:510,1551531600:550,1551535200:30,r
+Frameworks/UIKit/CMakeLists.txt:760,1551535200:760,m
+build/UIKit/lib/Debug/UIKitLib.tlog/CL.command.1.tlog:300,1551535200:300,r
+Frameworks/UIKit/StarboardXaml/ApplicationMain.mm:285,1551387600:15,1551531600:270,r
+samples/HelloUI/HelloUI/main.m:240,1551531600:240,r
+Frameworks/OpenGLES/GLES.mm:180,1551373200:180,r
+Frameworks/CoreFoundation/Base.subproj/CFRuntime.c:180,1551272400:180,r
+Frameworks/CMakeLists.txt:180,1551373200:180,r
+Frameworks/Starboard/CMakeLists.txt:60,1551535200:60,r
+include/UIKit/UIApplication.h:45,1551387600:45,r
+Frameworks/UIKit/StarboardXaml/StoryboardManager.h:30,1551535200:30,r
+Frameworks/UIKit/StarboardXaml/ApplicationMain.h:20,1551531600:20,r
+build/UIKit/lib/UIKitLib.vcxproj:20,1551535200:20,r
+Frameworks/UIKit/UIApplication.mm:15,1551387600:15,r
+Frameworks/UIKit/UIApplicationMain.mm:15,1551387600:15,r
