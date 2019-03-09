@@ -27,7 +27,14 @@
 // clang-format off
 #define BRIDGED_CLASS_REQUIRED_IMPLS(CFBridgedTypeRef, CFTypeIDFunc, NSBridgedType, NSBridgedConcreteType) \
  \
- /* [port] CHANGED: `load` -> `initialize`. See #18. */ \
+/* [port] CHANGED: Added this method. See #18. */ \
++ (void)load { \
+    _CFRuntimeBridgeTypeToClass(CFTypeIDFunc(), self); \
+    if (class_getInstanceMethod(self, @selector(loadInternal))) { \
+      [self loadInternal]; \
+    } \
+} \
+/* [port] CHANGED: `load` -> `initialize`. See #18. */ \
 + (void)initialize { \
     /* self here is referring to the Class object since its a + method. */ \
     _CFRuntimeBridgeTypeToClass(CFTypeIDFunc(), self); \

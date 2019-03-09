@@ -1109,7 +1109,7 @@ void __CFInitialize(void) {
     if (!__CFInitialized && !__CFInitializing) {
         __CFInitializing = 1;
 
-    // [port] CHANGED: Added so that those classes are realized. Otherwise, since they have not a `+load` method,
+    // [port] CHANGED: Added so that those classes are realized. Otherwise, since they don't have `+load` method,
     // [port] our runtime would consider them as lazy and not realize them automatically. They would be realized
     // [port] later, when message was sent to them, for example, but we are first calling `class_addProtocol` on
     // [port] them and that method requires the classes to be already realized.
