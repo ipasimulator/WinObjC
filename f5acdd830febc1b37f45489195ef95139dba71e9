@@ -1,0 +1,10 @@
+[ver:1,total:2400]
+Frameworks/UIKit/UIApplicationMain.mm:860,1552208400:720,1552212000:140,r
+Frameworks/UIKit/UIColor.mm:510,1552212000:510,m
+Frameworks/Foundation/NSObject.mm:300,1552208400:300,r
+Frameworks/Foundation/NSKeyValueCoding.mm:240,1552208400:240,r
+Frameworks/UIKit/UIWindow.mm:190,1552212000:190,r
+Frameworks/Foundation/Utils.mm:150,1552208400:150,r
+Frameworks/UIKit/UICGColor.mm:60,1552212000:60,r
+Frameworks/UIKit/UIView.mm:60,1552208400:60,r
+include/Foundation/NSObjCRuntime.h:30,1552208400:30,r
