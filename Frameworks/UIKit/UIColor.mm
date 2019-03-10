@@ -353,7 +353,9 @@ BASE_CLASS_REQUIRED_IMPLS(UIColor, UICGColorPrototype, CGColorGetTypeID);
         const char* pPattern = [pattern UTF8String];
         TraceVerbose(TAG, L"Selecting pattern %hs", pPattern);
 
-        return [[[self class] performSelector:NSSelectorFromString(pattern)] retain];
+        // [port] CHANGED: Wrapped the `return` statement in this `if`.
+        if ([[self class] respondsToSelector:NSSelectorFromString(pattern)])
+            return [[[self class] performSelector:NSSelectorFromString(pattern)] retain];
     } else {
         CGFloat alpha = ([coder containsValueForKey:@"UIAlpha"]) ? [coder decodeFloatForKey:@"UIAlpha"] : 1.0f;
         if ([coder containsValueForKey:@"UIWhite"]) {
