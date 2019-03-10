@@ -1,0 +1,7 @@
+[ver:1,total:1380]
+Frameworks/UIKit/UIView.mm:750,1552204800:60,1552208400:690,m
+Frameworks/UIKit.Xaml/Button.xaml.cpp:310,1552204800:310,r
+Frameworks/CoreFoundation/Base.subproj/CFPlatform.c:180,1552204800:180,r
+build/UIKit.Xaml/dll/Generated Files/Button.g.hpp:80,1552204800:80,r
+Frameworks/AutoLayout/AutoLayout.mm:30,1552208400:30,r
+Frameworks/UIKit/UIApplicationMain.mm:30,1552204800:30,r
