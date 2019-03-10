@@ -129,6 +129,13 @@ const char **_CFGetProcessPath(void) {
 #if DEPLOYMENT_TARGET_WINDOWS
 const char *_CFProcessPath(void) {
     if (__CFProcessPath) return __CFProcessPath;
+#if defined(OBJC_PORT)
+    HMODULE lib = LoadPackagedLibrary(L"libIpaSimLibrary.dll", 0);
+    FARPROC func = GetProcAddress(lib, "ipaSim_processPath");
+    __CFProcessPath = ((const char *(*)())func)();
+    FreeLibrary(lib);
+// defined(OBJC_PORT)
+#else
     wchar_t buf[CFMaxPathSize] = {0};
     DWORD rlen = GetModuleFileNameW(NULL, buf, sizeof(buf) / sizeof(buf[0]));
     if (0 < rlen) {
@@ -144,6 +151,8 @@ const char *_CFProcessPath(void) {
     __CFProcessPath = "";
         __CFprogname = __CFProcessPath;
     }
+// !defined(OBJC_PORT)
+#endif
     return __CFProcessPath;
 }
 #endif
