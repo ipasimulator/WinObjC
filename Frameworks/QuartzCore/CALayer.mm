@@ -2238,7 +2238,11 @@ static CALayer* _findSuperLayerForLayer(CALayer* layer) {
         auto strongSuperLayer = reinterpret_cast<CALayer*>(objc_loadWeakRetained(&weakSuperLayer));
 
         // We need to make sure the retain we just performed above is released *after* we construct the block
+        // [port] CHANGED: This releases object that's accessed later (see the block below).
+        // [port] TODO: How could this ever work?
+#if !defined(OBJC_PORT)
         auto releaseSuperLayer = wil::ScopeExit([&strongSuperLayer]() { objc_release(strongSuperLayer); });
+#endif
 
         // The weak reference is no longer needed, so clean up after ourselves
         objc_destroyWeak(&weakSuperLayer);
@@ -2270,6 +2274,11 @@ static CALayer* _findSuperLayerForLayer(CALayer* layer) {
                     // Redisplay anything necessary
                     DoDisplayList(strongSuperLayer);
                 }
+
+                // [port] CHANGED: See few lines above.
+#if defined(OBJC_PORT)
+                objc_release(strongSuperLayer);
+#endif
             } else if (DEBUG_VERBOSE) {
                 TraceVerbose(TAG, L"Skipping _displayChanged work for currently-dealloc'd object (0x%p).", rawSuperLayerForLog);
             }
