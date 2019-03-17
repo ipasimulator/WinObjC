@@ -32,19 +32,36 @@ add_library (dispatch SHARED ${SOURCE_FILES})
 add_prep_dep (dispatch)
 
 target_compile_definitions (dispatch PRIVATE
+    # From `/src/objc/CMakeLists.txt`
+    OBJC_PORT
+    __OBJC2__=1
     # From `libdispatch.vcxproj`
     WIN32
     _DEBUG
     DISPATCH_DEBUG
     _WINDLL
     _LIB
-    HAS_TIMESPEC)
+    HAS_TIMESPEC
+    # Probably `ClangCompile`'s defaults
+    WINOBJC)
+set_source_files_properties (
+    "${CMAKE_CURRENT_SOURCE_DIR}/platform/windows/pthread_workqueue_winrt.cpp"
+    PROPERTIES COMPILE_OPTIONS -UWINOBJC)
 
 target_include_directories (dispatch PRIVATE
     # From `libdispatch.vcxproj`
-    "${CMAKE_CURRENT_SOURCE_DIR}")
+    "${CMAKE_CURRENT_SOURCE_DIR}"
+    # From `/src/objc/CMakeLists.txt`
+    "${SOURCE_DIR}/src/objc/include"
+    "${SOURCE_DIR}/deps/apple-headers"
+    "${SOURCE_DIR}/deps/libclosure")
 
 target_compile_options (dispatch PRIVATE -Wno-nullability-completeness
-    -Wno-incompatible-pointer-types)
+    -Wno-incompatible-pointer-types
+    # From `ClangCompile`'s defaults
+    -fblocks
+    # From `/src/objc/CMakeLists.txt`
+    -fobjc-runtime=macosx-10.13.0
+    )
 
-target_link_libraries (dispatch PRIVATE msvcrtd WindowsApp.lib User32.lib)
+target_link_libraries (dispatch PRIVATE msvcrtd WindowsApp.lib User32.lib objc)

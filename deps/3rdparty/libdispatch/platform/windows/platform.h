@@ -89,8 +89,9 @@
 #define __private_extern__
 
 #ifdef __BLOCKS__
-#include <objc/blocks_private.h>
-#include <objc/blocks_runtime.h>
+// [port] CHANGED: Use our implementation of blocks.
+#include <Block.h>
+#include <Block_private.h>
 #endif /* __BLOCKS__ */
 
 #ifdef _MSC_VER

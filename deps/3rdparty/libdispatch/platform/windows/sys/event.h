@@ -1,7 +1,7 @@
 #ifndef PLATFORM_WINDOWS_SYS_EVENT__H
 #define PLATFORM_WINDOWS_SYS_EVENT__H
 
-#ifdef WINOBJC
+#if defined(WINOBJC) && !defined(OBJC_PORT)
  #include <mactypes.h>
 #endif
 
