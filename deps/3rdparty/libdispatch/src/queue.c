@@ -610,7 +610,10 @@ static intptr_t _dispatch_queue_serial_numbers = 10;
 
 // Note to later developers: ensure that any initialization changes are
 // made for statically allocated queues (i.e. _dispatch_main_q).
-DISPATCH_INLINE void
+// [port] CHANGED: Remove `DISPATCH_INLINE`, so that this can be used by
+// [port] `source.c`, as well.
+// [port] TODO: How could this work in the original `libdispatch.vcxproj`?
+void
 _dispatch_queue_init(dispatch_queue_t dq)
 {
 	dq->do_vtable = &_dispatch_queue_vtable;
@@ -717,7 +720,7 @@ _dispatch_queue_dispose(dispatch_queue_t dq)
 #endif
 
 	if (slowpath(dq->dq_specific_q)) {
-		dispatch_release(dq->dq_specific_q);
+		dispatch_release((dispatch_object_t)dq->dq_specific_q);
 	}
 	if (slowpath(dq->dq_specific_list)) {
 		_dispatch_queue_specific_list_release(dq->dq_specific_list);
@@ -2027,7 +2030,7 @@ static void _dispatch_queue_init_specific_list(dispatch_queue_t dq) {
 	newQueue->dq_specific_list = dqsl;
 	
 	if(slowpath(!dispatch_atomic_cmpxchg_pointer(&dq->dq_specific_q, NULL, newQueue))) {
-		dispatch_release(newQueue);
+		dispatch_release((dispatch_object_t)newQueue);
 	}
 }
 
