@@ -1,0 +1,12 @@
+[ver:1,total:1740]
+deps/3rdparty/libdispatch/CMakeLists.txt:932,1552820400:932,m
+tools/include/objc/blocks_private.h:287,1552820400:287,r
+deps/3rdparty/libdispatch/platform/windows/platform.h:170,1552820400:170,m
+deps/3rdparty/libdispatch/platform/windows/sys/event.h:75,1552820400:75,m
+deps/3rdparty/libdispatch/dispatch/source.h:74,1552820400:74,m
+deps/3rdparty/libdispatch/src/interop.c:60,1552820400:60,r
+deps/3rdparty/libdispatch/dispatch/once.h:60,1552820400:60,r
+deps/3rdparty/libdispatch/platform/windows/pthread_workqueue_winrt.cpp:30,1552820400:30,r
+deps/3rdparty/libdispatch/platform/windows/pthread_workqueue.h:20,1552820400:20,r
+deps/3rdparty/libdispatch/src/queue.c:20,1552820400:20,r
+tools/include/objc/blocks_runtime.h:12,1552820400:12,r
