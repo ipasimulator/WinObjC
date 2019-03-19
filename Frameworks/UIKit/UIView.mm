@@ -86,7 +86,7 @@ static const bool DEBUG_TOUCHES = DEBUG_TOUCHES_VERBOSE || false;
 static const bool DEBUG_TOUCHES_LIGHT = DEBUG_TOUCHES || false;
 static const bool DEBUG_HIT_TESTING = DEBUG_ALL || false;
 static const bool DEBUG_HIT_TESTING_LIGHT = DEBUG_HIT_TESTING || false;
-static const bool DEBUG_LAYOUT = DEBUG_ALL || false;
+static const bool DEBUG_LAYOUT = DEBUG_ALL || true;
 
 const CGFloat UIViewNoIntrinsicMetric = -1.0f;
 

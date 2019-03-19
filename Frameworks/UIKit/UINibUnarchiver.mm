@@ -310,7 +310,7 @@ static id getObjectForKey(UINibUnarchiver* self, const char* keyName) {
         _classNames[i][len] = '\0';
         _classTypes[i] = objc_getClass(_classNames[i]);
         if (_classTypes[i] == nil) {
-            TraceVerbose(TAG, L"Couldn't find class");
+            TraceVerbose(TAG, L"Couldn't find class %hs", _classNames[i]);
         }
         _curOffset += len;
     }
