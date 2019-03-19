@@ -1,0 +1,11 @@
+[ver:1,total:2880]
+deps/3rdparty/libdispatch/src/queue.c:1600,1553004000:540,1553007600:1060,m
+deps/3rdparty/libdispatch/src/object_internal.h:605,1553007600:605,m
+deps/3rdparty/libdispatch/CMakeLists.txt:317,1553004000:180,1553007600:137,m
+Frameworks/UIKit/UIBarButtonItem.mm:123,1553007600:123,r
+Frameworks/UIKit/UIControl.mm:120,1553004000:120,r
+Frameworks/UIKit/UIPanGestureRecognizer.mm:60,1553004000:60,r
+deps/3rdparty/libdispatch/src/queue_internal.h:15,1553007600:15,r
+deps/3rdparty/libdispatch/dispatch/base.h:15,1553007600:15,r
+deps/3rdparty/libdispatch/src/continuation_cache.h:15,1553007600:15,r
+deps/3rdparty/libdispatch/src/hw_shims.h:10,1553007600:10,r
