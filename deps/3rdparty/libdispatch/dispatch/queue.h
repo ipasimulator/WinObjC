@@ -805,6 +805,11 @@ __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_5_0)
 DISPATCH_EXPORT DISPATCH_PURE DISPATCH_WARN_RESULT DISPATCH_NOTHROW
 void * dispatch_get_specific(const void *key);
 
+// [port] CHANGED: See #27.
+#if defined(OBJC_PORT)
+DISPATCH_EXPORT bool dispatch_is_dispatch_object(const void* obj);
+#endif
+
 __DISPATCH_END_DECLS
 
 #endif

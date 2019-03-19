@@ -2110,3 +2110,17 @@ void* _Nullable dispatch_queue_get_specific(dispatch_queue_t queue, const void *
 void* _Nullable dispatch_get_specific(const void *key) {
 	return dispatch_queue_get_specific(_dispatch_queue_get_current(), key);
 }
+
+// [port] CHANGED: See #27.
+#if defined(OBJC_PORT)
+// Defined in `objc`'s `stubs.mm`.
+extern __declspec(dllimport) void objc_register_dispatch_is_dispatch_object(bool (*)(const void*));
+bool dispatch_is_dispatch_object(const void *obj) {
+    void *vtable = *(void**)obj;
+    return vtable == &_dispatch_queue_vtable
+      || vtable == &_dispatch_queue_root_vtable;
+}
+__attribute__((constructor)) static void register_dispatch_is_dispatch_object() {
+    objc_register_dispatch_is_dispatch_object(dispatch_is_dispatch_object);
+}
+#endif
