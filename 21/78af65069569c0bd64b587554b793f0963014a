@@ -1,0 +1,13 @@
+[ver:1,total:2460]
+Frameworks/UIKit/UILabel.mm:945,1553011200:915,1553014800:30,r
+Frameworks/UIKit/UIView.mm:512,1553011200:512,m
+deps/3rdparty/libdispatch/src/queue.c:390,1553007600:360,1553011200:30,r
+Frameworks/UIKit/UINibUnarchiver.mm:185,1553011200:165,1553014800:20,m
+Frameworks/UIKit/StarboardXaml/LayerCoordinator.cpp:144,1553011200:74,1553014800:70,r
+Frameworks/QuartzCore/CALayer.mm:94,1553011200:94,r
+include/UIKit/UIView.h:54,1553011200:54,r
+Frameworks/UIKit/StarboardXaml/LayerCoordinator.h:42,1553011200:42,r
+Frameworks/AutoLayout/AutoLayout.mm:40,1553011200:40,r
+include/UIKit/UILabel.h:30,1553011200:30,r
+include/QuartzCore/CALayer.h:12,1553011200:12,r
+include/UIKit/UIResponder.h:12,1553011200:12,r
