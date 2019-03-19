@@ -424,7 +424,12 @@ _dispatch_continuation_pop(dispatch_object_t dou)
 	} else {
 		dg = NULL;
 	}
+  // [port] TODO: This might not be actually needed.
+#if defined(OBJC_PORT)
+  ipaSim_callBack1(dc->dc_func, dc->dc_ctxt);
+#else
 	dc->dc_func(dc->dc_ctxt);
+#endif
 	if (dg) {
 		dispatch_group_leave(dg);
 		_dispatch_release(as_do(dg));

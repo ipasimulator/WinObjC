@@ -64,4 +64,5 @@ target_compile_options (dispatch PRIVATE -Wno-nullability-completeness
     -fobjc-runtime=macosx-10.13.0
     )
 
-target_link_libraries (dispatch PRIVATE msvcrtd WindowsApp.lib User32.lib objc)
+target_link_libraries (dispatch PRIVATE
+    msvcrtd WindowsApp.lib User32.lib objc IpaSimLibrary)
