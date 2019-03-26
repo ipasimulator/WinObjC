@@ -1,0 +1,14 @@
+[ver:1,total:5160]
+Frameworks/UIKit/UITextField.mm:1539,1553360400:339,1553364000:840,1553367600:180,1553421600:120,1553425200:60,r
+Frameworks/UIKit/StarboardXaml/LayerCoordinator.cpp:930,1553014800:600,1553360400:330,r
+Frameworks/UIKit/UIApplication.mm:697,1553410800:480,1553594400:217,r
+Frameworks/UIKit/UIApplicationMain.mm:600,1553414400:180,1553418000:420,r
+samples/HelloUI/HelloUI/main.m:312,1553335200:180,1553360400:90,1553594400:42,r
+Frameworks/UIKit/StarboardXaml/ApplicationMain.mm:255,1553594400:255,m
+Frameworks/UIKit/UIBarButtonItem.mm:180,1553425200:180,r
+Frameworks/UIKit/UIView.mm:180,1553014800:180,r
+Frameworks/UIKit/UIPanGestureRecognizer.mm:180,1553425200:60,1553594400:120,r
+samples/HelloUI/HelloUI/HelloUI.m:159,1553335200:60,1553594400:99,r
+include/UIKit/UITextField.h:51,1553360400:51,r
+include/UIKit/UIApplication.h:47,1553594400:47,r
+Frameworks/UIKit/UISearchBar.mm:30,1553360400:30,r
