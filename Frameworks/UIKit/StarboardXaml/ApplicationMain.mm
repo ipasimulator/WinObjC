@@ -120,6 +120,14 @@ void RunApplicationMain(const char* principalName, const char* delegateName, Act
     WOCDisplayMode* displayMode = [UIApplication displayMode];
     [displayMode _setWindowSize:CGSizeMake(windowBounds.Width, windowBounds.Height)];
 
+    // [port] CHANGED: Set some better defaults. Inspired by samples (they do
+    // [port] this in `setStartupDisplayMode:`).
+#if defined(OBJC_PORT)
+    displayMode.fixedWidth = 0;
+    displayMode.fixedHeight = 0;
+// defined(OBJC_PORT)
+#endif
+
     if (activationType == ActivationTypeLibrary) {
         // In library mode, honor app's native display size
         [displayMode setDisplayPreset:WOCDisplayPresetNative];
