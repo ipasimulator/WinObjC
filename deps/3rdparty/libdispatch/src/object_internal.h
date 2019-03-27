@@ -62,9 +62,9 @@ enum {
 // [port] CHANGED: See `IpaSimLibrary` for implementation.
 // [port] TODO: This might not be actually needed.
 #if defined(OBJC_PORT)
-extern __declspec(dllimport) void ipaSim_callBack1(void *FP, void *arg0);
-extern __declspec(dllimport) void *ipaSim_callBack1r(void *FP, void *arg0);
-extern __declspec(dllimport) void *ipaSim_callBack3r(void *FP, void *arg0, void *arg1, void *arg2);
+extern __declspec(dllimport) void ipaSim_callBack1(void *FP, void *Arg0);
+extern __declspec(dllimport) void *ipaSim_callBack1r(void *FP, void *Arg0);
+extern __declspec(dllimport) void *ipaSim_callBack3r(void *FP, void *Arg0, void *Arg1, void *Arg2);
 #define dx_debug(x, y, z) ((size_t)ipaSim_callBack3r((x)->do_vtable->do_debug, (x), (y), (void *)(z)))
 #define dx_dispose(x) ipaSim_callBack1((x)->do_vtable->do_dispose, (x))
 #define dx_invoke(x) ((struct dispatch_queue_s *)ipaSim_callBack1r((x)->do_vtable->do_invoke, (x)))
