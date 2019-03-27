@@ -1,0 +1,12 @@
+[ver:1,total:6060]
+Frameworks/QuartzCore/CALayer.mm:3980,1553598000:900,1553601600:420,1553608800:750,1553612400:180,1553616000:540,1553630400:240,1553673600:180,1553684400:360,1553688000:410,r
+Frameworks/UIKit/UIGestureRecognizer.mm:960,1553594400:360,1553601600:540,1553608800:30,1553688000:30,r
+deps/3rdparty/libdispatch/src/queue.c:398,1553688000:398,r
+Frameworks/UIKit/UIApplication.mm:220,1553594400:160,1553598000:60,r
+Frameworks/UIKit/UIView.mm:200,1553594400:200,r
+Frameworks/UIKit/UIPanGestureRecognizer.mm:120,1553594400:120,r
+Frameworks/UIKit/StarboardXaml/ApplicationMain.mm:60,1553594400:60,r
+deps/3rdparty/libdispatch/src/object_internal.h:60,1553688000:60,m
+Frameworks/UIKit/UINibUnarchiver.mm:30,1553688000:30,r
+Frameworks/UIKit/UIBarButtonItem.mm:20,1553688000:20,r
+deps/3rdparty/libdispatch/platform/windows/pthread_workqueue_winrt.cpp:12,1553688000:12,r
