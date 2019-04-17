@@ -1,0 +1,9 @@
+[ver:1,total:1620]
+deps/3rdparty/cassowary-0.60/CMakeLists.txt:765,1555524000:765,m
+deps/3rdparty/cassowary-0.60/cassowary-0.60-Windows.vcxproj:475,1555524000:475,r
+tools/WinObjCRT/CMakeLists.txt:180,1555520400:180,r
+deps/3rdparty/libdispatch/CMakeLists.txt:120,1555524000:120,r
+deps/3rdparty/cassowary-0.60/mkinstalldirs:20,1555524000:20,r
+deps/3rdparty/cassowary-0.60/configure:20,1555524000:20,r
+deps/3rdparty/cassowary-0.60/configure.in:20,1555524000:20,r
+deps/3rdparty/cassowary-0.60/README:20,1555524000:20,r
