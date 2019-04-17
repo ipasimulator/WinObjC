@@ -7,4 +7,4 @@ add_prep_dep (WinObjCRT)
 
 target_link_libraries (WinObjCRT PRIVATE
     # From `WinObjCRT.vcxproj`.
-    "-def:${CMAKE_CURRENT_SOURCE_DIR}/dll/WinObjCRT_Debug.def") # TODO: Release?
+    "-def:${CMAKE_CURRENT_SOURCE_DIR}/dll/WinObjCRT_${CMAKE_BUILD_TYPE}.def")
