@@ -25,9 +25,9 @@ if (NOT CL_COMPILER)
     add_library (Social.Xaml SHARED IMPORTED)
     set_target_properties (Social.Xaml PROPERTIES
         IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/../Social.Xaml/prebuilt/\
-Socal.Xaml.dll"
+${CMAKE_BUILD_TYPE}/Socal.Xaml.dll"
         IMPORTED_IMPLIB "${CMAKE_CURRENT_SOURCE_DIR}/../Social.Xaml/prebuilt/\
-Social.Xaml.lib")
+${CMAKE_BUILD_TYPE}/Social.Xaml.lib")
 
     target_link_libraries (Social PRIVATE
         ${WOCFX_LIBS}

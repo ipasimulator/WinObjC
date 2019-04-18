@@ -14,7 +14,8 @@ if (CL_COMPILER)
     target_include_directories (UIKit PRIVATE ${WOCFX_INCLUDE_DIRS})
 
     target_compile_options (UIKit PRIVATE
-        "/FU${CMAKE_CURRENT_SOURCE_DIR}/../UIKit.Xaml/prebuilt/UIKit.Xaml.winmd"
+        "/FU${CMAKE_CURRENT_SOURCE_DIR}/../UIKit.Xaml/prebuilt/\
+${CMAKE_BUILD_TYPE}/UIKit.Xaml.winmd"
         /ZW)
 
     target_link_libraries (UIKit PRIVATE Logging)
@@ -301,9 +302,9 @@ else (CL_COMPILER)
     add_library (UIKit.Xaml SHARED IMPORTED)
     set_target_properties (UIKit.Xaml PROPERTIES
         IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/../UIKit.Xaml/prebuilt/\
-UIKit.Xaml.dll"
+${CMAKE_BUILD_TYPE}/UIKit.Xaml.dll"
         IMPORTED_IMPLIB "${CMAKE_CURRENT_SOURCE_DIR}/../UIKit.Xaml/prebuilt/\
-UIKit.Xaml.lib")
+${CMAKE_BUILD_TYPE}/UIKit.Xaml.lib")
 
     target_link_libraries (UIKit PRIVATE
         ${WOCFX_LIBS}
