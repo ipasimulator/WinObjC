@@ -1,0 +1,12 @@
+[ver:1,total:1440]
+build/Social.Xaml/dll/Social.Xaml.vcxproj:630,1555588800:270,1555592400:360,r
+build/CoreFoundation/dll/CoreFoundation.vcxproj:180,1555592400:180,r
+Frameworks/UIKit/CMakeLists.txt:180,1555588800:180,r
+include/CoreFoundation/CFPropertyList.h:165,1555585200:165,r
+msvc/sdk-build.props:150,1555588800:30,1555592400:120,m
+.gitignore:30,1555592400:30,r
+Frameworks/UIKit.Xaml/prebuilt/.gitignore:30,1555592400:30,m
+Frameworks/Social.Xaml/pch.h:20,1555588800:20,r
+Frameworks/Social.Xaml/ShareSheet.xaml:20,1555588800:20,r
+Frameworks/Social.Xaml/pch.cpp:20,1555588800:20,r
+Frameworks/include/ForFoundationOnly.h:15,1555585200:15,r
