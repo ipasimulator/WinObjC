@@ -1,0 +1,10 @@
+[ver:1,total:1320]
+Frameworks/UIKit/CMakeLists.txt:540,1555592400:540,r
+Frameworks/AutoLayout/AutoLayout.mm:287,1555848000:287,r
+Frameworks/OpenGLES/CMakeLists.txt:180,1555844400:180,r
+Frameworks/AutoLayout/CMakeLists.txt:120,1555848000:120,m
+build/AutoLayout/dll/AutoLayout.vcxproj:62,1555848000:62,r
+build/AutoLayout/lib/AutoLayoutLib.vcxproj:47,1555848000:47,r
+deps/3rdparty/cassowary-0.60/c++/ClSimplexSolver.h:40,1555848000:40,r
+deps/3rdparty/cassowary-0.60/c++/ClLinearConstraint.h:32,1555848000:32,r
+deps/3rdparty/cassowary-0.60/c++/ClConstraint.h:12,1555848000:12,r
