@@ -11,8 +11,8 @@ if (NOT CL_COMPILER)
     target_compile_definitions (AutoLayout PRIVATE
         ${WINOBJC_DEFS}
         # From `AutoLayoutLib.vcxproj`.
-        HAVE_CONFIG_H
-        _ITERATOR_DEBUG_LEVEL=0)
+        $<$<CONFIG:Debug>:HAVE_CONFIG_H>
+        $<$<CONFIG:Debug>:_ITERATOR_DEBUG_LEVEL=0>)
 
     target_compile_options (AutoLayout PRIVATE ${WINOBJC_CLANG_OPTIONS})
 
