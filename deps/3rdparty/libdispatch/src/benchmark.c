@@ -24,6 +24,8 @@
 struct __dispatch_benchmark_data_s {
 #if HAVE_MACH_ABSOLUTE_TIME
 	mach_timebase_info_data_t tbi;
+#elif defined(OBJC_PORT)
+	uint64_t freq; // counts per nanosecond
 #endif
 	uint64_t loop_cost;
 	void (*func)(void *);
@@ -52,6 +54,10 @@ _dispatch_benchmark_init(void *context)
 
 	kr = mach_timebase_info(&bdata->tbi);
 	dispatch_assert_zero(kr);
+#elif defined(OBJC_PORT)
+	if (!QueryPerformanceFrequency(&bdata->freq))
+		bdata->freq = 1;
+	bdata->freq /= 1000000;
 #endif
 
 	start = _dispatch_absolute_time();
@@ -65,6 +71,8 @@ _dispatch_benchmark_init(void *context)
 #if HAVE_MACH_ABSOLUTE_TIME
 	lcost *= bdata->tbi.numer;
 	lcost /= bdata->tbi.denom;
+#elif defined(OBJC_PORT)
+	lcost /= bdata->freq;
 #endif
 	lcost /= cnt;
 
@@ -84,6 +92,9 @@ uint64_t
 dispatch_benchmark_f(size_t count, register void *ctxt, register void (*func)(void *))
 {
 	static struct __dispatch_benchmark_data_s bdata = {
+#if defined(OBJC_PORT)
+		/* .freq     = */ 0,
+#endif
 		/*.loop_cost = */	0,
 		/*.func      = */	(dispatch_function_t)dummy_function,
 		/*.context   = */	0,
@@ -120,6 +131,8 @@ dispatch_benchmark_f(size_t count, register void *ctxt, register void (*func)(vo
 #if HAVE_MACH_ABSOLUTE_TIME
 	conversion *= bdata.tbi.numer;
 	big_denom = bdata.tbi.denom;
+#elif defined(OBJC_PORT)
+	big_denom = (long double)bdata.freq;
 #else
 	big_denom = (long double)delta;
 #endif
