@@ -1,0 +1,17 @@
+[ver:1,total:2280]
+deps/3rdparty/libdispatch/src/benchmark.c:530,1555880400:180,1555884000:350,m
+Frameworks/UIKit/UIButton.mm:450,1555880400:450,r
+Frameworks/UIKit/UIView.mm:300,1555866000:300,r
+deps/3rdparty/libdispatch/src/shims/time.h:240,1555884000:240,r
+Frameworks/AutoLayout/CMakeLists.txt:180,1555858800:180,r
+deps/3rdparty/libdispatch/src/apply.c:180,1555880400:180,r
+include/UIKit/UIView.h:160,1555862400:160,r
+deps/3rdparty/libdispatch/src/queue.c:40,1555884000:40,r
+Frameworks/UIKit/UIButtonProxies.h:30,1555880400:30,r
+Frameworks/UIKit/StarboardXaml/DisplayProperties.mm:30,1555862400:30,r
+Frameworks/UIKit/StarboardXaml/DisplayProperties.h:30,1555862400:30,r
+deps/3rdparty/libdispatch/src/internal.h:30,1555884000:30,r
+Frameworks/UIKit/UIApplication.mm:20,1555862400:20,r
+include/UIKit/UIResponder.h:20,1555862400:20,r
+Frameworks/UIKit/UIWindow.mm:20,1555862400:20,r
+include/UIKit/UIWindow.h:20,1555862400:20,r
