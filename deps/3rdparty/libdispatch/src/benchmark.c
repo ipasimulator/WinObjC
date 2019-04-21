@@ -107,7 +107,12 @@ dispatch_benchmark_f(size_t count, register void *ctxt, register void (*func)(vo
 	start = _dispatch_absolute_time();
 	do {
 		i++;
+		// [port] CHANGED: `func` might be a callback.
+#if defined(OBJC_PORT)
+		ipaSim_callBack1(func, ctxt);
+#else
 		func(ctxt);
+#endif
 	} while (i < count);
 	delta = _dispatch_absolute_time() - start;
 
