@@ -115,15 +115,15 @@ dispatch_benchmark_f(size_t count, register void *ctxt, register void (*func)(vo
 		return 0;
 	}
 
+#if defined(OBJC_PORT)
+	extern __declspec(dllimport) void *ipaSim_translateC(void *Addr, size_t ArgC);
+	func = ipaSim_translateC(func, 1);
+#endif
+
 	start = _dispatch_absolute_time();
 	do {
 		i++;
-		// [port] CHANGED: `func` might be a callback.
-#if defined(OBJC_PORT)
-		ipaSim_callBack1(func, ctxt);
-#else
 		func(ctxt);
-#endif
 	} while (i < count);
 	delta = _dispatch_absolute_time() - start;
 
