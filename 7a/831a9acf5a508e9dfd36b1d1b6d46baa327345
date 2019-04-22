@@ -1,0 +1,11 @@
+[ver:1,total:2220]
+deps/3rdparty/libdispatch/src/benchmark.c:1710,1555887600:300,1555923600:180,1555938000:330,1555941600:900,m
+Frameworks/CoreFoundation/Base.subproj/CFRuntime.c:180,1555930800:180,r
+deps/3rdparty/libdispatch/dispatch/time.h:120,1555930800:120,r
+deps/3rdparty/libdispatch/src/source.c:60,1555930800:60,r
+deps/3rdparty/libdispatch/src/once.c:30,1555930800:30,r
+deps/3rdparty/libdispatch/dispatch/queue.h:30,1555930800:30,r
+deps/3rdparty/libdispatch/src/object_internal.h:30,1555938000:30,r
+Frameworks/CoreFoundation/Base.subproj/CFPlatform.c:20,1555930800:20,r
+Frameworks/CoreFoundation/Base.subproj/CFBase.c:20,1555930800:20,r
+Frameworks/CoreFoundation/Base.subproj/CFFileUtilities.c:20,1555930800:20,r
