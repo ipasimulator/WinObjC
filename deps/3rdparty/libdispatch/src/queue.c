@@ -104,6 +104,17 @@ _dispatch_get_root_queue(long priority, bool overcommit)
 }
 
 #ifdef __BLOCKS__
+
+// [port] CHANGED: Added this function.
+static dispatch_block_t translate_block(dispatch_block_t db) {
+#if defined(OBJC_PORT)
+	struct Block_basic *bb = (void *)db;
+	extern __declspec(dllimport) void *ipaSim_translateC(void *FP, size_t ArgC);
+	bb->Block_invoke = ipaSim_translateC(bb->Block_invoke, 1);
+#endif
+	return db;
+}
+
 dispatch_block_t
 _dispatch_Block_copy(dispatch_block_t db)
 {
@@ -770,7 +781,8 @@ _dispatch_barrier_async_f_slow(dispatch_queue_t dq, void *context, dispatch_func
 void
 dispatch_barrier_async(dispatch_queue_t dq, void (^work)(void))
 {
-	dispatch_barrier_async_f(dq, _dispatch_Block_copy(work), _dispatch_call_block_and_release);
+	// [port] CHANGED: Used `translate_block`.
+	dispatch_barrier_async_f(dq, translate_block(_dispatch_Block_copy(work)), _dispatch_call_block_and_release);
 }
 #endif
 
@@ -809,7 +821,8 @@ _dispatch_async_f_slow(dispatch_queue_t dq, void *context, dispatch_function_t f
 void
 dispatch_async(dispatch_queue_t dq, void (^work)(void))
 {
-	dispatch_async_f(dq, _dispatch_Block_copy(work), _dispatch_call_block_and_release);
+	// [port] CHANGED: Used `translate_block`.
+	dispatch_async_f(dq, translate_block(_dispatch_Block_copy(work)), _dispatch_call_block_and_release);
 }
 #endif
 
@@ -902,7 +915,8 @@ dispatch_barrier_sync(dispatch_queue_t dq, void (^work)(void))
 	// therefore we must Block_copy in order to notify the thread-local
 	// garbage collector that the objects are transferring to the main thread
 	if (dq->dq_manually_drained) {
-		dispatch_block_t block = Block_copy(work);
+		// [port] CHANGED: Used `translate_block`.
+		dispatch_block_t block = translate_block(Block_copy(work));
 		return dispatch_barrier_sync_f(dq, block, _dispatch_call_block_and_release);
 	}	
 	struct Block_basic *bb = (void *)work;
@@ -928,7 +942,11 @@ dispatch_barrier_sync_f(dispatch_queue_t dq, void *ctxt, dispatch_function_t fun
 	}
 
 	_dispatch_thread_setspecific(dispatch_queue_key, dq);
+#if defined(OBJC_PORT)
+  ipaSim_callBack1(func, ctxt);
+#else
 	func(ctxt);
+#endif
 	_dispatch_workitem_inc();
 	_dispatch_thread_setspecific(dispatch_queue_key, old_dq);
 	_dispatch_queue_unlock(dq);
@@ -1958,7 +1976,8 @@ dispatch_after(dispatch_time_t when, dispatch_queue_t queue, dispatch_block_t wo
 #endif
 		return;
 	}
-	dispatch_after_f(when, queue, _dispatch_Block_copy(work), _dispatch_call_block_and_release);
+	// [port] CHANGED: Used `translate_block`.
+	dispatch_after_f(when, queue, translate_block(_dispatch_Block_copy(work)), _dispatch_call_block_and_release);
 }
 #endif
 
