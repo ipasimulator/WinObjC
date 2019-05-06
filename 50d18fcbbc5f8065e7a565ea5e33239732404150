@@ -1,0 +1,13 @@
+[ver:1,total:1560]
+Frameworks/UIKit/UINavigationController.mm:910,1557176400:670,1557180000:180,1557183600:60,m
+Frameworks/Foundation/NSObject_NSCoding.mm:180,1557180000:180,r
+deps/3rdparty/libdispatch/src/queue.c:180,1557162000:180,r
+include/UIKit/NSString+UIKitAdditions.h:150,1557176400:150,r
+Frameworks/Foundation/NSString.mm:50,1557176400:50,r
+Frameworks/Foundation/NSString+HSTRING.mm:20,1557176400:20,r
+include/Foundation/NSString.h:20,1557176400:20,r
+Frameworks/UIKit/UISegmentedControl.mm:10,1557176400:10,r
+Frameworks/UIKit/UINavigationBar.mm:10,1557176400:10,r
+Frameworks/UIKit/UIToolbar.mm:10,1557176400:10,r
+Frameworks/UIKit/UISegment.mm:10,1557176400:10,r
+Frameworks/Foundation/NSBundle.mm:10,1557176400:10,r
