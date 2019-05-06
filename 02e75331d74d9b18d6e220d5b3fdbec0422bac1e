@@ -1,0 +1,12 @@
+[ver:1,total:1440]
+Frameworks/Foundation/NSBundle.mm:330,1556827200:330,r
+Frameworks/UIKit/UITableView.mm:240,1557133200:240,r
+deps/3rdparty/libdispatch/src/object_internal.h:240,1557147600:240,r
+Frameworks/UIKit/UINavigationPane.mm:220,1556827200:220,r
+Frameworks/include/UIApplicationInternal.h:180,1556812800:180,r
+deps/3rdparty/libdispatch/src/benchmark.c:75,1557147600:75,m
+Frameworks/UIKit/StarboardXaml/ApplicationMain.mm:60,1556812800:60,r
+include/UIKit/UINavigationController.h:30,1556827200:30,r
+Frameworks/include/Starboard.h:30,1556827200:30,r
+deps/3rdparty/libdispatch/dispatch/queue.h:20,1557147600:20,r
+deps/3rdparty/libdispatch/dispatch/base.h:15,1557147600:15,r
