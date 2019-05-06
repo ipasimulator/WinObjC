@@ -116,7 +116,7 @@ dispatch_benchmark_f(size_t count, register void *ctxt, register void (*func)(vo
 	}
 
 #if defined(OBJC_PORT)
-	extern __declspec(dllimport) void *ipaSim_translateC(void *Addr, size_t ArgC);
+	extern __declspec(dllimport) void *ipaSim_translateC(void *FP, size_t ArgC);
 	func = ipaSim_translateC(func, 1);
 #endif
 
