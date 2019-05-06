@@ -1089,6 +1089,11 @@ _dispatch_queue_cleanup_and_release(void* ctxt)
 dispatch_queue_t
 dispatch_get_global_queue(long priority, unsigned long flags)
 {
+	// [port] CHANGED: We don't support multiple threads right now, hence this
+	// [port] workaround.
+#if defined(OBJC_PORT)
+	return dispatch_get_main_queue();
+#endif
 	if (flags & ~DISPATCH_QUEUE_OVERCOMMIT) {
 		return NULL;
 	}
