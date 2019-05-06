@@ -770,6 +770,8 @@ static void rotateViewController(UINavigationController* self) {
 
             bool clipToNavBar = true;
 
+            // [port] CHANGED: This caused problems, e.g. in sample `ToDo.app`.
+#if !defined(OBJC_PORT)
             if (isOSTarget(@"7.0")) {
                 if ([_newController ? _newController : _curController _edgesForExtendedLayout] ==
                     0) { //  [POTENTIAL BUG: Might be a bitmask for top & bottom]
@@ -780,6 +782,7 @@ static void rotateViewController(UINavigationController* self) {
                     clipToNavBar = false;
                 }
             }
+#endif
 
             if (!_navBarHidden && clipToNavBar) {
                 containerRect.origin.y += UINavigationBarHeight;
