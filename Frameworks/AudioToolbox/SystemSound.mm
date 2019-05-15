@@ -178,7 +178,6 @@ OSStatus AudioServicesDisposeSystemSoundID(SystemSoundID inSystemSoundID) {
 // Calls into C++ to access Windows.Phone.Devices.Notification namespace to vibrate devices with vibration capability.
 void vibrateDevice() {
     // [port] CHANGED: See #16.
-    // [port] TODO: Implement this, though.
 #if !defined(OBJC_PORT)
     Boolean vibrationCapable = false;
     HRESULT status;

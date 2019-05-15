@@ -487,7 +487,6 @@ static void createMainView(UINavigationController* self, CGRect frame) {
     createMainView(self, frame);
 
     // [port] CHANGED: This is a nonsense and so thinks the compiler.
-    // [port] TODO: What was the meaning of this in the original code?
 #if !defined(OBJC_PORT)
     _navigationBar = _navigationBar;
     _toolBar = _toolBar;

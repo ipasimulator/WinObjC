@@ -129,7 +129,6 @@ static void _runLoopTimerWithBlockContext(CFRunLoopTimerRef timer, void *opaqueB
 // [port] CHANGED: See #17.
 #if defined(OBJC_PORT)
 static pthread_t kNilPthreadT = pthread_t{nullptr, 0};
-// [port] TODO: Is it OK to ignore reuse count of `pthread_t`?
 #define pthreadPointer(a) ((a).p)
 // defined(OBJC_PORT)
 #else

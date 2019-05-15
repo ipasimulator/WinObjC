@@ -2239,7 +2239,6 @@ static CALayer* _findSuperLayerForLayer(CALayer* layer) {
 
         // We need to make sure the retain we just performed above is released *after* we construct the block
         // [port] CHANGED: This releases object that's accessed later (see the block below).
-        // [port] TODO: How could this ever work?
 #if !defined(OBJC_PORT)
         auto releaseSuperLayer = wil::ScopeExit([&strongSuperLayer]() { objc_release(strongSuperLayer); });
 #endif

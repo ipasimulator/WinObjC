@@ -435,7 +435,6 @@ _dispatch_continuation_pop(dispatch_object_t dou)
 	} else {
 		dg = NULL;
 	}
-  // [port] TODO: This might not be actually needed.
 #if defined(OBJC_PORT)
   ipaSim_callBack1(dc->dc_func, dc->dc_ctxt);
 #else
@@ -628,7 +627,6 @@ static intptr_t _dispatch_queue_serial_numbers = 10;
 // made for statically allocated queues (i.e. _dispatch_main_q).
 // [port] CHANGED: Remove `DISPATCH_INLINE`, so that this can be used by
 // [port] `source.c`, as well.
-// [port] TODO: How could this work in the original `libdispatch.vcxproj`?
 void
 _dispatch_queue_init(dispatch_queue_t dq)
 {

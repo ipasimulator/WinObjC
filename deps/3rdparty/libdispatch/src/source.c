@@ -27,7 +27,6 @@
 // [port] CHANGED: Add parentheses around `max` to avoid using macro from
 // [port] `stdlib.h`. Defining `NOMINMAX` doesn't help since this is a C code,
 // [port] not C++.
-// [port] TODO: How could this work in the original `libdispatch.vcxproj`?
 static inline size_t (max)(size_t a, size_t b) {
     return (a > b) ? a : b;
 }

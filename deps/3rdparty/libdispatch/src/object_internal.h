@@ -60,7 +60,6 @@ enum {
 #define dx_type(x) (x)->do_vtable->do_type
 #define dx_kind(x) (x)->do_vtable->do_kind
 // [port] CHANGED: See `IpaSimLibrary` for implementation.
-// [port] TODO: This might not be actually needed.
 #if defined(OBJC_PORT)
 extern __declspec(dllimport) void ipaSim_callBack1(void *FP, void *Arg0);
 extern __declspec(dllimport) void *ipaSim_callBack1r(void *FP, void *Arg0);

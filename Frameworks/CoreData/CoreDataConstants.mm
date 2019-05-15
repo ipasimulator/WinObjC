@@ -17,7 +17,6 @@
 #import <StubReturn.h>
 #import <CoreData/CoreDataConstants.h>
 // [port] CHANGED: Needed, it contains declarations of the constants defined here.
-// [port] TODO: How could this work in the original code?
 #if defined(OBJC_PORT)
 #import <CoreData/CoreDataErrors.h>
 #endif
