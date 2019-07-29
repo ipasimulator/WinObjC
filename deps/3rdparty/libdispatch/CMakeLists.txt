@@ -65,4 +65,5 @@ target_compile_options (dispatch PRIVATE -Wno-nullability-completeness
     )
 
 target_link_libraries (dispatch PRIVATE
-    msvcrtd WindowsApp.lib User32.lib objc IpaSimLibrary)
+    $<IF:$<CONFIG:Debug>,msvcrtd,msvcrt> WindowsApp.lib User32.lib objc
+    IpaSimLibrary)
