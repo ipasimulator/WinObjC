@@ -37,8 +37,8 @@ target_compile_definitions (dispatch PRIVATE
     __OBJC2__=1
     # From `libdispatch.vcxproj`
     WIN32
-    _DEBUG
-    DISPATCH_DEBUG
+    $<IF:$<CONFIG:Debug>,_DEBUG,NDEBUG>
+    $<$<CONFIG:DEBUG>:DISPATCH_DEBUG>
     _WINDLL
     _LIB
     HAS_TIMESPEC
@@ -61,8 +61,7 @@ target_compile_options (dispatch PRIVATE -Wno-nullability-completeness
     # From `ClangCompile`'s defaults
     -fblocks
     # From `/src/objc/CMakeLists.txt`
-    -fobjc-runtime=macosx-10.13.0
-    )
+    -fobjc-runtime=macosx-10.13.0)
 
 target_link_libraries (dispatch PRIVATE
     $<IF:$<CONFIG:Debug>,msvcrtd,msvcrt> WindowsApp.lib User32.lib objc
